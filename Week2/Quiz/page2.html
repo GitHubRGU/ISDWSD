@@ -15,12 +15,22 @@
     <form action="page3.html">
         <h2>Question 2</h2>
         <p>Pick a number between 50 and 100</p>
-        <p><input type="number" name="pickedNumber" min="50" max="100"></p>
+        <p><input type="number" name="ChosenNumber" min="50" max="100"></p>
 
-        <p><input type="radio" name="cost" value="£1">£1</p>
-        <p><input type="radio" name="cost" value="£10">£10</p>
-        <p><input type="radio" name="cost" value="£100">£100</p>
-        <p><input type="radio" name="cost" value="£100">£1000</p>
+        <h2>Question 3</h2>
+        <p>What colour is the sky today?</p>
+        <p><input type="colour" name="SkyColour"></p>
+
+        <h2>Question 4</h2>
+        <p>What is your favourite dog breed?</p>
+        <select name="breed">
+            <option value="">Select Breed</option>
+            <option value="corgi">Corgi</option>
+            <option value="labrador">Labrador</option>
+            <option value="poodle">Poodle</option>
+            <option value="other">Other</option>
+        </select>
+
         <input type="submit" value="Next Question">
     </form>
 </main>
