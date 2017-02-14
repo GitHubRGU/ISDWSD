@@ -46,6 +46,8 @@ li a:hover {
 #Students
 {
     width: 200px;
+    float: left;
+    padding-right: 10px;
 }
 
 
