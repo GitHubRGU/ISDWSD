@@ -1,4 +1,4 @@
-@import "templatecolours.css";
+/* @import "templatecolours.css"; */
 
 body{
     max-width:960px;
@@ -83,4 +83,25 @@ footer{
 
 aside p,h3,h4{
     color: white;
+}
+
+
+/* FONT SIZES */
+h1 {
+    font-size: 20px;
+}
+h2 {
+    font-size: 18px;
+}
+h3 {
+    font-size: 16px;
+}
+h4 {
+    font-size: 14px;
+}
+p {
+    font-size: 13px;
+}
+a {
+    font-size: 13px;
 }
