@@ -118,6 +118,13 @@ main{
     padding-right: 0px !important;
 }
 
+footer>p{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
 
 /* FONT SIZES */
 h1 {
