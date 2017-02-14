@@ -67,3 +67,20 @@ h3, h4, h5 {
     font-weight: 700;
 }
 
+
+/* COLOURINGS */
+#news{
+    background-color: #DBC9DF;
+}
+
+#events{
+    background-color: #782A7E;
+}
+
+footer{
+    background-color: #363636;
+}
+
+aside p,h3,h4{
+    color: white;
+}
