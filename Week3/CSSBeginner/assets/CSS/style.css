@@ -86,6 +86,39 @@ aside p,h3,h4{
 }
 
 
+/* MARGIN FIXES */
+aside p,h3,h4{
+    margin: 0;
+}
+
+aside h3{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+aside h4{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+aside p{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+aside {
+    padding-right: 0px !important;
+    padding-top: -5px !important;
+}
+
+main{
+    padding-right: 0px !important;
+}
+
+
 /* FONT SIZES */
 h1 {
     font-size: 20px;
