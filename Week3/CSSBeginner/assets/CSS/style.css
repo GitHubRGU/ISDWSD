@@ -6,6 +6,7 @@ body{
     margin-right: auto;
 }
 
+
 /* NAVIGATION BAR CSS */
 nav>ul {
     list-style-type: none;
@@ -29,3 +30,21 @@ nav>ul>li a {
 li a:hover {
     color: #363636;
 }
+
+
+/* IMAGE SIZING CSS */
+#RGULogo
+{
+    width: 300px;
+}
+
+#RGUBanner
+{
+    max-width: 960px;
+}
+
+#Students
+{
+    width: 200px;
+}
+
