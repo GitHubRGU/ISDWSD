@@ -110,12 +110,12 @@ aside p{
 }
 
 aside {
-    padding-right: 0px !important;
-    padding-top: -5px !important;
+    padding-right: 0px;
+    padding-top: -5px;
 }
 
 main{
-    padding-right: 0px !important;
+    padding-right: 0px;
 }
 
 footer>p{
