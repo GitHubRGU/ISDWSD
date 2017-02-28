@@ -8,7 +8,7 @@
 <p>
     <?php
     $name="Shaun";
-    $myage="19";
+    $myage="22";
 
     print"Hello " . $name;
     print"Your age is " . $myage;
