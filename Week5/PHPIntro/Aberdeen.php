@@ -10,7 +10,7 @@
     $name="Shaun";
     $myage="12";
 
-    print "Hello " . $name;
+    print "Hello, " . $name;
     print "Your age is " . $myage;
     if($myage>"21"){
         print "You can buy sausage rolls";
@@ -29,14 +29,17 @@
     $wantedgood="mugs";
 
     switch($wantedgood){
-    case mugs:
+    case $wantedgood="mugs":
         echo "You have to be 18 to buy mugs";
         break;
-    case specs:
+    case $wantedgood="specs":
         echo "You need to be 16 to buy specs";
         break;
-    case sausagerolls:
+    case $wantedgood="sausage rolls":
         echo "You need to be 21 to buy sausage rolls";
+    break;
+    default:
+    echo "You need to be over 16 to buy anything";
     ?>
 </p>
 
