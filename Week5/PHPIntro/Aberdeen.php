@@ -26,7 +26,7 @@
 
 
 
-    $wantedgood="mugs";
+    $wantedgood="specs";
 
     switch($wantedgood) {
         case $wantedgood = "mugs":
