@@ -14,7 +14,9 @@
     $myage="12";
 
     print "Hello, " . $name;
+    print "<p></p>";
     print "Your age is " . $myage;
+    print "<p></p>";
     if($myage>"21"){
         print "You can buy sausage rolls";
     }
