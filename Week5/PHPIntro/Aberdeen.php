@@ -14,18 +14,24 @@
     $myage="12";
 
     print "Hello, " . $name;
+    print "<p></p>";
     print "Your age is " . $myage;
+    print "<p></p>";
     if($myage>"21"){
         print "You can buy sausage rolls";
+        print "<p></p>";
     }
     elseif($myage>"18"){
         print "You can buy mugs";
+        print "<p></p>";
     }
     elseif($myage>"16"){
         print "You can buy specs";
+        print "<p></p>";
     }
     else
     print "You can't buy anything";
+    print "<p></p>";
 
 
     // Activity 2:
@@ -35,15 +41,19 @@
     switch($wantedgood) {
         case $wantedgood = "mugs":
             echo "You have to be 18 to buy mugs";
+            print "<p></p>";
             break;
         case $wantedgood = "specs":
             echo "You need to be 16 to buy specs";
+            print "<p></p>";
             break;
         case $wantedgood = "sausage rolls":
             echo "You need to be 21 to buy sausage rolls";
+            print "<p></p>";
             break;
         default:
             echo "You need to be over 16 to buy anything";
+            print "<p></p>";
     }
 
 
