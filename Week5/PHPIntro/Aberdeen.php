@@ -10,23 +10,24 @@
     $name="Shaun";
     $myage="12";
 
-    print "Hello, " . $name; . "<br>"
-    print "Your age is " . $myage; . "<br>"
+    print "Hello, " . $name . "<br>";
+    print "Your age is " . $myage . "<br>";
     if($myage>"21"){
-        print "You can buy sausage rolls";
+        print "You can buy sausage rolls" . "<br>";
     }
     elseif($myage>"18"){
-        print "You can buy mugs";
+        print "You can buy mugs" . "<br>";
     }
     elseif($myage>"16"){
-        print "You can buy specs";
+        print "You can buy specs" . "<br>";
     }
     else
-    print "You can't buy anything";
+    print "You can't buy anything" . "<br>";
 
+print "<br>";
+print "<br>";
 
-
-    $wantedgood="specs";
+    $wantedgood="mugs";
 
     switch($wantedgood) {
         case $wantedgood = "mugs":
