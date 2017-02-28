@@ -7,6 +7,9 @@
 <body>
 <p>
     <?php
+
+    //  Activity 1:
+
     $name="Shaun";
     $myage="12";
 
@@ -25,6 +28,7 @@
     print "You can't buy anything";
 
 
+    // Activity 2:
 
     $wantedgood="specs";
 
@@ -41,6 +45,19 @@
         default:
             echo "You need to be over 16 to buy anything";
     }
+
+
+    // Activity 3:
+
+    $provisionedActivities=array("Specs","Mugs","Sausage Rolls");
+
+    foreach($provisionedActivities as $x){
+        print "<p>$x</p>";
+    }
+
+
+
+
     ?>
 </p>
 
