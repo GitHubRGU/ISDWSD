@@ -73,7 +73,7 @@
     print "<p></p>";
     print "<p></p>";
 
-    $provisionedActivities[1]="Hugs";
+    $provisionedActivities[1]="Dugs";
     unset($provisionedActivities[2]);
 
     foreach($provisionedActivities as $x){
