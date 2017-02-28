@@ -26,10 +26,10 @@
 
 
 
-    $wantedgood="mugs";
+    $wantedgood="specs";
 
     switch($wantedgood) {
-        case $wantedgood = "specs":
+        case $wantedgood = "mugs":
             echo "You have to be 18 to buy mugs";
             break;
         case $wantedgood = "specs":
