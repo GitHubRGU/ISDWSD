@@ -26,20 +26,20 @@
 
 
 
-    $wantedgood="mugs";
-
-    switch($wantedgood){
-    case $wantedgood="mugs":
-        echo "You have to be 18 to buy mugs";
-        break;
-    case $wantedgood="specs":
-        echo "You need to be 16 to buy specs";
-        break;
-    case $wantedgood="sausage rolls":
-        echo "You need to be 21 to buy sausage rolls";
-    break;
-    default:
-    echo "You need to be over 16 to buy anything";
+//    $wantedgood="mugs";
+//
+//    switch($wantedgood){
+//    case $wantedgood="mugs":
+//        echo "You have to be 18 to buy mugs";
+//        break;
+//    case $wantedgood="specs":
+//        echo "You need to be 16 to buy specs";
+//        break;
+//    case $wantedgood="sausage rolls":
+//        echo "You need to be 21 to buy sausage rolls";
+//    break;
+//    default:
+//    echo "You need to be over 16 to buy anything";
     ?>
 </p>
 
