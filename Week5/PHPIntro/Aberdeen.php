@@ -39,7 +39,7 @@
     $wantedgood="specs";
 
     switch($wantedgood) {
-        case $wantedgood = "mugs":
+        case $wantedgood = "sausagerolls":
             echo "You have to be 18 to buy mugs";
             print "<p></p>";
             break;
@@ -47,7 +47,7 @@
             echo "You need to be 16 to buy specs";
             print "<p></p>";
             break;
-        case $wantedgood = "sausage rolls":
+        case $wantedgood = "sausagerolls":
             echo "You need to be 21 to buy sausage rolls";
             print "<p></p>";
             break;
