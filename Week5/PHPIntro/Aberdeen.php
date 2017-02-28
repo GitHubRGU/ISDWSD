@@ -23,11 +23,9 @@
     }
     else
     print "You can't buy anything";
-    ?>
-</p>
 
-<p>
-    <?php
+
+
     $wantedgood="mugs";
 
     switch($wantedgood){
@@ -39,7 +37,7 @@
         break;
     case sausagerolls:
         echo "You need to be 21 to buy sausage rolls";
-    />
+    ?>
 </p>
 
 </body>
