@@ -10,8 +10,8 @@
     $name="Shaun";
     $myage="12";
 
-    print "Hello, " . $name;
-    print "Your age is " . $myage;
+    print "Hello, " . $name; . "<br>"
+    print "Your age is " . $myage; . "<br>"
     if($myage>"21"){
         print "You can buy sausage rolls";
     }
