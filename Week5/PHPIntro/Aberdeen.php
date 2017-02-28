@@ -31,6 +31,8 @@
     }
     else
     print "You can't buy anything";
+
+    print "<p></p>";
     print "<p></p>";
 
 
@@ -55,6 +57,9 @@
             echo "You need to be over 16 to buy anything";
             print "<p></p>";
     }
+
+    print "<p></p>";
+    print "<p></p>";
 
 
     // Activity 3:
