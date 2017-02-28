@@ -11,7 +11,7 @@
     //  Activity 1:
 
     $name="Shaun";
-    $myage="12";
+    $myage="17";
 
     print "Hello, " . $name;
     print "<p></p>";
