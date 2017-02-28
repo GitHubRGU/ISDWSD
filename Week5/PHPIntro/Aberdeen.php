@@ -10,22 +10,21 @@
     $name="Shaun";
     $myage="12";
 
-    print "Hello, " . $name . "<br>";
-    print "Your age is " . $myage . "<br>";
+    print "Hello, " . $name;
+    print "Your age is " . $myage;
     if($myage>"21"){
-        print "You can buy sausage rolls" . "<br>";
+        print "You can buy sausage rolls";
     }
     elseif($myage>"18"){
-        print "You can buy mugs" . "<br>";
+        print "You can buy mugs";
     }
     elseif($myage>"16"){
-        print "You can buy specs" . "<br>";
+        print "You can buy specs";
     }
     else
-    print "You can't buy anything" . "<br>";
+    print "You can't buy anything";
 
-print "<br>";
-print "<br>";
+
 
     $wantedgood="mugs";
 
