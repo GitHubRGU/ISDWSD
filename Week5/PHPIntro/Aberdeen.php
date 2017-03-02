@@ -86,8 +86,7 @@
 
     // Activity 4:
 
-
-    $provisionedActivities=array("no products","Specs","mugs","sausage rolls");
+    $provisionedActivities=array("no products","specs","mugs","sausage rolls");
 
     for($day=1;$day<31;$day++)
     {
@@ -125,6 +124,14 @@
     }
 
 
+    // Activity 5:  HELP!!!
+
+
+    // Activity 6:
+
+    $names=array("Sam","Alex","Rita","Bryan","Najah","Alister","Albert","Eric","John","Paul","Ringo","George","Zakk","Adrian");
+    sort($names);
+    print join(", ",$names);
 
 
     ?>
