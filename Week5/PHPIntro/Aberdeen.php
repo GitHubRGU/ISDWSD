@@ -149,11 +149,27 @@
     print join(", ",$names);
     print "<p></p>";
 
+    $selection=rand(0,10);
+    print strtoupper($names[$selection]) . " has won the mugs!";
+    print "<p></p>";
+    unset($names[$selection]);  //  Removes the winner from the array
+
+    print "Remaining contestants: ";
+    print join(", ",$names);
+    print "<p></p>";
+
+    $selection=rand(0,9);
+    print strtoupper($names[$selection]) . " has won the sausage rolls!";
+    print "<p></p>";
+    unset($names[$selection]);  //  Removes the winner from the array
+
+    print "Remaining contestants: ";
+    print join(", ",$names);
+    print "<p></p>";
 
 
 
 
-    
     ?>
 </p>
 
