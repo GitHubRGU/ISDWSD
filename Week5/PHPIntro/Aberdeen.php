@@ -141,10 +141,19 @@
     print "<p></p>";
 
     $selection=rand(0,11);
-    print strtoupper($names[$selection]);
+    print strtoupper($names[$selection]) . " has won the specs!";
+    print "<p></p>";
+    unset($names[$selection]);  //  Removes the winner from the array
+
+    print "Remaining contestants: ";
+    print join(", ",$names);
     print "<p></p>";
 
 
+
+
+
+    
     ?>
 </p>
 
