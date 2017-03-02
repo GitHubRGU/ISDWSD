@@ -93,7 +93,7 @@
         if($day=="1"){
             print "no products";
         }
-        if(!is_int($day/2) and !is_int($day/3) and !is_int($day/4)){
+        elseif(!is_int($day/2) and !is_int($day/3) and !is_int($day/4)){
             print "no products";
         }
         if(is_int($day/2)){
