@@ -87,7 +87,7 @@
     // Activity 4:
 
 
-    $provisionedActivities=array("no products","specs","mugs","sausage rolls");
+    $provisionedActivities=array("no products","Specs","mugs","sausage rolls");
 
     for($day=1;$day<31;$day++)
     {
