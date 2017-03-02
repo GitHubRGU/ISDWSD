@@ -87,7 +87,7 @@
     // Activity 4:
 
 
-    for($day=1;$day<32;$day++)
+    for($day=1;$day<31;$day++)
     {
         // Test for first day of the month
         print "On the " . $day . " of the month ";
