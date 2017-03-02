@@ -90,6 +90,13 @@
     for($day=1;$day<32;$day++)
     {
         print "On the " . $day . " of the month ";
+        if($day>"1"){
+            print "no products";
+        }
+        elseif($day/2==$day/2){
+            print "specs";
+        }
+        print " are available";
         print "<p></p>";
 
     }
