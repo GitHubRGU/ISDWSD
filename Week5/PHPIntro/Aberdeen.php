@@ -166,6 +166,38 @@
     print "Remaining contestants: ";
     print join(", ",$names);
     print "<p></p>";
+    print "<p></p>";
+
+
+    // Activity 7:
+
+    function calcaward($specs,$mugs,$srolls){
+        return($specs + $mugs + $srolls);
+    }
+
+    function wanted($name,$specs,$mugs,$srolls){
+        print "Wnated: " . $name;
+        print "<p></p>";
+        print "Known to be in posession of the following items:";
+        print "<p></p>";
+        print "Specs: " . $specs;
+        print "<p></p>";
+        print "Mugs: " . $mugs;
+        print "<p></p>";
+        print "Sausage Rolls: " . $srolls;
+        print "<p></p>";
+        print "Award for capture: £" . calcaward($specs,$mugs,$srolls);
+        print "<p></p>";
+        print "<p></p>";
+    }
+
+
+    wanted("Gordon",3,4,5);
+//    wanted("Andy",4,5,6);
+//    wanted("Stuart",5,6,7);
+
+
+
 
 
 
