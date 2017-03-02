@@ -93,6 +93,9 @@
         if($day=="1"){
             print "no products";
         }
+        if(is_int($day/2) and is_int($day/3) and is_int($day/4)){
+            print "no products";
+        }
         if(is_int($day/2)){
             print "specs";
             if(is_int($day/3) or is_int($day/4)){
