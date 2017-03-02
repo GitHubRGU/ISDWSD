@@ -141,7 +141,7 @@
     print "<p></p>";
 
     $selection=rand(0,11);
-    print 
+    print strtoupper($names[$selection]);
     print "<p></p>";
 
 
