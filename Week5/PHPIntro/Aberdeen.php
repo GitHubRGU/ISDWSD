@@ -89,21 +89,27 @@
 
     for($day=1;$day<32;$day++)
     {
+        // Test for first day of the month
         print "On the " . $day . " of the month ";
         if($day=="1"){
             print "no products";
         }
+        // Test for not a multiple of 2, 3 or 4 using !is_int()
         elseif(!is_int($day/2) and !is_int($day/3) and !is_int($day/4)){
             print "no products";
         }
+        // Test for not a multiple of 2, using is_int()
         if(is_int($day/2)){
             print "specs";
+            // Need an " and " inserted if day is also a multiple of 3 or 4
             if(is_int($day/3) or is_int($day/4)){
                 print " and ";
             }
         }
+        // Test for not a multiple of 3, using is_int()
         if(is_int($day/3)){
             print "mugs";
+            // Need an " and " inserted if day is also a multiple of 4
             if(is_int($day/4)){
                 print " and ";
             }
