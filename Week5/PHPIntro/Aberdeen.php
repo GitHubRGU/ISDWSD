@@ -93,7 +93,7 @@
         if($day=="1"){
             print "no products";
         }
-        elseif($day/2==$day/2){
+        elseif(is_int($day/2)){
             print "specs";
         }
         print " are available";
