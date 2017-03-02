@@ -95,6 +95,9 @@
         }
         if(is_int($day/2)){
             print "specs";
+            if(is_int($day/3) or is_int($day/4)){
+                print " and ";
+            }
         }
         if(is_int($day/3)){
             print "mugs";
