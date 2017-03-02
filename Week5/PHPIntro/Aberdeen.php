@@ -93,8 +93,14 @@
         if($day=="1"){
             print "no products";
         }
-        elseif(is_int($day/2)){
+        if(is_int($day/2)){
             print "specs";
+        }
+        if(is_int($day/3)){
+            print "mugs";
+        }
+        if(is_int($day/4)){
+            print "sausage rolls";
         }
         print " are available";
         print "<p></p>";
