@@ -87,20 +87,22 @@
     // Activity 4:
 
 
+    $provisionedActivities=array("no products","specs","mugs","sausage rolls");
+
     for($day=1;$day<31;$day++)
     {
         // Test for first day of the month
         print "On the " . $day . " of the month ";
         if($day=="1"){
-            print "no products";
+            print $provisionedActivities[0];
         }
         // Test for not a multiple of 2, 3 or 4 using !is_int()
         elseif(!is_int($day/2) and !is_int($day/3) and !is_int($day/4)){
-            print "no products";
+            print $provisionedActivities[0];
         }
         // Test for not a multiple of 2, using is_int()
         if(is_int($day/2)){
-            print "specs";
+            print $provisionedActivities[1];
             // Need an " and " inserted if day is also a multiple of 3 or 4
             if(is_int($day/3) or is_int($day/4)){
                 print " and ";
@@ -108,14 +110,14 @@
         }
         // Test for not a multiple of 3, using is_int()
         if(is_int($day/3)){
-            print "mugs";
+            print $provisionedActivities[2];
             // Need an " and " inserted if day is also a multiple of 4
             if(is_int($day/4)){
                 print " and ";
             }
         }
         if(is_int($day/4)){
-            print "sausage rolls";
+            print $provisionedActivities[3];
         }
         print " are available";
         print "<p></p>";
