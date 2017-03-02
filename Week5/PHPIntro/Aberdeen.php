@@ -89,7 +89,7 @@
 
     for($day=1;$day<32;$day++)
     {
-        print $day;
+        print "On the " . $day . " of the month ";
         print "<p></p>";
 
     }
