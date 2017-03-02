@@ -46,7 +46,7 @@
             print "<p></p>";
             break;
         case $wantedgood == "specs":
-            echo "You need to be 16 to buy specs";
+            echo "You need to be 16 to buy spectacles";
             print "<p></p>";
             break;
         case $wantedgood == "sausage rolls":
@@ -86,7 +86,7 @@
 
     // Activity 4:
 
-    
+
 
     ?>
 </p>
