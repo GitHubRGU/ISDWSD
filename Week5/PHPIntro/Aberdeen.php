@@ -129,8 +129,8 @@
 
     // Activity 6:
 
-    // 14 Names in this array:
-    $names=array("Sam","Alex","Rita","Bryan","Najah","Alister","Albert","Eric","John","Paul","Ringo","George","Zakk","Adrian");
+    // 12 Names in this array:
+    $names=array("Sam","Alex","Rita","Bryan","Najah","Alister","Albert","Eric","John","George","Zakk","Adrian");
     print "Unsorted names: ";
     print join(", ",$names);
     print "<p></p>";
@@ -138,6 +138,11 @@
     sort($names);
     print "Sorted names: ";
     print join(", ",$names);
+    print "<p></p>";
+
+    $selection=rand(0,11);
+    print 
+    print "<p></p>";
 
 
     ?>
