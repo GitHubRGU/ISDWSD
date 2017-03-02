@@ -87,7 +87,12 @@
     // Activity 4:
 
 
+    for($x=1;$x<32;$x++){
+        if($x="1") {
+            print "On the " . $x . "of the month no products are available";
+        }
 
+    }
     ?>
 </p>
 
