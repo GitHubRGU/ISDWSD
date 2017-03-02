@@ -101,6 +101,9 @@
         }
         if(is_int($day/3)){
             print "mugs";
+            if(is_int($day/4)){
+                print " and ";
+            }
         }
         if(is_int($day/4)){
             print "sausage rolls";
