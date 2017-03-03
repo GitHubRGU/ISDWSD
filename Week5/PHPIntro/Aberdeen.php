@@ -38,6 +38,8 @@
 
     // Activity 2:
 
+    print "<br/>";
+
     $wantedgood="sausage rolls";
 
     switch($wantedgood) {
@@ -64,6 +66,8 @@
 
     // Activity 3:
 
+    print "<br/>";
+
     $provisionedActivities=array("Specs","Mugs","Sausage Rolls");
 
     foreach($provisionedActivities as $x){
@@ -85,6 +89,8 @@
 
 
     // Activity 4:
+
+    print "<br/>";
 
     $provisionedActivities=array("no products","specs","mugs","sausage rolls");
 
@@ -128,6 +134,8 @@
 
 
     // Activity 6:
+
+    print "<br/>";
 
     // 12 Names in this array:
     $names=array("Sam","Alex","Rita","Bryan","Najah","Alister","Albert","Eric","John","George","Zakk","Adrian");
