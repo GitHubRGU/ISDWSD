@@ -172,11 +172,11 @@
     // Activity 7:
 
     function calcaward($specs,$mugs,$srolls){
-        return($specs + $mugs + $srolls);
+        return($specs * $mugs * $srolls);
     }
 
     function wanted($name,$specs,$mugs,$srolls){
-        print "Wnated: " . $name;
+        print "Wanted: " . $name;
         print "<p></p>";
         print "Known to be in posession of the following items:";
         print "<p></p>";
