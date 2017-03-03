@@ -193,9 +193,9 @@
     }
 
 
-    wanted("Gordon",3,4,5);
-    wanted("Andy",4,5,6);
-    wanted("Stuart",5,6,7);
+    wanted("Gordon",1,2,3);
+    wanted("Andy",2,3,4);
+    wanted("Stuart",3,4,5);
 
 
 
