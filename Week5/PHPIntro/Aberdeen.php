@@ -147,13 +147,14 @@
             $extraStock[$todaysGood]=$extraStock[$todaysGood]-1;  // Reduce appropriate good by 1
         }
         // Test for not a multiple of 2, 3 or 4 using !is_int()
-        elseif(!is_int($day/2) and !is_int($day/3) and !is_int($day/4)){
-            $todaysGood=rand(1,3);  // Choose one of the 3 x goods
-            if($extraStock[$todaysGood]>1){                             // Check there is still stock left
-                print $provisionedActivities[$todaysGood];              // Display the item
-                $extraStock[$todaysGood]=$extraStock[$todaysGood] - 1;  // Reduce appropriate good by 1
-                else
-            print $provisionedActivities[0];
+        elseif(!is_int($day/2) and !is_int($day/3) and !is_int($day/4)) {
+            $todaysGood = rand(1, 3);  // Choose one of the 3 x goods
+            if ($extraStock[$todaysGood] > 1) {                            // Check there is still stock left
+                print $provisionedActivities[$todaysGood];                 // Display the item
+                $extraStock[$todaysGood] = $extraStock[$todaysGood] - 1;   // Reduce appropriate good by 1
+            else
+                print $provisionedActivities[0];
+            }
         }
         // Test for not a multiple of 2, using is_int()
         if(is_int($day/2)){
