@@ -176,6 +176,7 @@
     }
 
     function wanted($name,$specs,$mugs,$srolls){
+        print "<p></p>";
         print "Wanted: " . $name;
         print "<p></p>";
         print "Known to be in posession of the following items:";
