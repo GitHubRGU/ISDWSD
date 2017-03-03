@@ -147,9 +147,8 @@
 
         // Test for not a multiple of 2, 3 or 4 using !is_int()
         elseif(!is_int($day/2) and !is_int($day/3) and !is_int($day/4)){
-            while($extraStock[0]+$extraStock[1]+$extraStock[2]>0){
-                $pickStock=rand(0,2);                            // Choose which item to offer
-            }
+            $pickStock=rand(0,2);                                // Choose which item to offer
+            // if($extraStock[$pickStock])
             print $provisionedActivities[0];
         }
 
