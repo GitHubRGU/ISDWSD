@@ -137,8 +137,13 @@
     $extraStock=array(7,7,7);
 
     for($day=1;$day<31;$day++){
-        // Test date for not being a multiple of 2, 3 or 4 using !is_int()
-        if(!is_int($day/2) and !is_int($day/3) and !is_int($day/4)){
+        // Test for first day of the month
+        print "On the " . $day . " of the month ";
+        if($day=="1"){
+            print $provisionedActivities[0];
+        }
+        // Test for not a multiple of 2, 3 or 4 using !is_int()
+        elseif(!is_int($day/2) and !is_int($day/3) and !is_int($day/4)){
             print $provisionedActivities[0];
         }
         // Test for not a multiple of 2, using is_int()
