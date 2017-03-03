@@ -143,6 +143,7 @@
         if($day=="1"){
             $pickStock=rand(1,3);
             print $provisionedActivities[$pickStock];
+            $extraStock[$pickStock]=$extraStock[$pickStock]-1;
         }
         // Test for not a multiple of 2, 3 or 4 using !is_int()
         elseif(!is_int($day/2) and !is_int($day/3) and !is_int($day/4)){
