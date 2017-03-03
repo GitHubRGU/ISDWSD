@@ -138,10 +138,11 @@
 
     for($day=1;$day<31;$day++){
         print "On the " . $day . " of the month ";
-        
+
         // Test for first day of the month
         if($day=="1"){
-            print $provisionedActivities[0];
+            $pickStock=rand(1,3);
+            print $provisionedActivities[$pickStock];
         }
         // Test for not a multiple of 2, 3 or 4 using !is_int()
         elseif(!is_int($day/2) and !is_int($day/3) and !is_int($day/4)){
