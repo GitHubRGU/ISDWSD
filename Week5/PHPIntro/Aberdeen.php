@@ -141,8 +141,8 @@
 
         // Test for first day of the month
         if($day=="1"){
-            $pickStock=rand(1,3);
-            print $provisionedActivities[$pickStock];
+            $pickStock=rand(0,2);
+            print $provisionedActivities[$pickStock+1];
             $extraStock[$pickStock]=$extraStock[$pickStock]-1;
         }
         // Test for not a multiple of 2, 3 or 4 using !is_int()
