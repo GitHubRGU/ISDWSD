@@ -172,7 +172,7 @@
     // Activity 7:
 
     function calcaward($specs,$mugs,$srolls){
-        return($specs * $mugs * $srolls);
+        return(($specs * $mugs * $srolls)^2);
     }
 
     function wanted($name,$specs,$mugs,$srolls){
