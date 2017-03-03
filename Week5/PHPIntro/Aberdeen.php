@@ -137,8 +137,9 @@
     $extraStock=array(7,7,7);
 
     for($day=1;$day<31;$day++){
-        // Test for first day of the month
         print "On the " . $day . " of the month ";
+        
+        // Test for first day of the month
         if($day=="1"){
             print $provisionedActivities[0];
         }
