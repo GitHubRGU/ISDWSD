@@ -194,7 +194,7 @@
 
 
     wanted("Gordon",1,2,3);
-    wanted("Andy",2,3,4);
+    wanted("Andy",2,2,2);
     wanted("Stuart",3,4,5);
 
 
