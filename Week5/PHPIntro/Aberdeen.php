@@ -139,16 +139,17 @@
     for($day=1;$day<31;$day++){
         print "On the " . $day . " of the month ";
 
-        // Test for first day of the month
-        if($day=="1"){
-            $pickStock=rand(0,2);
-            print $provisionedActivities[$pickStock+1];
-            $extraStock[$pickStock]=$extraStock[$pickStock]-1;
+        if($day=="1"){                                           // Test for first day of the month (definitely $extraStock!)
+            $pickStock=rand(0,2);                                // Choose which item to offer
+            print $provisionedActivities[$pickStock+1];          // Display the offered item
+            $extraStock[$pickStock]=$extraStock[$pickStock]-1;   // Reduce stock of item in $extraStock
         }
+
         // Test for not a multiple of 2, 3 or 4 using !is_int()
         elseif(!is_int($day/2) and !is_int($day/3) and !is_int($day/4)){
             print $provisionedActivities[0];
         }
+
         // Test for not a multiple of 2, using is_int()
         if(is_int($day/2)){
             print $provisionedActivities[1];
@@ -157,6 +158,7 @@
                 print " and ";
             }
         }
+
         // Test for not a multiple of 3, using is_int()
         if(is_int($day/3)){
             print $provisionedActivities[2];
