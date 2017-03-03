@@ -94,8 +94,7 @@
 
     $provisionedActivities=array("no products","specs","mugs","sausage rolls");
 
-    for($day=1;$day<31;$day++)
-    {
+    for($day=1;$day<31;$day++){
         // Test for first day of the month
         print "On the " . $day . " of the month ";
         if($day=="1"){
@@ -137,24 +136,15 @@
     $provisionedActivities=array("no products","specs","mugs","sausage rolls");
     $extraStock=array(7,7,7);
 
-    for($day=1;$day<31;$day++)
-    {
+    for($day=1;$day<31;$day++){
         // Test for first day of the month
         print "On the " . $day . " of the month ";
         if($day=="1"){
-            $todaysGood=rand(1,3);  // Choose one of the 3 x goods
-            print $provisionedActivities[$todaysGood];
-            $extraStock[$todaysGood]=$extraStock[$todaysGood]-1;  // Reduce appropriate good by 1
+            print $provisionedActivities[0];
         }
         // Test for not a multiple of 2, 3 or 4 using !is_int()
-        elseif(!is_int($day/2) and !is_int($day/3) and !is_int($day/4)) {
-            $todaysGood = rand(1, 3);  // Choose one of the 3 x goods
-            if ($extraStock[$todaysGood] > 1) {                            // Check there is still stock left
-                print $provisionedActivities[$todaysGood];                 // Display the item
-                $extraStock[$todaysGood] = $extraStock[$todaysGood] - 1;   // Reduce appropriate good by 1
-            else
-                print $provisionedActivities[0];
-            }
+        elseif(!is_int($day/2) and !is_int($day/3) and !is_int($day/4)){
+            print $provisionedActivities[0];
         }
         // Test for not a multiple of 2, using is_int()
         if(is_int($day/2)){
