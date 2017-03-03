@@ -130,7 +130,54 @@
     }
 
 
-    // Activity 5:  HELP!!!
+    // Activity 5:
+
+    print "<br/>";
+
+    $provisionedActivities=array("no products","specs","mugs","sausage rolls");
+    $extraStock=array(7,7,7);
+
+    for($day=1;$day<31;$day++)
+    {
+        // Test for first day of the month
+        print "On the " . $day . " of the month ";
+        if($day=="1"){
+            $todaysGood=rand(1,3);  // Choose one of the 3 x goods
+            print $provisionedActivities[$todaysGood];
+            $extraStock[$todaysGood]=$extraStock[$todaysGood]-1;  // Reduce appropriate good by 1
+        }
+        // Test for not a multiple of 2, 3 or 4 using !is_int()
+        elseif(!is_int($day/2) and !is_int($day/3) and !is_int($day/4)){
+            $todaysGood=rand(1,3);  // Choose one of the 3 x goods
+            if($extraStock[$todaysGood]>1){                             // Check there is still stock left
+                print $provisionedActivities[$todaysGood];              // Display the item
+                $extraStock[$todaysGood]=$extraStock[$todaysGood] - 1;  // Reduce appropriate good by 1
+                else
+            print $provisionedActivities[0];
+        }
+        // Test for not a multiple of 2, using is_int()
+        if(is_int($day/2)){
+            print $provisionedActivities[1];
+            // Need an " and " inserted if day is also a multiple of 3 or 4
+            if(is_int($day/3) or is_int($day/4)){
+                print " and ";
+            }
+        }
+        // Test for not a multiple of 3, using is_int()
+        if(is_int($day/3)){
+            print $provisionedActivities[2];
+            // Need an " and " inserted if day is also a multiple of 4
+            if(is_int($day/4)){
+                print " and ";
+            }
+        }
+        if(is_int($day/4)){
+            print $provisionedActivities[3];
+        }
+        print " are available";
+        print "<p></p>";
+
+    }
 
 
     // Activity 6:
