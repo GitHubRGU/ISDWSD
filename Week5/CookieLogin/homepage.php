@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: 1615309
- * Date: 03/03/2017
- * Time: 14:38
+ * Created using PhpStorm.
  */
 
 $username="Mike";
@@ -11,3 +8,15 @@ $password="mysecretpassword";
 
 print "Triggered the php!!!";
 print ":-)";
+
+set cookie(‘access_level’,'standarduser');
+
+function displayAccessLevelInformation(accessLevel){
+    if($access_level=="standarduser"){
+        echo "<p>You are currently logged in as a standard user</p>";
+    }
+    elseif($access_level=="root"){
+        echo "<p>You are currently logged in as a root user</p>";
+        echo "<p>You now have access to additional administrative features</p>";
+    }
+}
