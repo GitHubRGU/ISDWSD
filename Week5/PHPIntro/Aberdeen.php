@@ -169,6 +169,7 @@
             print $provisionedActivities[3];
         }
         print " are available";
+        print "  (S=" . $extraStock[0] . "  M=" . $extraStock[1] . "  SR=" . $extraStock[2] . ")";
         print "<p></p>";
 
     }
