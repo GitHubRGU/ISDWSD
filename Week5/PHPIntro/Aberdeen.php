@@ -18,11 +18,11 @@
     print "Your age is " . $myage;
     print "<p></p>";
     if($myage>"21"){
-        print "You can buy sausage rolls";
+        print "You can buy specs, mugs and sausage rolls";
         print "<p></p>";
     }
     elseif($myage>"18"){
-        print "You can buy mugs";
+        print "You can buy specs and mugs";
         print "<p></p>";
     }
     elseif($myage>"16"){
