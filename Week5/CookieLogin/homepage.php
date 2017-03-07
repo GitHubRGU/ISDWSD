@@ -17,22 +17,30 @@ print $password;
 
 if($username=="Mike" AND $password=="mysecretpassword") {
     setcookie("access_level", "standarduser");
+    $accessLevel="standarduser";
     }
     else
     print "WRONG USERNAME OR PASSWORD";
 
+if($username=="Mike" AND $password=="myrootpassword") {
+    setcookie("access_level", "root");
+    $accessLevel="root";
+}
+else
+    print "WRONG USERNAME OR PASSWORD";
+
 //  Function to display which User Level you've logged in as
-function displayAccessLevelInformation($access_level){
-    if($access_level=="standarduser"){
+function displayAccessLevelInformation($accessLevel){
+    if($accessLevel=="standarduser"){
         echo "<p>You are currently logged in as a standard user</p>";
     }
-    elseif($access_level=="root"){
+    elseif($accessLevel=="root"){
         echo "<p>You are currently logged in as root user</p>";
         echo "<p>You now have access to additional administrative features</p>";
     }
 }
 
-displayAccessLevelInformation($access_level);
+displayAccessLevelInformation($accessLevel);
 
 
 ?>
