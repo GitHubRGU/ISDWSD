@@ -21,6 +21,16 @@ if($username=="Mike" AND $password=="mysecretpassword") {
     else
     print "WRONG USERNAME OR PASSWORD";
 
+//  Function to display which User Level you've logged in as
+function displayAccessLevelInformation($accessLevel){
+    if($accessLevel=="standarduser"){
+        echo "<p>You are currently logged in as a standard user</p>";
+    }
+    elseif($accessLevel=="root"){
+        echo "<p>You are currently logged in as root user</p>";
+        echo "<p>You now have access to additional administrative features</p>";
+    }
+}
+
 
 ?>
-
