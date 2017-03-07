@@ -15,7 +15,11 @@ $password=$_POST["password"];
 print $username;
 print $password;
 
-
+if($username=="Mike" AND $password=="mysecretpassword") {
+    setcookie("access_level", "standarduser");
+}
+    else
+    print "WRONG USERNAME OR PASSWORD";
 
 
 ?>
