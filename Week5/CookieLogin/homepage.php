@@ -1,35 +1,7 @@
 <?php
-/**
- * Created using PhpStorm.
- */
 
-//  $username="Mike";
-//  $password="mysecretpassword";
 
-print "Triggered the php!!!";
-print ":-)";
-
-$username=$_POST["name"];
-$password=$_POST["password"];
-
-print $username;
-print $password;
-
-if($username=="Mike" AND $password=="mysecretpassword") {
-    setcookie("access_level", "standarduser");
-    $accessLevel="standarduser";
-    }
-    else
-    print "WRONG USERNAME OR PASSWORD";
-
-if($username=="Mike" AND $password=="myrootpassword") {
-    setcookie("access_level", "root");
-    $accessLevel="root";
-}
-else
-    print "WRONG USERNAME OR PASSWORD";
-
-//  Function to display which User Level you've logged in as
+//  Function to display which User Level you've logged in with:
 function displayAccessLevelInformation($accessLevel){
     if($accessLevel=="standarduser"){
         echo "<p>You are currently logged in as a standard user</p>";
@@ -40,7 +12,29 @@ function displayAccessLevelInformation($accessLevel){
     }
 }
 
-displayAccessLevelInformation($accessLevel);
 
+$username=$_POST["name"];
+$password=$_POST["password"];
+
+//  Show the Username and Password entered:
+print "<p>Username: ".$username."</p>";
+print "<p>Password: ".$password."</p>";
+
+if($username=="Mike" AND $password=="mysecretpassword") {
+    setcookie("access_level", "standarduser");
+    $accessLevel="standarduser";
+    }
+if($username=="Mike" AND $password=="myrootpassword") {
+    setcookie("access_level", "root");
+    $accessLevel="root";
+    }
+else
+    print "<p>WRONG USERNAME OR PASSWORD ENTERED</p>";
+
+
+
+
+displayAccessLevelInformation($accessLevel);
+print "<p></p>";
 
 ?>
