@@ -21,7 +21,7 @@ $_SESSION['password']=['password'];
 
 
 
-//  Show the Username and Password entered:
+/*//  Show the Username and Password entered:
 print "<p>Username: ".$_SESSION['username']."</p>";
 print "<p>Password: ".$_SESSION['password']."</p>";
 
@@ -32,7 +32,7 @@ if($_SESSION['username']=="Mike" AND $_SESSION['password']=="myrootpassword") {
     $_SESSION['access_level']="root";
 }
 else
-    print "<p>WRONG USERNAME OR PASSWORD ENTERED</p>";
+    print "<p>WRONG USERNAME OR PASSWORD ENTERED</p>";*/
 
 
 
