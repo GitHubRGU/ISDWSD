@@ -16,8 +16,8 @@ function displayAccessLevelInformation($accessLevel){
 }
 
 
-$_SESSION['username']=['name'];
-$_SESSION['password']=['password'];
+$_SESSION['username']=["name"];
+$_SESSION['password']=["password"];
 
 
 
