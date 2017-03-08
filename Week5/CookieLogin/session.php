@@ -21,11 +21,11 @@ $_SESSION['password']=['password'];
 
 
 
-/*//  Show the Username and Password entered:
+//  Show the Username and Password entered:
 print "<p>Username: ".$_SESSION['username']."</p>";
 print "<p>Password: ".$_SESSION['password']."</p>";
 
-if($_SESSION['username']=="Mike" AND $_SESSION['password']=="mysecretpassword") {
+/*if($_SESSION['username']=="Mike" AND $_SESSION['password']=="mysecretpassword") {
     $_SESSION['access_level']="standarduser";
 }
 if($_SESSION['username']=="Mike" AND $_SESSION['password']=="myrootpassword") {
