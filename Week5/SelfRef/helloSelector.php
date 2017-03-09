@@ -17,15 +17,13 @@
 <body>
 
 <header>
-    <h1>Where would you like to say hello to?</h1>
+    <h1>Where would you like to say hello?</h1>
 </header>
 
 <main>
     <p><a href="helloPrinter.php">Earth</a></p>
     <p><a href="helloPrinter.php">Mars</a></p>
     <p><a href="helloPrinter.php">Uranus</a></p>
-
-
 </main>
 
 <footer>
