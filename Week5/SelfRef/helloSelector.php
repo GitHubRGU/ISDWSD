@@ -29,9 +29,9 @@
     <br>
 
     <h3>Extended links:</h3>
-    <p><a href="helloPrinter.php?query=Earth&type=planet">Earth</a></p>
-    <p><a href="helloPrinter.php?query=Mars&type=planet">Mars</a></p>
-    <p><a href="helloPrinter.php?query=Uranus&type=planet">Uranus</a></p>
+    <p><a href="helloPrinter.php?query=Earth&type=Planet">Earth</a></p>
+    <p><a href="helloPrinter.php?query=Mars&type=Planet">Mars</a></p>
+    <p><a href="helloPrinter.php?query=Uranus&type=Planet">Uranus</a></p>
 
     <br>
     <br>
