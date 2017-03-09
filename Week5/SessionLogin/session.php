@@ -33,10 +33,10 @@ print "<p>Password: ".$_SESSION['login_password']."</p>";
 
 
 if($_SESSION['login_user']=="Mike" AND $_SESSION['login_password']=="mysecretpassword") {
-    $_SESSION['access_level']="standarduser";
+    $access_level="standarduser";
 }
 if($_SESSION['login_user']=="Mike" AND $_SESSION['login_password']=="myrootpassword") {
-    $_SESSION['access_level']="root";
+    $access_level="root";
 }
 else
     print "<p>WRONG USERNAME OR PASSWORD ENTERED</p>";
@@ -44,7 +44,7 @@ else
 
 
 
-displayAccessLevelInformation($_SESSION['access_level']);
+displayAccessLevelInformation($access_level);
 print "<p></p>";
 
 
