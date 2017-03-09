@@ -29,7 +29,7 @@
 </main>
 
 <footer>
-    <p>(C) Shaun Hyland (RGU 2017)</p>
+    <p>(C) Shaun Hyland (RGU 2017) x</p>
 </footer>
 
 </body>
