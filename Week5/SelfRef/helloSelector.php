@@ -21,9 +21,9 @@
 </header>
 
 <main>
-    <a href="helloPrinter.php">Earth</a>
-    <a href="helloPrinter.php">Mars</a>
-    <a href="helloPrinter.php">Uranus</a>
+    <p><a href="helloPrinter.php">Earth</a></p>
+    <p><a href="helloPrinter.php">Mars</a></p>
+    <p><a href="helloPrinter.php">Uranus</a></p>
 
 
 </main>
