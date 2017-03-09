@@ -35,7 +35,7 @@ print "<p>Password: ".$_SESSION['login_password']."</p>";
 if($_SESSION['login_user']=="Mike" AND $_SESSION['login_password']=="mysecretpassword") {
     $access_level="standarduser";
 }
-if($_SESSION['login_user']=="Mike" AND $_SESSION['login_password']=="myrootpassword") {
+elseif($_SESSION['login_user']=="Mike" AND $_SESSION['login_password']=="myrootpassword") {
     $access_level="root";
 }
 else
