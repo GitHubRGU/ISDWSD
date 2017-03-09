@@ -21,6 +21,7 @@
 </header>
 
 <main>
+    <br>
     <p><a href="helloPrinter.php">Earth</a></p>
     <p><a href="helloPrinter.php">Mars</a></p>
     <p><a href="helloPrinter.php">Uranus</a></p>
@@ -29,7 +30,7 @@
 </main>
 
 <footer>
-    <p>(C) Shaun Hyland (RGU 2017) x</p>
+    <p>(C) Shaun Hyland (RGU 2017)</p>
 </footer>
 
 </body>
