@@ -28,8 +28,8 @@ $_SESSION['login_password']=$password;
 
 
 //  Show the Username and Password entered:
-print "<p>Username: ".$_SESSION['username']."</p>";
-print "<p>Password: ".$_SESSION['password']."</p>";
+print "<p>Username: ".$_SESSION['login_user']."</p>";
+print "<p>Password: ".$_SESSION['login_password']."</p>";
 
 
 /*if($_SESSION['username']=="Mike" AND $_SESSION['password']=="mysecretpassword") {
