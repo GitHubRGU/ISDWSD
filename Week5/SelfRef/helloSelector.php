@@ -17,7 +17,7 @@
 <body>
 
 <header>
-    <h1>Where would you like to say hello?</h1>
+    <h1>Where would you like to say hello to?</h1>
 </header>
 
 <main>
