@@ -25,6 +25,11 @@
     <p><a href="helloPrinter.php">Earth</a></p>
     <p><a href="helloPrinter.php">Mars</a></p>
     <p><a href="helloPrinter.php">Uranus</a></p>
+
+    <p><a href="helloPrinter.php?query=Earth&type=planet">Earth</a></p>
+    <p><a href="helloPrinter.php?query=Mars&type=planet">Mars</a></p>
+    <p><a href="helloPrinter.php?query=Uranus&type=planet">Uranus</a></p>
+
     <br>
     <br>
 </main>
