@@ -16,8 +16,15 @@ function displayAccessLevelInformation($accessLevel){
 }
 
 
-$_SESSION['username']=["name"];
-$_SESSION['password']=["password"];
+//  $_SESSION['username']=["name"];
+//  $_SESSION['password']=["password"];
+
+
+$username=$_POST['name'];
+$password=$_POST['password'];
+
+$_SESSION['login_user']=$username;
+$_SESSION['login_password']=$password;
 
 
 //  Show the Username and Password entered:
