@@ -32,14 +32,14 @@ print "<p>Username: ".$_SESSION['login_user']."</p>";
 print "<p>Password: ".$_SESSION['login_password']."</p>";
 
 
-/*if($_SESSION['username']=="Mike" AND $_SESSION['password']=="mysecretpassword") {
+if($_SESSION['login_user']=="Mike" AND $_SESSION['login_password']=="mysecretpassword") {
     $_SESSION['access_level']="standarduser";
 }
-if($_SESSION['username']=="Mike" AND $_SESSION['password']=="myrootpassword") {
+if($_SESSION['login_user']=="Mike" AND $_SESSION['login_password']=="myrootpassword") {
     $_SESSION['access_level']="root";
 }
 else
-    print "<p>WRONG USERNAME OR PASSWORD ENTERED</p>";*/
+    print "<p>WRONG USERNAME OR PASSWORD ENTERED</p>";
 
 
 
