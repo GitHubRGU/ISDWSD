@@ -1,0 +1,37 @@
+<?php
+session_start();
+?>
+<!--  ^ This needs to be the first section, before anything else!  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shaun's Login Page</title>
+</head>
+<body>
+
+<header>
+    <h1>Shaun's Logon Page</h1>
+</header>
+
+<main>
+    <p>Welcome to my logon page - please enter your Username and Password below:</p>
+    <br>
+    <form action="session.php" method = "POST">
+        <h3>User Logon</h3>
+        Username:<br><input type="text" name="name"><br><br>
+        Password:<br><input type="password" name="password"><br><br>
+        <input type="submit" value="Log on">
+    </form>
+
+    <br>
+    <br>
+</main>
+
+<footer>
+    <p>(C) Shaun Hyland (RGU 2017)</p>
+</footer>
+
+</body>
+</html>
