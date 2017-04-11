@@ -1,4 +1,4 @@
-<?
+<?php
 
 $connectstr_dbhost = '';
 $connectstr_dbname = '';
@@ -24,5 +24,19 @@ if (!$link) {
     echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
     exit;
 }
+
+
+
+$sql_query = "SELECT * FROM marvelmovies";
+$result = $link->query($sql_query);
+
+while($row = $result->fetch_array()){
+    echo "<p>".$row['title']."</p>";
+}
+
+$result->close();
+// close connection to database
+$link->close();
+
 
 ?>
