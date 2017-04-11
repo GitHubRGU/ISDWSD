@@ -18,7 +18,7 @@
 
 
 // create a SQL query as a string
-$sql_query = "SELECT * FROM superheros WHERE superpower LIKE '%laser%'";
+$sql_query = "SELECT * FROM marvelmovie s";
 // execute the SQL query
 $result = $link->query($sql_query);
 We can then process the results from this (step 4)
