@@ -27,11 +27,10 @@ if (!$link) {
 
 
 
-$sql_query = "SELECT * FROM marvelmovies";
+$sql_query = "SELECT * FROM marvelmovies WHERE superpower LIKE '%laser%'";
 $result = $link->query($sql_query);
-
 while($row = $result->fetch_array()){
-    echo "<p>".$row['title']."</p>";
+    echo "<p>" . $row['superheroName'] . "</p>";
 }
 
 $result->close();
