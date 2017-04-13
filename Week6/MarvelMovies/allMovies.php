@@ -37,7 +37,7 @@ include ("ConnectionString.php");
     // iterate over $result object one $row at a time
     // use fetch_array() to return an associative array
     // process the $row
-    echo $result;
+    echo $sql_query;
     while($row = $result->fetch_array()){
         // print out fields from row of data
         echo "<p>".$row."</p>";
