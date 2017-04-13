@@ -1,9 +1,13 @@
 <?php
 
+echo "Part 1";
+
 $connectstr_dbhost = '';
 $connectstr_dbname = '';
 $connectstr_dbusername = '';
 $connectstr_dbpassword = '';
+
+echo "Part 2";
 
 foreach ($_SERVER as $key => $value) {
     if (strpos($key, "MYSQLCONNSTR_localdb") !== 0) {
