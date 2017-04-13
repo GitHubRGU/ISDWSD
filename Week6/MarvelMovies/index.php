@@ -1,5 +1,5 @@
 <?php
-include ("dbConnect.php");
+include ("ConnectionString.php");
 ?>
 
 
