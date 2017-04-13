@@ -28,29 +28,30 @@ include ("ConnectionString.php");
     // create an SQL query as a string
     $sql_query = "SELECT * FROM ldbmm";
 
-    echo "Step B";
+    echo "<p>Step B</p>";
     // execute the SQL query
     $result = $link->query($sql_query);
 
-    echo "Step C";
+    echo "<p>Step C</p>";
     // We can then process the results from this (step 4)
     // iterate over $result object one $row at a time
     // use fetch_array() to return an associative array
     // process the $row
-    echo $sql_query;
+    echo "<p>Query: " . $sql_query . "</p>";
+    echo "<p>Result: " . $result . "</p>";
     while($row = $result->fetch_array()){
         // print out fields from row of data
         echo "<p>".$row."</p>";
     }
 
-    echo "Step D";
+    echo "<p>Step D</p>";
     $result->close();
 
-    echo "Step E";
+    echo "<p>Step E</p>";
     // close connection to database
     $link->close();
 
-    echo "Step F";
+    echo "<p>Step F</p>";
 
 
 
