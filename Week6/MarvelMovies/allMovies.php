@@ -25,7 +25,7 @@ include ("ConnectionString.php");
     <?
 
     // create an SQL query as a string
-    $sql_query = "SELECT * FROM ldbmm WHERE title LIKE '%spider%'";
+    $sql_query = "SELECT * FROM ldbmm";
     // execute the SQL query
     $result = $link->query($sql_query);
     // We can then process the results from this (step 4)
@@ -36,7 +36,7 @@ include ("ConnectionString.php");
 
     while($row = $result->fetch_array()){
         // print out fields from row of data
-        echo "<p>".$row['title']."</p>";
+        echo "<p>".$row."</p>";
     }
 
 
