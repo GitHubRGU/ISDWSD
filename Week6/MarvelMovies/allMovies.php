@@ -25,7 +25,7 @@ include ("ConnectionString.php");
 <?
 
 // create a SQL query as a string
-$sql_query = "SELECT * FROM marvelmovies";
+$sql_query = "SELECT * FROM marvelmovies WHERE title LIKE '%spider%'";
 // execute the SQL query
 $result = $link->query($sql_query);
 // We can then process the results from this (step 4)
@@ -48,6 +48,9 @@ $link->close();
 
 
 ?>
+
+<BR>
+<p>All done!</p>
 
 </body>
 </html>
