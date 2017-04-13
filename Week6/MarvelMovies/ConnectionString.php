@@ -11,8 +11,8 @@ echo "Part 2";
 
 foreach ($_SERVER as $key => $value) {
     if (strpos($key, "MYSQLCONNSTR_localdb") !== 0) {
-        continue;
         echo "Help";
+        continue;
     }
 
     echo "Please";
