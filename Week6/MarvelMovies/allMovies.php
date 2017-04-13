@@ -24,7 +24,7 @@ include ("ConnectionString.php");
 
     <?
 
-    echo "Step A";
+    echo "<p>Step A</p>";
     // create an SQL query as a string
     $sql_query = "SELECT * FROM ldbmm";
 
