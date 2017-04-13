@@ -1,9 +1,9 @@
 <?php
 
-$connectstr_dbhost = '';
-$connectstr_dbname = '';
-$connectstr_dbusername = '';
-$connectstr_dbpassword = '';
+$connectstr_dbhost = 'ftp://waws-prod-db3-081.ftp.azurewebsites.windows.net';
+$connectstr_dbname = 'mmovies';
+$connectstr_dbusername = 'shaun.hyland@live.co.uk';
+$connectstr_dbpassword = 'DarthJan01';
 
 foreach ($_SERVER as $key => $value) {
     if (strpos($key, "MYSQLCONNSTR_localdb") !== 0) {
