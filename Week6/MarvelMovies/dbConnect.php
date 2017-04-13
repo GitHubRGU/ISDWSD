@@ -1,6 +1,6 @@
 <?php
 
-$connectstr_dbhost = 'ftp://waws-prod-db3-081.ftp.azurewebsites.windows.net';
+$connectstr_dbhost = 'waws-prod-db3-081.ftp.azurewebsites.windows.net';
 $connectstr_dbname = 'MMovies';
 $connectstr_dbusername = 'shaun.hyland@live.co.uk';
 $connectstr_dbpassword = 'DarthJan01';
