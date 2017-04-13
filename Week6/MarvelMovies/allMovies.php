@@ -18,14 +18,14 @@ include ("ConnectionString.php");
 
 <main>
     <BR>
-    <p>None of the Marvel Movies</p>
+    <p>"spidery" ldbmm Marvel Movies</p>
 
 
 
     <?
 
     // create an SQL query as a string
-    $sql_query = "SELECT * FROM marvelmovies WHERE title LIKE '%spider%'";
+    $sql_query = "SELECT * FROM ldbmm WHERE title LIKE '%spider%'";
     // execute the SQL query
     $result = $link->query($sql_query);
     // We can then process the results from this (step 4)
