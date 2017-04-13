@@ -37,11 +37,10 @@ include ("ConnectionString.php");
     // iterate over $result object one $row at a time
     // use fetch_array() to return an associative array
     // process the $row
-
-
     while($row = $result->fetch_array()){
         // print out fields from row of data
-        echo "<p>".$row."</p>";
+        // echo "<p>".$row."</p>";
+        echo $row;
     }
 
     echo "Step 4";
