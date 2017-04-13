@@ -18,7 +18,7 @@ include ("ConnectionString.php");
 
 <main>
     <BR>
-    <p>All of the Marvel Movies</p>
+    <p>None of the Marvel Movies</p>
 
 
 
