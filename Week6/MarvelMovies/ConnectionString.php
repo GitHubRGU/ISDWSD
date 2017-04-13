@@ -10,6 +10,7 @@ $connectstr_dbpassword = '';
 echo "Part 2";
 
 foreach ($_SERVER as $key => $value) {
+    var_dump($key);
     if (strpos($key, "MYSQLCONNSTR_localdb") !== 0) {
         echo "Help";
         continue;
