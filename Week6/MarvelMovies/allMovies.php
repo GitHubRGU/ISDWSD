@@ -24,15 +24,15 @@ include ("ConnectionString.php");
 
     <?
 
-    echo "Step 1";
+    echo "Step A";
     // create an SQL query as a string
     $sql_query = "SELECT * FROM ldbmm";
 
-    echo "Step 2";
+    echo "Step B";
     // execute the SQL query
     $result = $link->query($sql_query);
 
-    echo "Step 3";
+    echo "Step C";
     // We can then process the results from this (step 4)
     // iterate over $result object one $row at a time
     // use fetch_array() to return an associative array
@@ -43,14 +43,14 @@ include ("ConnectionString.php");
         echo $row;
     }
 
-    echo "Step 4";
+    echo "Step D";
     $result->close();
 
-    echo "Step 5";
+    echo "Step E";
     // close connection to database
     $link->close();
 
-    echo "Step 6";
+    echo "Step F";
 
 
 
