@@ -18,16 +18,21 @@ include ("ConnectionString.php");
 
 <main>
     <BR>
-    <p>"ALL of the Marvel Movies"</p>
+    <p>ALL of the Marvel Movies</p>
 
 
 
     <?
 
+    echo "Step 1";
     // create an SQL query as a string
     $sql_query = "SELECT * FROM ldbmm";
+
+    echo "Step 2";
     // execute the SQL query
     $result = $link->query($sql_query);
+
+    echo "Step 3";
     // We can then process the results from this (step 4)
     // iterate over $result object one $row at a time
     // use fetch_array() to return an associative array
@@ -39,10 +44,14 @@ include ("ConnectionString.php");
         echo "<p>".$row."</p>";
     }
 
-
+    echo "Step 4";
     $result->close();
+
+    echo "Step 5";
     // close connection to database
     $link->close();
+
+    echo "Step 6";
 
 
 
