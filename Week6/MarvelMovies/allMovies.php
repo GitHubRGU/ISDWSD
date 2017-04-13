@@ -18,7 +18,7 @@ include ("ConnectionString.php");
 
 <main>
     <BR>
-    <p>"spidery" ldbmm Marvel Movies</p>
+    <p>"ALL of the Marvel Movies"</p>
 
 
 
