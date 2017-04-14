@@ -19,9 +19,9 @@ include("connection.php");
     <br><br>
     <form method="post" action="login.php">
         <label>Username:</label><br>
-        <input type="text" name="username" placeholder="Enter username"/><br><br>
+        <input type="text" name="username" placeholder="username"/><br><br>
         <label>Password:</label><br>
-        <input type="password" name="password" placeholder="Enter password"/><br><br>
+        <input type="password" name="password" placeholder="password"/><br><br>
         <input type="submit" name="submit" value="login"/>
     </form>
     <div class="error"><?php // echo error;?><?php // echo $username; echo $password?></div>
