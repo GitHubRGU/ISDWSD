@@ -39,9 +39,9 @@ echo "dbhost: " . $connectstr_dbhost;
 print "<p></p>";
 echo "username: " . $connectstr_dbusername;
 print "<p></p>";
-echo "dbpassword:" . $connectstr_dbpassword;
+echo "dbpassword: " . $connectstr_dbpassword;
 print "<p></p>";
-echo "dbname:" . $connectstr_dbname;
+echo "dbname: " . $connectstr_dbname;
 print "<p></p>";
 
 mysqli_close($link);
