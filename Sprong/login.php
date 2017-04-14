@@ -22,7 +22,8 @@ if(empty($_POST["username"]) || empty($_POST["password"]))
 
     //  SQL query to select uid for the user that matches the username and password entered
     //  and store it in $result:
-    $sql="SELECT uid FROM users WHERE username='$username' and password='$password'";
+    //  $sql="SELECT uid FROM users WHERE username='$username' AND password='$password'";
+    $sql="SELECT * FROM users";
     $result=mysqli_query($link,$sql);
 
     //  What is $result returning?:
