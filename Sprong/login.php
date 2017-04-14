@@ -5,9 +5,6 @@ include("connection.php");
 
 
 
-
-
-
 //  Check if the username and password fields are blank:
 if(empty($_POST["username"]) || empty($_POST["password"]))
 {
@@ -32,7 +29,7 @@ if(empty($_POST["username"]) || empty($_POST["password"]))
     echo "End of result." . "<p></p>";
 
     //  Check how many rows are in result (should only be one):
-    if(mysqli_num_rows($result == 1))
+    if(mysqli_num_rows($result) == 1)
     {
         //  If query doesn't return a single row, then something is wrong,
         //  so send the user to the home page:
