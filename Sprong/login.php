@@ -25,6 +25,9 @@ if(empty($_POST["username"]) || empty($_POST["password"]))
     $sql="SELECT uid FROM users WHERE username='$username' and password='$password'";
     $result=mysqli_query($link,$sql);
 
+    //  What is $result returning?:
+    echo $result . "<p></p>";
+
     //  Check how many rows are in result (should only be one):
     if(mysqli_num_rows($result == 1))
     {
