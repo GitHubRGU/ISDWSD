@@ -1,3 +1,9 @@
+<?php
+//  Establish connection to Azure mySQL database ($link):
+include("connection.php");
+?>
+
+
 <!doctype html>
     <html>
     <head>

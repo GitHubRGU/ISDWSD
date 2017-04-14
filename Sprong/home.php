@@ -1,9 +1,3 @@
-<?php
-//  Establish connection to Azure mySQL database ($link):
-include("connection.php");
-?>
-
-
 <html>
 <head>
     <meta charset="utf-8">
