@@ -1,6 +1,6 @@
 <?php
 
-//  Establish connection to my (Sprong) Azure mySQL database ($link):
+//  Establish connection (called $link) to my Sprong Azure mySQL database:
 include("connection.php");
 
 
