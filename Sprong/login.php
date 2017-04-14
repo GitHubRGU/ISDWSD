@@ -26,6 +26,7 @@ if(empty($_POST["username"]) || empty($_POST["password"]))
     $result=mysqli_query($link,$sql);
 
     //  What is $result returning?:
+    echo "This is what result is returning: " . "<p></p>";
     echo $result . "<p></p>";
 
     //  Check how many rows are in result (should only be one):
