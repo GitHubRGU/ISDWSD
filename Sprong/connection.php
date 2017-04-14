@@ -35,10 +35,6 @@ echo "Host information: " . mysqli_get_host_info($link) . PHP_EOL;
 print "<p></p>";
 
 
-echo "Details: " . $_SERVER;
-print "<p></p>";
-
-
 echo "dbhost: " . $connectstr_dbhost;
 print "<p></p>";
 echo "username: " . $connectstr_dbusername;
