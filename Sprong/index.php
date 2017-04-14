@@ -2,14 +2,14 @@
     <html>
     <head>
     <meta charset="utf-8">
-        <title>PHP Login Form without Session</title>
+        <title>Sprong PHP Login Form without Session</title>
         <link rel="sytlesheet" href="CSS/style.css" type="text/css" />
     </head>
 
 <body>
-<h1>PHP Login Form with Session</h1>
+<h1>Sprong PHP Login Form with Session</h1>
 <div class="loginBox">
-    <h3>Login Form</h3>
+    <h3>Login to Sprong</h3>
     <br><br>
     <form method="post" action="login.php">
         <label>Username:</label><br>
