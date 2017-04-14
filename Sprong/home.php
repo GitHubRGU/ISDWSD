@@ -7,6 +7,12 @@
 
 
 <body>
-<h1>Hello</h1>
+<h1>Hello</h1><BR>
+
+<?php
+//  Establish connection to Azure mySQL database ($link):
+include("connection.php");
+?>
+
 </body>
 </html>
