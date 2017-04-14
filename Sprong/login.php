@@ -28,6 +28,7 @@ if(empty($_POST["username"]) || empty($_POST["password"]))
     //  What is $result returning?:
     echo "This is what result is returning: " . "<p></p>";
     echo $result . "<p></p>";
+    echo "End of result." . "<p></p>";
 
     //  Check how many rows are in result (should only be one):
     if(mysqli_num_rows($result == 1))
