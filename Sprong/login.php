@@ -3,6 +3,11 @@
 //  Establish connection to my (Sprong) Azure mySQL database ($link):
 include("connection.php");
 
+
+
+
+
+
 //  Check if the username and password fields are blank:
 if(empty($_POST["username"]) || empty($_POST["password"]))
 {
@@ -11,6 +16,9 @@ if(empty($_POST["username"]) || empty($_POST["password"]))
 {
     $username=$_POST['username'];
     $password=$_POST['password'];
+
+    echo "Username: " . $username . "<p></p>";
+    echo "Password: " . $password . "<p></p>";
 
     //  SQL query to select uid for the user that matches the username and password entered
     //  and store it in $result:
