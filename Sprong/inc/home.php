@@ -18,7 +18,7 @@ echo "
   <li>Restring</li>
   <li>Change of string gauge</li>
   <li>Full instrument setup, to customers requirements / specifications</li>
-  <li>Repairs</li>
+  <li>Instrument repairs</li>
   <li>Replacement of hardware / electronics</li>
   <li>Fault finding and problem resolution</li>
 </ul> 
