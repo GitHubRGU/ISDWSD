@@ -1,16 +1,16 @@
-//<?php
+<?php
 
-////  include ("header.php");
-//
-//echo "
-//<main>
-//<p>Welcome to Sprong, the home of quality guitar maintenance and repair</p>
-//</main>
-//";
-//
-////  include ("footer.php");
-//
-//?>
+include ("header.php");
+
+echo "
+<main>
+<p>Welcome to Sprong, the home of quality guitar maintenance and repair</p>
+</main>
+";
+
+include ("footer.php");
+
+?>
 
 
 
@@ -22,7 +22,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Welcome to Sprong</title>
+    <title>(index.php) Welcome to Sprong</title>
     <link rel="sytlesheet" href="CSS/style.css" type="text/css" />
 </head>
 
