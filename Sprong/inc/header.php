@@ -16,13 +16,13 @@ session_start();
     <h1>Sprong - Guitar maintenance and repairs</h1>
     <nav>
         <ul>
-            <li><a href="./">Home Page</a></li>
-            <li><a href="viewJobStatus">View / update work progress</a></li>
+            <li><a href="../inc/home.php">Home Page</a></li>
+            <li><a href="../inc/viewJobStatus.php">View / update work progress</a></li>
             <?php
             if (isset($_SESSION['username'])) {
-                echo "<li><a href='requestWork'>Request work</a></li>";
+                echo "<li><a href='../inc/requestWork.php'>Request work</a></li>";
             } else {
-                echo "<li><a href='login'>Login</a></li>";
+                echo "<li><a href='../inc/login.php'>Login</a></li>";
             }
             ?>
 
