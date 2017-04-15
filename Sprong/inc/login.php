@@ -15,25 +15,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     ?>
 
     <main>
-
         <div class="loginBox">
-            <h3>Login Form</h3>
-            <br><br>
             <form method="post" action="login.php">
                 <label>Username:</label><br>
-                <input type="text" name="username" placeholder="username"/><br><br>
+                <input type="text" name="username" placeholder="Enter username"/><br><br>
                 <label>Password:</label><br>
                 <input type="password" name="password" placeholder="password"/><br><br>
                 <input type="submit" name="submit" value="login"/>
             </form>
             <div class="error"><?php // echo error;?><?php // echo $username; echo $password?></div>
         </div>
-
-<!--        <form method="post" action="login">-->
-<!--            <input type="text" name="username" placeholder="username"><br>-->
-<!--            <input type="password" name="password" placeholder="password"><br>-->
-<!--            <p><input type="submit" value="Submit"></p>-->
-<!--        </form>-->
     </main>
 
 
