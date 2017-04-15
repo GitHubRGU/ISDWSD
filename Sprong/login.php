@@ -1,3 +1,9 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+<body>
+
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
@@ -44,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 ?>
 
 
-
+</body>
 
 
 
