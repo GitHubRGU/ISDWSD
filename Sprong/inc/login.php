@@ -6,14 +6,13 @@
 
 
 <?php
-
 include("../inc/header.php");
 
-
+//  Check if anything has been POSTed:
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+//  If nothing POSTed, then display the Login form:
 
     ?>
-
     <main>
         <div class="loginBox">
             <form method="post" action="login.php"><br>
@@ -33,11 +32,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("../inc/footer.php");
 
 } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    //  Something has been POSTed, so user is logged in, but need to check that a
+    //  correct username and password has been entered:
+
+    //  Open a connection to the mySQL database ($link):
     include("../inc/connection.php");
 
     $username = $_POST["username"];
     $password = $_POST{"password"};
 
+    //  Run a SQL query on the user table in the database and confirm that the username
+    //  and password entered are a correct pair:
     function checklogin($username, $password, $link)
     {
         $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" . $password . "'";
