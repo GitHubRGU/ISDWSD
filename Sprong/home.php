@@ -23,7 +23,7 @@ include ("footer.php");
 <head>
     <meta charset="utf-8">
     <title>(home.php) Welcome to Sprong</title>
-    <link rel="sytlesheet" href="CSS/style.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/style.css" type="text/css" />
 </head>
 
 
