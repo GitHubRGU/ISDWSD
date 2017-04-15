@@ -6,9 +6,9 @@
 
 <?php
 //  Establish connection to Azure mySQL database ($link):
-include("connection.php");
+include("inc/connection.php");
 
-define('INCLUDE_DIR', dirname(__FILE__) . '/inc');
+define('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
 
 $rules = array(
     //

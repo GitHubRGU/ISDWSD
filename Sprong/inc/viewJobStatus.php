@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+<link rel="stylesheet" href="../CSS/style.css" type="text/css" />
 <body>
 
 
@@ -11,7 +11,7 @@ include("header.php");
 
 echo "
 <main>
-<p>requestWork.php.</p>
+<p>viewJobStatus.php.</p>
 </main>
 ";
 
