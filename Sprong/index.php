@@ -42,7 +42,7 @@ foreach ($rules as $action => $rule) {
 <head>
     <meta charset="utf-8">
     <title>(index.php) Sproooong PHP Login Form without Session</title>
-    <link rel="sytlesheet" href="CSS/style.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/style.css" type="text/css" />
 </head>
 
 <body>
