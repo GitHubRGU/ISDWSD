@@ -41,7 +41,7 @@ foreach ($rules as $action => $rule) {
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Sprong PHP Login Form without Session</title>
+    <title>Login to Sprong</title>
     <link rel="stylesheet" href="CSS/style.css" type="text/css" />
 </head>
 
