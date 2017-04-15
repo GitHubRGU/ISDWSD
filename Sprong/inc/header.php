@@ -21,6 +21,7 @@ session_start();
             <?php
             if (isset($_SESSION['username'])) {
                 echo "<li><a href='../inc/requestWork.php'>Request work</a></li>";
+                echo "<li><a href='../inc/logout.php'>Logout</a></li>";
             } else {
                 echo "<li><a href='../inc/login.php'>Login</a></li>";
             }
