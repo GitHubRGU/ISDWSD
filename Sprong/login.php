@@ -4,13 +4,14 @@
 <link rel="stylesheet" href="CSS/style.css" type="text/css" />
 <body>
 
+
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     include("header.php");
     ?>
     <main>
-        <form method="post" action="login.php">
+        <form method="post" action="login">
             <input type="text" name="username" placeholder="username"><br>
             <input type="password" name="password" placeholder="password"><br>
             <p><input type="submit" value="Submit"></p>
