@@ -1,16 +1,49 @@
 <?php
 //  Establish connection to Azure mySQL database ($link):
 include("connection.php");
+
+define('INCLUDE_DIR', dirname(__FILE__) . '/inc');
+
+$rules = array(
+    //
+    //  Main pages:
+    'viewJobStatus' => "/viewJobStatus",
+    'requestWork' => "/requestWork",
+    //
+    //  Admin pages:
+    'login' => "/login",
+    'manageUsers' => "/manageUsers",
+    'logout' => "/logout",
+    //
+    //  Home page:
+    'home' => "/"
+);
+
+$uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
+$uri = '/' . trim(str_replace($uri, '', $_SERVER['REQUEST_URI']), '/');
+$uri = urldecode($uri);
+
+foreach ($rules as $action => $rule) {
+    if (preg_match('~^' . $rule . '$~i', $uri, $params)) {
+        include(INCLUDE_DIR . $action . '.php');
+        exit();
+    }
+}
+
+//  Nothing found, so 404 error:
+    include(INCLUDE_DIR . '404.php');
+
+
 ?>
 
 
 <!doctype html>
-    <html>
-    <head>
+<html>
+<head>
     <meta charset="utf-8">
-        <title>Sprong PHP Login Form without Session</title>
-        <link rel="sytlesheet" href="CSS/style.css" type="text/css" />
-    </head>
+    <title>Sprong PHP Login Form without Session</title>
+    <link rel="sytlesheet" href="CSS/style.css" type="text/css" />
+</head>
 
 <body>
 <h1>Sprong PHP Login Form with Session</h1>
