@@ -22,7 +22,7 @@ $link = mysqli_connect($connectstr_dbhost, $connectstr_dbusername, $connectstr_d
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
     print "<p></p>";
-    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+    echo "Debugging error number: " . mysqli_connect_errno() . PHP_EOL;
     print "<p></p>";
     echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
     print "<p></p>";
