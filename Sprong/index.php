@@ -46,7 +46,7 @@ foreach ($rules as $action => $rule) {
 </head>
 
 <body>
-<h1>(index.php) Sproooong PHP Login Form with Session</h1>
+<h1>Sprong Login (form with Session)</h1>
 <div class="loginBox">
     <h3>Login to Sprong</h3>
     <br><br>
