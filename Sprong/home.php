@@ -7,7 +7,7 @@
 
 <?php
 
-include("header.php");
+include("inc/header.php");
 
 echo "
 <main>
@@ -15,7 +15,7 @@ echo "
 </main>
 ";
 
-include("footer.php");
+include("inc/footer.php");
 
 ?>
 
