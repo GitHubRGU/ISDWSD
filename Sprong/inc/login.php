@@ -6,10 +6,14 @@
 
 
 <?php
+
+include("../inc/header.php");
+
+
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
-    include("header.php");
     ?>
+
     <main>
         <form method="post" action="login">
             <input type="text" name="username" placeholder="username"><br>
@@ -17,12 +21,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             <p><input type="submit" value="Submit"></p>
         </form>
     </main>
+
+
     <?php
 
-    include("footer.php");
+    include("../inc/footer.php");
 
 } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    include("connection.php");
+    include("../inc/connection.php");
 
     $username = $_POST["username"];
     $password = $_POST{"password"};
