@@ -21,8 +21,7 @@ if(empty($_POST["username"]) || empty($_POST["password"]))
     //  and store it in $result:
     //  $sql="SELECT uid FROM users WHERE username='$username' AND password='$password'";
     $sql="SELECT * FROM users";
-    //  $result=mysqli_query($link,$sql);
-    $result = $link->query($sql);
+    $result=mysqli_query($link,$sql);
 
     //  What is $result returning?:
     echo "This is what result is returning: " . "<p></p>";
