@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 <input type="text" name="username" placeholder="Enter username here"/><br><br>
                 <label>Password:</label><br>
                 <input type="password" name="password" placeholder="Enter password here"/><br><br>
-                <input type="submit" name="submit" value="login"/>
+                <input type="submit" name="submit" value="Login to Sprong"/>
             </form>
             <div class="error"><?php // echo error;?><?php // echo $username; echo $password?></div>
         </div>
