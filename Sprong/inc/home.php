@@ -19,6 +19,7 @@ echo "
   <li>Change of string gauge</li>
   <li>Full instrument setup, to customers requirements / specifications</li>
   <li>Instrument repairs</li>
+  <li>Clean up and restoration</li>
   <li>Replacement of hardware / electronics</li>
   <li>Fault finding and problem resolution</li>
 </ul> 
