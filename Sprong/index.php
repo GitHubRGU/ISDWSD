@@ -6,14 +6,14 @@
 
 <?php
 //  Establish connection to Azure mySQL database ($link):
-include("inc/connection.php");
+include("connection.php");
 
 define('INCLUDE_DIR', dirname(__FILE__) . '/inc');
 
 $rules = array(
     //
     //  Main pages:
-    'viewJobStatus' => "/viewJobStatus.php",
+    'viewJobStatus' => "/viewJobStatus",
     'requestWork' => "/requestWork",
     //
     //  Admin pages:
