@@ -1,7 +1,24 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+<body>
+
+
 <?php
-/**
- * Created by PhpStorm.
- * User: shaun
- * Date: 15/04/2017
- * Time: 09:03
- */
+
+include ("header.php");
+
+echo "
+<main>
+<p>manageUsers.php.</p>
+</main>
+";
+
+include ("footer.php");
+
+?>
+
+
+</body>
+</html>
