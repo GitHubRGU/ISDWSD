@@ -1,12 +1,33 @@
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Welcome to Sprong</title>
-    <link rel="sytlesheet" href="CSS/style.css" type="text/css" />
-</head>
+<?php
+
+include ("header.php");
+
+echo "
+<main>
+<p>Welcome to Sprong, the home of quality guitar maintenance and repair</p>
+</main>
+";
+
+include ("footer.php");
+
+?>
 
 
-<body>
-<h1>Hello</h1><BR>
-</body>
-</html>
+
+
+
+
+
+
+<!--<html>-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <title>Welcome to Sprong</title>-->
+<!--    <link rel="sytlesheet" href="CSS/style.css" type="text/css" />-->
+<!--</head>-->
+<!---->
+<!---->
+<!--<body>-->
+<!--<h1>Hello</h1><BR>-->
+<!--</body>-->
+<!--</html>-->
