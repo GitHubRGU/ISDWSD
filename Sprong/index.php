@@ -1,3 +1,9 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+<body>
+
 <?php
 //  Establish connection to Azure mySQL database ($link):
 include("connection.php");
@@ -35,6 +41,7 @@ foreach ($rules as $action => $rule) {
 
 
 ?>
+</body>
 
 
 <!--<!doctype html>-->
