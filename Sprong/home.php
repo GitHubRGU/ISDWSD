@@ -11,23 +11,3 @@ echo "
 include ("footer.php");
 
 ?>
-
-
-
-
-
-
-
-
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>(home.php) Welcome to Sprong</title>
-    <link rel="stylesheet" href="CSS/style.css" type="text/css" />
-</head>
-
-
-<body>
-<h1>Hello</h1><BR>
-</body>
-</html>
