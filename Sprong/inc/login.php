@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if (checklogin($username, $password, $link)) {
         session_start();
         $_SESSION['username'] = $username;
-        header("location:./");
+        header("location:home");
     } else {
         header("location:login");
     }
