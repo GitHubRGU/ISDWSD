@@ -1,6 +1,6 @@
 <?php
 //  Establish connection to Azure mySQL database ($link):
-include("connection.php");
+//  include("connection.php");
 
 define('INCLUDE_DIR', dirname(__FILE__) . '/inc');
 
