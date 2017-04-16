@@ -59,9 +59,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if (checklogin($username, $password, $link)) {
         session_start();
         $_SESSION['username'] = $username;
-        header("location:./");
+        //   header("location:./");
+        echo "THING A";
     } else {
-        header("location:login");
+        echo "THING B";
+        //   header("location:inc/login");
     }
 
 } else {
