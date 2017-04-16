@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         //  Open a connection to the mySQL database ($link):
         include("../inc/connection.php");
 
-        $sql_query="SELECT uid FROM users WHERE username='$username' and password='$password'";
+        $sql_query="SELECT * FROM users WHERE username='$username' and password='$password'";
 
         echo "<p>SQL query string: " . $sql_query . "</p>";
 
