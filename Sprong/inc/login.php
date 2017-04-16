@@ -51,8 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         echo "<p>SQL query string: " . $sql_query . "</p>";
 
-        //  OLD   $result = mysqli_query($link,$sql_query);
-        $result=$link->query($sql_query);
+        $result = mysqli_query($link,$sql_query);
 
         echo "<p>Got here!</p>";
         echo "<p> Query returned: " . $result . "</p>";
@@ -64,6 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             echo $row['uid'] . " - " . $row['username'] . " - " . $row['password'];
             echo "<br/>";
         }
+
 
         echo "<p>Got here too!</p>";
 
