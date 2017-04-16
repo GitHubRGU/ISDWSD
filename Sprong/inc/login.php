@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("../inc/footer.php");
 
 } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    //  Something has been POSTed, so user is logged in, but need to check that a
+    //  Something has been POSTed, so a user is logged in, but need to check that a
     //  correct username and password has been entered:
 
     //  Open a connection to the mySQL database ($link):
@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     //  and password entered are a correct pair:
     function checklogin($username, $password, $link)
     {
-        $sql_query = "SELECT * FROM users WHERE username='" . $username . "' and password='" . $password . "'";
+        $sql_query = "SELECT * FROM users WHERE username='" . $username . "' AND password='" . $password . "'";
         echo $sql_query;
         $result = mysqli_query($link,$sql_query);
         //  OLD    $result = $link->query($sql);
