@@ -1,147 +1,66 @@
-/* @import "templatecolours.css"; */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Pacifico';
 
 body{
-    max-width:960px;
+    max-width: 960px;
     margin-left: auto;
     margin-right: auto;
 }
 
+h1, h2, p{
+    margin-top: 0;
+}
 
-/* NAVIGATION BAR CSS */
-nav>ul {
+*{
+    font-family: 'Open Sans', cursive;
+}
+
+h1, h2{
+    font-family: 'Pacifico', cursive;
+}
+
+
+
+/*  HEADER  */
+header{
+    background-color: #a1a1a1;
+    padding-top: 14px;
+}
+
+header>h1{
+    padding-left: 10px;
+}
+
+
+
+/*  MAIN  */
+main{
+    background-color: #a1a1a1;
+    padding: 5px 0 5px 10px;
+}
+
+
+
+/*  NAVIGATION  */
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: #333;
 }
 
-nav>ul>li {
+nav li {
     float: left;
 }
 
-nav>ul>li a {
+nav li a {
     display: block;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
-    padding: 10px 30px;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover {
-    color: #363636;
-}
-
-
-/* IMAGE SIZING CSS */
-#RGULogo
-{
-    width: 300px;
-}
-
-#RGUBanner
-{
-    max-width: 960px;
-}
-
-#Students
-{
-    width: 200px;
-    float: left;
-    padding-right: 10px;
-}
-
-
-/* TEXT STYLING */
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
-
-p, h2, h3, h4, h5, a{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
-
-h3, h4, h5 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-}
-
-
-/* COLOURINGS */
-#news{
-    background-color: #DBC9DF;
-}
-
-#events{
-    background-color: #782A7E;
-}
-
-footer{
-    background-color: #363636;
-}
-
-aside p,h3,h4{
-    color: white;
-}
-
-
-/* MARGIN FIXES */
-aside p,h3,h4{
-    margin: 0;
-}
-
-aside h3{
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-aside h4{
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-aside p{
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-aside {
-    padding-right: 0 !important;
-    padding-top: -5px !important;
-}
-
-main{
-    padding-right: 0 !important;
-}
-
-footer>p{
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-}
-
-
-/* FONT SIZES */
-h1 {
-    font-size: 20px;
-}
-h2 {
-    font-size: 18px;
-}
-h3 {
-    font-size: 16px;
-}
-h4 {
-    font-size: 14px;
-}
-p {
-    font-size: 13px;
-}
-a {
-    font-size: 13px;
+nav li a:hover {
+    background-color: #111;
 }
