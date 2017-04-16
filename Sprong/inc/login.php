@@ -29,7 +29,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     <?php
 
-    include("../inc/footer.php");
 
 } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
     //  Something has been POSTed, so a user is logged in, but need to check that a
@@ -41,14 +40,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if(empty($_POST["username"]) || empty($_POST["password"]))
     {
         echo "Both fields are required.";
-    }else
-    {
+    }
 
+    else{
 
         //  Open a connection to the mySQL database ($link):
         include("../inc/connection.php");
 
+        echo "Username: " . $username . "<BR>";
+        echo "Password: " . $password . "<BR>";
+
         $sql="SELECT uid FROM users WHERE username='$username' and password='$password'";
+
+        echo $sql . "<BR>";
+
         $result=mysqli_query($link,$sql);
 
         if(mysqli_num_rows($result == 1))
@@ -65,6 +70,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
 
 }
+
+
+include("../inc/footer.php");
+
+
 ?>
 
 
