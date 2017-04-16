@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             session_start();
             $_SESSION['username'] = $username;
             //  send the user to the index page:
-            header("location:./");
+            header("location:../index.php");
         }else
             //  No match, tell user to try again:
         {
