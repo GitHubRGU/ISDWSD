@@ -86,6 +86,7 @@ echo "<p>Step F</p>";
 
 
 
+
 mysqli_close($link);
 
 ?>
