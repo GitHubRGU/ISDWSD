@@ -56,13 +56,13 @@ echo "<p>Step B</p>";
 $result = $link->query($sql_query);
 
 echo "<p>Step C(1)</p>";
-// We can then process the results from this (step 4)
+// We can then process the results from this
 // iterate over $result object one $row at a time
 // use fetch_array() to return an associative array
 // process the $row
 echo "<p>Query: " . $sql_query . "</p>";
 echo "<p>Step C(2)</p>";
-echo "<p>Result: " . $result . "</p>";
+echo "<p>Result: " . var_dump($result) . "</p>";
 while($row = $result->fetch_array()){
     // print out fields from row of data
     echo "<p>".$row."</p>";
