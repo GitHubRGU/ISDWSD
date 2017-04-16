@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         $result=mysqli_query($link,$sql);
 
-        echo "<p>$result: " . var_dump($result) . "</p>";
+        echo "<p>SQL query returns: " . var_dump($result) . "</p>";
 
         if(mysqli_num_rows($result == 1))
         {
