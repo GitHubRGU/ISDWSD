@@ -50,20 +50,18 @@ print "<p></p>";
 echo "<p>Step A</p>";
 // create an SQL query as a string
 $sql_query = "SELECT * FROM users";
+echo "<p>sql_query is: " . $sql_query . "</p>";
 
 echo "<p>Step B</p>";
 // execute the SQL query
 $result = $link->query($sql_query);
+echo "<p>Result is: " . var_dump($result) . "</p>";
 
-echo "<p>Step C(1)</p>";
+echo "<p>Step C</p>";
 // We can then process the results from this
 // iterate over $result object one $row at a time
 // use fetch_array() to return an associative array
 // process the $row
-echo "<p>Query: " . $sql_query . "</p>";
-echo "<p>Step C(2)</p>";
-echo "<p>Result: " . var_dump($result) . "</p>";
-echo "<p>Step C(3)</p>";
 while($row = $result->fetch_array()){
     // print out fields from row of data
     echo "<p>".$row."</p>";
