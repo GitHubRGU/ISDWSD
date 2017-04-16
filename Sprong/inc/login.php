@@ -56,15 +56,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         echo "<p>Got here!</p>";
 
-        while($row = $result->fetch_assoc()){
-            echo $row['uid'] . '<br />';
-        }
-
-
         echo "<p>Result is: " . var_dump($result) . "</p>";
 
         while($row = $result->fetch_assoc()){
-            echo $row['username'] . '<br />';
+            echo "<p>uid: " . $row['uid'] . "</p>";
         }
 
         while($row = mysqli_fetch_array($result)){
