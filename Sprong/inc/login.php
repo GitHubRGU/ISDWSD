@@ -54,6 +54,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         //  OLD   $result = mysqli_query($link,$sql_query);
         $result=$link->query($sql_query);
 
+        echo "Got here";
+
         while($row = $result->fetch_assoc()){
             echo $row['uid'] . '<br />';
         }
