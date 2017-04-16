@@ -61,15 +61,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         echo "<p>Number of rows = " . mysqli_num_rows($result) . "</p>";
 
 
-//        if(mysqli_num_rows($result) == 1)
-//        {
-//            //  If query doesn't return a single row, then something is wrong,
-//            //  send the user to the home page:
-//            header("location: home.php");
-//        }else
-//        {
-//            echo "Incorrect username or password.";
-//        }
+        if(mysqli_num_rows($result) == 1)
+        {
+            echo "<p>SAUL GOODMAN!</p>";
+            //  If query doesn't return a single row, then something is wrong,
+            //  send the user to the home page:
+            //  header("location: home.php");
+        }else
+        {
+            echo "<p>Incorrect username or password entered.</p>";
+        }
     }
 
 
