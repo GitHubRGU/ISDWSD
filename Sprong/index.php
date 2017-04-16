@@ -5,6 +5,10 @@
 <body>
 
 <?php
+
+include("inc/header.php");
+
+
 //  Establish connection to Azure mySQL database ($link):
 include("inc/connection.php");
 
@@ -39,6 +43,7 @@ foreach ($rules as $action => $rule) {
 //  Nothing found, so 404 error:
     include(INCLUDE_DIR . '404.php');
 
+include("inc/footer.php");
 
 ?>
 </body>
