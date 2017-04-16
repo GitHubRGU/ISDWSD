@@ -55,6 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $result=$link->query($sql_query);
 
         echo "<p>Got here!</p>";
+        echo "<p> Query returned: " . $result . "</p>";
 
         //   echo "<p>Result is: " . var_dump($result) . "</p>";
 
