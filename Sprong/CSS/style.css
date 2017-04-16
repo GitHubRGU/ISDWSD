@@ -27,11 +27,11 @@ h1, h2{
 /*  HEADER  */
 header{
     background-color: #a1a1a1;
+    text-shadow: 4px 4px 4px #ff0000;
     padding-top: 14px;
 }
 
 header>h1{
-    text-shadow: 4px 4px 4px #ff0000;
     padding-left: 10px;
 }
 
