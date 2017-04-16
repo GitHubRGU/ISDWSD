@@ -24,6 +24,10 @@ echo "
   <li>Replacement of hardware / electronics</li>
   <li>Fault finding and problem resolution</li>
 </ul> 
+<p>If you'd like us to undertake any of the above work on your instrument, please contact us!</p>
+<p>To view the current status of your existing work order, please log in using the link above.</p>
+
+
 </main>
 ";
 
