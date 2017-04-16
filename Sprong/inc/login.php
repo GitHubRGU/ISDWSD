@@ -60,14 +60,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         echo "<p>Number of rows = " . mysqli_num_rows($result) . "</p>";
 
-
+        //  Looking up the entered Username and Password in the user table
+        //  should return a single row if both details match:
         if(mysqli_num_rows($result) == 1)
         {
             echo "<p>SAUL GOODMAN!</p>";
-            //  If query doesn't return a single row, then something is wrong,
             //  send the user to the home page:
             //  header("location: home.php");
         }else
+            //  No match, tell user to try again:
         {
             echo "<p>Incorrect username or password entered.</p>";
         }
