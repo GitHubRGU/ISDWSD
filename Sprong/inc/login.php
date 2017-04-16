@@ -62,8 +62,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         //  should return a single row if both details match:
         if(mysqli_num_rows($result) == 1)
         {
+            //  Username and password match the entries in the user table,
+            //  so start session, set username and send user to the index page:
+            session_start();
+            $_SESSION['username'] = $username;
             //  send the user to the home page:
-            header("location: home.php");
+            header("location: index.php");
         }else
             //  No match, tell user to try again:
         {
