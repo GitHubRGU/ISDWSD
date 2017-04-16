@@ -61,7 +61,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         while($row = mysqli_fetch_array($result)){
             // print out fields from row of data
-            echo "<p>UID: " . $row['uid'] . "</p>";
+            echo $row['uid'] . " - " . $row['username'] . " - " . $row['password'];
+            echo "<br/>";
         }
 
         echo "<p>Got here too!</p>";
