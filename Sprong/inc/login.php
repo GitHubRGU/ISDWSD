@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         echo "<p>Got here!</p>";
 
-        echo "<p>Result is: " . var_dump($result) . "</p>";
+        //   echo "<p>Result is: " . var_dump($result) . "</p>";
 
         while($row = $result->fetch_assoc()){
             echo "<p>uid: " . $row['uid'] . "</p>";
