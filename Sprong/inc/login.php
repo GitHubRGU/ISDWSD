@@ -57,6 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         echo "<p>Got here!</p>";
 
+
         echo "<p>Number of rows = " . mysqli_num_rows($result) . "</p>"
 
         if(mysqli_num_rows($result == 1))
