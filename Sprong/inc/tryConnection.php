@@ -54,7 +54,7 @@ echo "<p>sql_query is: " . $sql_query . "</p>";
 
 echo "<p>Step B</p>";
 // execute the SQL query
-$result = mysqli_query($link,$sql_query);
+$result = mysqli_query($sql_query);
 echo "<p>Result is: " . var_dump($result) . "</p>";
 
 echo "<p>Step C</p>";
@@ -62,9 +62,10 @@ echo "<p>Step C</p>";
 // iterate over $result object one $row at a time
 // use fetch_array() to return an associative array
 // process the $row
-while($row = $result->fetch_array()){
+while($row = mysqli_fetch_array($result)){
     // print out fields from row of data
-    echo "<p>".$row."</p>";
+    echo $row['username'] . " - " . $row['password'];
+    echo "<br/>";
 }
 
 echo "<p>Step D</p>";
