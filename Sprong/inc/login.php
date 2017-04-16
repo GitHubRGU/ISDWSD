@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         echo "<p>SQL query string: " . $sql_query . "</p>";
 
         //  OLD   $result = mysqli_query($link,$sql_query);
-        $result=$link->query($sql);
+        $result=$link->query($sql_query);
 
 
         echo "<p>Result is: " . var_dump($result) . "</p>";
