@@ -49,24 +49,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         $sql_query="SELECT * FROM users WHERE username='" . $username . "' and password='" . $password . "'";
 
-        //  DEBUGGING: Show me what the query string looks like:
-        echo "<p>SQL query string: " . $sql_query . "</p>";
+        //   DEBUGGING: Show me what the query string looks like:
+        //   echo "<p>SQL query string: " . $sql_query . "</p>";
 
         //  Run the SQL query on the database:
         $result = mysqli_query($link,$sql_query);
 
-        echo "<p>Got here!</p>";
-
-
-        echo "<p>Number of rows = " . mysqli_num_rows($result) . "</p>";
+        //   DEBUGGING: Show me the number of rows returned by the query:
+        //   echo "<p>Number of rows = " . mysqli_num_rows($result) . "</p>";
 
         //  Looking up the entered Username and Password in the user table
         //  should return a single row if both details match:
         if(mysqli_num_rows($result) == 1)
         {
-            echo "<p>SAUL GOODMAN!</p>";
             //  send the user to the home page:
-            //  header("location: home.php");
+            header("location: home.php");
         }else
             //  No match, tell user to try again:
         {
