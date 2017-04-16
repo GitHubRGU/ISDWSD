@@ -15,16 +15,16 @@ echo "
 <p>Welcome to Sprong, the home of quality guitar maintenance and repair.</p>
 <p>Your gateway to a perfectly set up instrument!</p>
 <p></p>
-<p><h4>Contact us</h4></p>
+<p><h2>Contact us</h2></p>
 <p></p>
-<p><h2>Address</h2></p>
+<p><h3>Address</h3></p>
 <p>1 Union Street</p>
 <p>Aberdeen</p>
 <p>AB1 1BA</p>
 <p></p>
 <p>Telephone: (01224) 123456</p>
 <p></p>
-<p>email: enquiries@spring.com</p>
+<p>email: enquiries@sprong.com</p>
 
 
 </main>
