@@ -11,7 +11,7 @@ include("../inc/header.php");
 
 echo "
 <main>
-<p>(home.php)</p>
+
 <p>Welcome to Sprong, the home of quality guitar maintenance and repair.</p>
 <p>Your gateway to a perfectly set up instrument!</p>
 <p>Sprong employ a team of three experienced luthiers, offering the following services:</p>
