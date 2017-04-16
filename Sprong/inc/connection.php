@@ -29,20 +29,20 @@ if (!$link) {
     exit;
 }
 
-echo "Woohoo: A proper connection to MySQL was made! The my_db database is great." . PHP_EOL;
-print "<p></p>";
-echo "Host information: " . mysqli_get_host_info($link) . PHP_EOL;
-print "<p></p>";
+//echo "Woohoo: A proper connection to MySQL was made! The my_db database is great." . PHP_EOL;
+//print "<p></p>";
+//echo "Host information: " . mysqli_get_host_info($link) . PHP_EOL;
+//print "<p></p>";
 
 
-echo "dbhost: " . $connectstr_dbhost;
-print "<p></p>";
-echo "username: " . $connectstr_dbusername;
-print "<p></p>";
-echo "dbpassword: " . $connectstr_dbpassword;
-print "<p></p>";
-echo "dbname: " . $connectstr_dbname;
-print "<p></p>";
+//echo "dbhost: " . $connectstr_dbhost;
+//print "<p></p>";
+//echo "username: " . $connectstr_dbusername;
+//print "<p></p>";
+//echo "dbpassword: " . $connectstr_dbpassword;
+//print "<p></p>";
+//echo "dbname: " . $connectstr_dbname;
+//print "<p></p>";
 
 //  OLD   mysqli_close($link);
 //  $link->close();

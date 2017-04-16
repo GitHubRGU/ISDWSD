@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         }else
             //  No match, tell user to try again:
         {
-            echo "<p>Incorrect username or password entered.</p>";
+            echo "<p>Incorrect username or password entered - please use the Login link above and try again.</p>";
         }
     }
 
