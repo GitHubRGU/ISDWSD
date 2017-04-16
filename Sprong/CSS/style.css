@@ -1,4 +1,6 @@
-/* @import 'https://fonts.googleapis.com/css?family=Open+Sans|Pacifico';  */
+/* @import @import url('https://fonts.googleapis.com/css?family=Muli');  */
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
 
 body{
     max-width: 960px;
@@ -11,11 +13,13 @@ h1, h2, p{
 }
 
 *{
-    font-family: 'Open Sans', cursive;
+    /*  font-family: 'Open Sans', cursive;  */
+    font-family: 'Muli', sans-serif;
 }
 
 h1, h2{
-    font-family: 'Pacifico', cursive;
+    /*  font-family: 'Pacifico', cursive;  */
+    font-family: 'Muli', sans-serif;
 }
 
 
