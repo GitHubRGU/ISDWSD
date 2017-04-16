@@ -59,6 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         //  echo "<p>Result is: " . var_dump($result) . "</p>";
 
+
         while($row = mysqli_fetch_array($result)){
             // print out fields from row of data
             echo $row['uid'] . " - " . $row['username'] . " - " . $row['password'];
