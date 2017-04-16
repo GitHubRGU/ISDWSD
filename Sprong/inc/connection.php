@@ -63,6 +63,7 @@ echo "<p>Step C(1)</p>";
 echo "<p>Query: " . $sql_query . "</p>";
 echo "<p>Step C(2)</p>";
 echo "<p>Result: " . var_dump($result) . "</p>";
+echo "<p>Step C(3)</p>";
 while($row = $result->fetch_array()){
     // print out fields from row of data
     echo "<p>".$row."</p>";
