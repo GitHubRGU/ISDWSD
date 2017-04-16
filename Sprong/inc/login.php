@@ -55,9 +55,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $result = mysqli_query($link,$sql_query);
 
         echo "<p>Got here!</p>";
-        echo "<p>Query returned: " . $result . "</p>";
+        //  echo "<p>Query returned: " . $result . "</p>";
 
-        //  echo "<p>Result is: " . var_dump($result) . "</p>";
+        echo "<p>Result is: " . var_dump($result) . "</p>";
 
 
         while($row = mysqli_fetch_array($result)){
