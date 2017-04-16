@@ -11,9 +11,10 @@ include("../inc/header.php");
 
 echo "
 <main>
-<p>(contact.php)</p>
+<p></p>
 <p>Welcome to Sprong, the home of quality guitar maintenance and repair.</p>
 <p>Your gateway to a perfectly set up instrument!</p>
+<p></p>
 <p></p>
 <p><h2>Contact us</h2></p>
 <p></p>
