@@ -53,7 +53,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         $result = mysqli_query($link,$sql_query);
 
-        echo "<p>SQL query returns: " . var_dump($result) . "</p>";
+        while($row = mysqli_fetch_array($result)){
+            // print out fields from row of data
+            echo $row['uid'] . " - " . $row['username'] . " - " . $row['password'];
+            echo "<br/>";
+        }
 
         if(mysqli_num_rows($result == 1))
         {
