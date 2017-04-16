@@ -26,7 +26,7 @@ echo "
 <p></p>
 <p>Telephone: (01224) 123456</p>
 <p></p>
-<p>email: enquiries@sprong.com</p>
+<p>Email us at: <a href=\"mailto:enquiries@.com?Subject=Enquiry\" target=\"_top\">enquiries@sprong.com</a></p>
 
 
 </main>
