@@ -56,19 +56,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $result = mysqli_query($link,$sql_query);
 
         echo "<p>Got here!</p>";
-        //  echo "<p>Query returned: " . $result . "</p>";
 
-        echo "<p>Result is: " . var_dump($result) . "</p>";
-
-
-        while($row = mysqli_fetch_array($result)){
-            // print out fields from row of data
-            echo $row['uid'] . " - " . $row['username'] . " - " . $row['password'];
-            echo "<br/>";
-        }
-
-
-        echo "<p>Got here too!</p>";
+        echo "<p>Number of rows = " . mysqli_num_rows($result) . "</p>"
 
         if(mysqli_num_rows($result == 1))
         {
