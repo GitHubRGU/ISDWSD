@@ -28,7 +28,8 @@ nav>ul>li a {
 }
 
 li a:hover {
-    color: #363636;
+    /* Was 363636 */
+    color: #FF0000;
 }
 
 
