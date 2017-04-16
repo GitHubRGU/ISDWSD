@@ -44,7 +44,8 @@ print "<p></p>";
 echo "dbname: " . $connectstr_dbname;
 print "<p></p>";
 
-mysqli_close($link);
+//  OLD   mysqli_close($link);
+$link->close();
 
 ?>
 
