@@ -35,39 +35,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     //  Something has been POSTed, so a user is logged in, but need to check that a
     //  correct username and password has been entered:
 
-    //  Open a connection to the mySQL database ($link):
-    include("../inc/connection.php");
-
     $username = $_POST["username"];
     $password = $_POST{"password"};
 
-    //  Run a SQL query on the user table in the database and confirm that the username
-    //  and password entered are a correct pair:
-    function checklogin($username, $password, $link)
+    if(empty($_POST["username"]) || empty($_POST["password"]))
     {
-        $sql_query = "SELECT * FROM users WHERE username='" . $username . "' AND password='" . $password . "'";
-        echo $sql_query;
-        $result = mysqli_query($link,$sql_query);
-        //  OLD    $result = $link->query($sql);
-        while($row = mysqli_fetch_array($result)){
-            //  OLD   while ($row = $result->fetch_array()) {
-            return true;
+        echo "Both fields are required.";
+    }else
+    {
+
+
+        //  Open a connection to the mySQL database ($link):
+        include("../inc/connection.php");
+
+        $sql="SELECT uid FROM users WHERE username='$username' and password='$password'";
+        $result=mysqli_query($link,$sql);
+
+        if(mysqli_num_rows($result == 1))
+        {
+            //  If query doesn't return a single row, then something is wrong,
+            //  send the user to the home page:
+            header("location: home.php");
+        }else
+        {
+            echo "Incorrect username or password.";
         }
-        return false;
     }
 
-    if (checklogin($username, $password, $link)) {
-        session_start();
-        $_SESSION['username'] = $username;
-        //   header("location:./");
-        echo "THING A";
-    } else {
-        echo "THING B";
-        //   header("location:inc/login");
-    }
 
-} else {
-    print('something has gone VERY wrong!');
+
 }
 ?>
 
