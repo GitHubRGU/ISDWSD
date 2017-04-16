@@ -54,6 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         //  Run the SQL query on the database:
         $result = mysqli_query($link,$sql_query);
 
+
         echo "<p>Got here!</p>";
         echo "<p>Query returned: " . $result . "</p>";
 
