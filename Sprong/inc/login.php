@@ -51,9 +51,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         echo "<p>SQL query string: " . $sql_query . "</p>";
 
-        $result = mysqli_query($link,$sql_query);
+        //  OLD   $result = mysqli_query($link,$sql_query);
+        $result=$link->query($sql);
+
 
         echo "<p>Result is: " . var_dump($result) . "</p>";
+
+        while($row = $result->fetch_assoc()){
+            echo $row['username'] . '<br />';
+        }
 
         while($row = mysqli_fetch_array($result)){
             // print out fields from row of data
