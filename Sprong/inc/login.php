@@ -10,8 +10,8 @@ include("../inc/header.php");
 
 //  Check if anything has been POSTed:
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-//  If nothing POSTed, then display the Login form:
 
+//  If nothing POSTed, then display the Login form:
     ?>
     <main>
         <div class="loginBox">
@@ -45,9 +45,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     //  and password entered are a correct pair:
     function checklogin($username, $password, $link)
     {
-        $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" . $password . "'";
-        $result = $link->query($sql);
-        while ($row = $result->fetch_array()) {
+        $sql_query = "SELECT * FROM users WHERE username='" . $username . "' and password='" . $password . "'";
+        echo $sql_query;
+        $result = mysqli_query($link,$sql_query);
+        //  OLD    $result = $link->query($sql);
+        while($row = mysqli_fetch_array($result)){
+            //  OLD   while ($row = $result->fetch_array()) {
             return true;
         }
         return false;
