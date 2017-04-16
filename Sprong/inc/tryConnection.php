@@ -55,6 +55,7 @@ echo "<p>sql_query is: " . $sql_query . "</p>";
 echo "<p>Step B</p>";
 // execute the SQL query
 $result = mysqli_query($link,$sql_query);
+
 //  THIS LINE DOESNT SEEM TO WORK:
 echo "<p>Result is: " . var_dump($result) . "</p>";
 
