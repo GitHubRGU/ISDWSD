@@ -21,15 +21,14 @@ nav>ul>li {
 
 nav>ul>li a {
     display: block;
-    color: #000000;
+    color: #FF0000;
     text-align: center;
     padding: 10px 30px;
     text-decoration: none;
 }
 
 li a:hover {
-    /* Was 363636 */
-    color: #FF0000;
+    color: #363636;
 }
 
 
