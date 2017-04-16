@@ -58,16 +58,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         //   echo "<p>Result is: " . var_dump($result) . "</p>";
 
-        while($row = $result->fetch_assoc()){
-            echo "<p>uid: " . $row['uid'] . "</p>";
-        }
-
-        echo "<p>Got here too!</p>";
-
         while($row = mysqli_fetch_array($result)){
             // print out fields from row of data
-            echo $row['uid'] . " - " . $row['username'] . " - " . $row['password'];
-            echo "<br/>";
+            echo "<p>UID: " . $row['uid'] . "</p>";
         }
 
         if(mysqli_num_rows($result == 1))
