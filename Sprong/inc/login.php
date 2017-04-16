@@ -63,6 +63,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             echo "<p>UID: " . $row['uid'] . "</p>";
         }
 
+        echo "<p>Got here too!</p>";
+
         if(mysqli_num_rows($result == 1))
         {
             //  If query doesn't return a single row, then something is wrong,
