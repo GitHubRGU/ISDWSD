@@ -87,6 +87,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
 include("../inc/footer.php");
 
+//  Close the link to the mySQL database:
+mysqli_close($link);
 
 ?>
 
