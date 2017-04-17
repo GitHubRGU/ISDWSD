@@ -8,10 +8,29 @@
 <?php
 
 //  Establish connection to Azure mySQL database ($link):
-include("inc/connection.php");
-
+include("connection.php");
 
 include("header.php");
+
+
+if ($_POST) {
+//   DEBUGGING:
+    echo "<p>Got here</p>";
+
+//  Build SQL query string to insert the new user into the database:
+    $sql_query="INSERT INTO users (firstname, surname) VALUES ('" . firstname . "', '" . surname . "')";
+
+//   DEBUGGING: Show me what the query string looks like:
+    echo "<p>SQL query string: " . $sql_query . "</p>";
+
+//  Run the SQL query on the database:
+//  $result = mysqli_query($link,$sql_query);
+
+//  Close the link to the mySQL database:
+    mysqli_close($link);
+}
+
+
 
 echo "
 <main>
@@ -47,31 +66,11 @@ echo "
 <input type=\"submit\" name=\"submit\" value=\"Create New Account\"/>
 </form>
 
-<div class=\"error\"><?php // echo error;?><?php // echo $username; echo $password?></div>
-
 
 </main>
 ";
 
-//   DEBUGGING:
-echo "<p>Got here</p>";
 
-
-//  Build SQL query string to insert the new user into the database:
-$sql_query="INSERT INTO users (firstname, surname) VALUES ('" . firstname . "', '" . surname . "')";
-
-
-
-//   DEBUGGING: Show me what the query string looks like:
-echo "<p>SQL query string: " . $sql_query . "</p>";
-
-
-//  Run the SQL query on the database:
-//  $result = mysqli_query($link,$sql_query);
-
-
-//  Close the link to the mySQL database:
-mysqli_close($link);
 
 
 include("footer.php");
