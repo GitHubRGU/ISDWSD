@@ -13,10 +13,6 @@ include("connection.php");
 include("header.php");
 
 
-//  Empty $_POST:
-$_POST = array();
-
-
 if ($_POST) {
 //   DEBUGGING:
     echo "<p>Got here</p>";
@@ -45,9 +41,7 @@ if ($_POST) {
     mysqli_close($link);
 }
 
-//  Let the user know their account has been created:
-echo "<p>Account created!</p>";
-echo "<p>Please return to the home page and log in.</p>";
+
 
 
 echo "
@@ -88,7 +82,9 @@ echo "
 </main>
 ";
 
-
+//  Let the user know their account has been created:
+echo "<p>Account created!</p>";
+echo "<p>Please return to the home page and log in.</p>";
 
 
 include("footer.php");
