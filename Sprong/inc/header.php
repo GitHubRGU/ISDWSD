@@ -27,12 +27,11 @@ session_start();
                 echo "<li><a href='logout.php'>Logout</a></li>";
             } else {
                 //  User is not logged in, so display basic links:
-                echo "<li><a href='../inc/home.php''>Home Page</a></li>";
-                echo "<li><a href='../inc/contact.php'>Contact us</a></li>";
+                echo "<li><a href='home.php''>Home Page</a></li>";
+                echo "<li><a href='contact.php'>Contact us</a></li>";
                 echo "<li><a href='login.php'>Login</a></li>";
             }
             ?>
-
         </ul>
     </nav>
 </header>
