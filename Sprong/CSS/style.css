@@ -27,6 +27,7 @@ h1, h2{
 /*  HEADER  */
 header{
     background-color: #5a5c51;
+    color: #ffffff;
     text-shadow: 2px 2px 2px #bcd5d1;
     padding-top: 14px;
 }
@@ -40,6 +41,7 @@ header>h1{
 /*  MAIN  */
 main{
     background-color: #ba9077;
+    color: #ffffff;
     min-height: 300px;
     padding: 15px;
 }
@@ -49,6 +51,7 @@ main{
 /*  FOOTER  */
 footer{
     background-color: #5a5c51;
+    color: #ffffff;
     padding: 5px 0 5px 10px;
 }
 
@@ -76,5 +79,5 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #bcd5d1;
+    color: #bcd5d1;
 }
