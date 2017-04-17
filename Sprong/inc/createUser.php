@@ -19,9 +19,17 @@ if ($_POST) {
 
     $firstname = $_POST["firstname"];
     $surname = $_POST["surname"];
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    $address1 = $_POST["address1"];
+    $address2 = $_POST["address2"];
+    $address3 = $_POST["address3"];
+    $postcode = $_POST["postcode"];
+    $telephone = $_POST["telephone"];
+    $email = $_POST["email"];
 
 //  Build SQL query string to insert the new user into the database:
-    $sql_query="INSERT INTO users (firstname, surname) VALUES ('" . $firstname . "', '" . $surname . "')";
+    $sql_query="INSERT INTO users (firstname, surname, username, password, address1, address2, address3, postcode, telephone, email) VALUES ('" . $firstname . "', '" . $surname . "', '" . $username . "', '" . $password . "', '" . $address1 . "', '" . $address2 . "', '" . $address3 . "', '" . $postcode . "', '" . $telephone . "', '" . $email . "')";
 
 //   DEBUGGING: Show me what the query string looks like:
     echo "<p>SQL query string: " . $sql_query . "</p>";
