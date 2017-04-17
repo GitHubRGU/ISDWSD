@@ -11,7 +11,7 @@ include("header.php");
 
 echo "
 <main>
-<p>To create your account, please enter your details below, click on the Create User button, then log in to Sprong.</p>
+<p>To create your account, please enter your details below, click on the Create New Account button, then log in to Sprong.</p>
 
 <form method=\"post\" action=\"createUser.php\">
 
@@ -40,7 +40,7 @@ echo "
 </table>
 
 <br>            
-<input type=\"submit\" name=\"submit\" value=\"Create user\"/>
+<input type=\"submit\" name=\"submit\" value=\"Create New Account\"/>
 </form>
 
 <div class=\"error\"><?php // echo error;?><?php // echo $username; echo $password?></div>
