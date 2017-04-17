@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
 
 } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    //  Something has been POSTed, so a user is logged in, but need to check that a
+    //  Something has been POSTed, so a user is logged in - check that a
     //  correct username and password has been entered:
 
     $username = $_POST["username"];
@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         if(mysqli_num_rows($result) == 1)
         {
             //  Username and password match the entries in the user table,
-            //  so start session, set username and send user to the index page:
+            //  so start a session, set username and send user to the index page:
             session_start();
             $_SESSION['username'] = $username;
             //  send the user to the index page:
