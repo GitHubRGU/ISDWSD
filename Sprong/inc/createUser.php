@@ -7,6 +7,10 @@
 
 <?php
 
+//  Establish connection to Azure mySQL database ($link):
+include("inc/connection.php");
+
+
 include("header.php");
 
 echo "
@@ -48,6 +52,24 @@ echo "
 
 </main>
 ";
+
+
+//  Build SQL query string to insert the new user into the database:
+$sql_query="INSERT INTO users (firstname, surname, username, password, address1, address2, address3, postcode, telephone, email) VALUES ("'" . firstname . "', '" . surname . "', ")";
+
+
+
+//   DEBUGGING: Show me what the query string looks like:
+echo "<p>SQL query string: " . $sql_query . "</p>";
+
+
+//  Run the SQL query on the database:
+//  $result = mysqli_query($link,$sql_query);
+
+
+//  Close the link to the mySQL database:
+mysqli_close($link);
+
 
 include("footer.php");
 
