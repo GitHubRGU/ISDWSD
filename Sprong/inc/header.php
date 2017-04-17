@@ -29,6 +29,7 @@ session_start();
                 //  User is not logged in, so display basic links:
                 echo "<li><a href='home.php''>Home Page</a></li>";
                 echo "<li><a href='contact.php'>Contact us</a></li>";
+                echo "<li><a href='createUser.php'>Create new account</a></li>";
                 echo "<li><a href='login.php'>Login</a></li>";
             }
             ?>
