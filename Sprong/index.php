@@ -18,9 +18,10 @@ $rules = array(
     //  Main pages:
     'viewJobStatus' => "/viewJobStatus",
     'requestWork' => "/requestWork",
+    'createUser' => "/createUser",
+    'login' => "/login",
     'logout' => "/logout",
     //  Admin pages:
-    'login' => "/login",
     'manageUsers' => "/manageUsers",
     //  Home page:
     'home' => "/"
