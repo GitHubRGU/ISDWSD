@@ -20,10 +20,10 @@ echo "
 <table>
 
 <tr><td><label for=\"firstname\">First name:</label>                
-  <td><input type=\"text\" name=\"firstname\" id=\"firstname\" size=\"20\">
+  <td><input type=\"text\" name=\"firstname\" id=\"firstname\" size=\"40\">
 
 <tr><td><label for=\"surname\">Surname:</label>                
-  <td><input type=\"text\" name=\"surname\" id=\"surname\" size=\"20\">
+  <td><input type=\"text\" name=\"surname\" id=\"surname\" size=\"40\">
 
 </table>
             
