@@ -53,6 +53,9 @@ echo "
 </main>
 ";
 
+//   DEBUGGING:
+echo "<p>Got here</p>";
+
 
 //  Build SQL query string to insert the new user into the database:
 $sql_query="INSERT INTO users (firstname, surname) VALUES ('" . firstname . "', '" . surname . "')";
