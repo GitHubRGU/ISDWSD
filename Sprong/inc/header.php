@@ -19,7 +19,7 @@ session_start();
             <?php
             if (isset($_SESSION['username'])) {
                 //  User successfully logged in, so show all appropriate links:
-                echo "<li><a href='../inc/home.php''>Home Page</a></li>";
+                echo "<li><a href='home.php''>Home Page</a></li>";
                 echo "<li><a href='contact.php'>Contact us</a></li>";
                 echo "<li><a href='manageUsers.php'>View/update Customer Details</a></li>";
                 echo "<li><a href='requestWork.php'>Request work</a></li>";
