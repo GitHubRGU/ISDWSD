@@ -83,8 +83,10 @@ echo "
 ";
 
 //  Let the user know their account has been created:
-echo "<p>Account created!</p>";
-echo "<p>Please return to the home page and log in.</p>";
+if ($_POST) {
+    echo "<p>Account created!</p>";
+    echo "<p>Please return to the home page and log in.</p>";
+}
 
 
 include("footer.php");
