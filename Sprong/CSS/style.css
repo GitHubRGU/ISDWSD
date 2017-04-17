@@ -53,7 +53,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #5a5c51;
+    background-color: #bcd5d1;
 }
 
 nav li {
@@ -62,12 +62,12 @@ nav li {
 
 nav li a {
     display: block;
-    color: #ffffff;
+    color: #5a5c51;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 nav li a:hover {
-    color: #bcd5d1;
+    color: #ffffff;
 }
