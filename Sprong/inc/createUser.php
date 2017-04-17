@@ -48,7 +48,8 @@ echo "
   <td><input type=\"text\" name=\"email\" id=\"email\" size=\"40\">
     
 </table>
-            
+
+<br>            
 <input type=\"submit\" name=\"submit\" value=\"Create user\"/>
 </form>
 <div class=\"error\"><?php // echo error;?><?php // echo $username; echo $password?></div>
