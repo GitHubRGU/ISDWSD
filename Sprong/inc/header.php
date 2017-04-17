@@ -16,8 +16,8 @@ session_start();
     <h1>Sprong - Guitar maintenance and repairs</h1>
     <nav>
         <ul>
-            <li><a href="../inc/home.php">Home Page</a></li>
-            <li><a href="../inc/contact.php">Contact us</a></li>
+            <li><a href="home.php">Home Page</a></li>
+            <li><a href="contact.php">Contact us</a></li>
             <?php
             if (isset($_SESSION['username'])) {
                 //  User successfully logged in, so show appropriate links:
