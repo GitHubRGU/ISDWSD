@@ -64,12 +64,12 @@ nav li {
 
 nav li a {
     display: block;
-    color: #1d2120;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 nav li a:hover {
-    color: #ffffff;
+    color: #1d2120;
 }
