@@ -20,7 +20,7 @@ if (isset($_SESSION['username']))
 }
 
 //  Send user to index.php:
-header("location:http://sprong.azurewebsites.net/Sprong/index.php");
+header("location:http://sprong.azurewebsites.net/Sprong/inc/home.php");
 
 include("../inc/footer.php");
 
