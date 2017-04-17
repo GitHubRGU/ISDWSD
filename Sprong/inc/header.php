@@ -22,7 +22,7 @@ session_start();
                 echo "<li><a href='../inc/home.php''>Home Page</a></li>";
                 echo "<li><a href='../inc/contact.php'>Contact us</a></li>";
                 echo "<li><a href='../inc/manageUsers.php'>View/update Customer Details</a></li>";
-                echo "<li><a href='requestWork.php'>Request work</a></li>";
+                echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/requestWork.php'>Request work</a></li>";
                 echo "<li><a href='../inc/viewJobStatus.php'>View / update work progress</a></li>";
                 echo "<li><a href='../inc/logout.php'>Logout</a></li>";
             } else {
