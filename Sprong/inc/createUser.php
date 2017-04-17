@@ -16,9 +16,9 @@ echo "
 
 
             <form method=\"post\" action=\"createUser.php\"><br>
-                <label>First name:</label><br>
+                <label>First name:</label>
                 <input type=\"text\" name=\"firstname\" placeholder=\"First name\"/><br><br>
-                <label>Surname:</label><br>
+                <label>Surname:</label>
                 <input type=\"text\" name=\"surname\" placeholder=\"Surname\"/><br><br>
                 <label>Username:</label><br>
                 <input type=\"text\" name=\"username\" placeholder=\"Enter username here\"/><br><br>
