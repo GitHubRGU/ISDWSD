@@ -29,13 +29,13 @@ echo "
 <tr><td><label for=\"password\">Password:</label>                
   <td><input type=\"text\" name=\"password\" id=\"password\" size=\"40\">
   
-<tr><td><label for=\"address1\">Address line 1:   </label>                
+<tr><td><label for=\"address1\">Address line 1:</label>                
   <td><input type=\"text\" name=\"address1\" id=\"address1\" size=\"40\">
     
-<tr><td><label for=\"address2\">Address line 2:   </label>                
+<tr><td><label for=\"address2\">Address line 2:</label>                
   <td><input type=\"text\" name=\"address2\" id=\"address2\" size=\"40\">
       
-<tr><td><label for=\"address3\">Address line 3:   </label>                
+<tr><td><label for=\"address3\">Address line 3:</label>                
   <td><input type=\"text\" name=\"address3\" id=\"address3\" size=\"40\">
 
 <tr><td><label for=\"postcode\">Postcode:</label>                
