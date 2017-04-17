@@ -24,12 +24,12 @@ h1, h2{
 header{
     background-color: #5a5c51;
     color: #ffffff;
-    text-shadow: 2px 2px 2px #bcd5d1;
     padding-top: 14px;
 }
 
 header>h1{
     padding-left: 10px;
+    text-shadow: 2px 2px 2px #bcd5d1;
 }
 
 /*  MAIN  */
