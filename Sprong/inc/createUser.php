@@ -21,17 +21,17 @@ echo "
                 <label>Username:</label>
                 <input type=\"text\" name=\"username\" placeholder=\"Enter username here\"/><br>
                 <label>Password:</label>
-                <input type=\"password\" name=\"password\" placeholder=\"Enter password here\"/><br><br>
+                <input type=\"password\" name=\"password\" placeholder=\"Enter password here\"/><br>
                 <label>Address line 1:</label>
-                <input type=\"text\" name=\"address1\" placeholder=\"Address line 1\"/><br><br>
+                <input type=\"text\" name=\"address1\" placeholder=\"Address line 1\"/><br>
                 <label>Address line 2:</label>
-                <input type=\"text\" name=\"address2\" placeholder=\"Address line 2\"/><br><br>
+                <input type=\"text\" name=\"address2\" placeholder=\"Address line 2\"/><br>
                 <label>Address line 3:</label>
-                <input type=\"text\" name=\"address3\" placeholder=\"Address line 3\"/><br><br>
+                <input type=\"text\" name=\"address3\" placeholder=\"Address line 3\"/><br>
                 <label>Postcode:</label>
-                <input type=\"text\" name=\"postcode\" placeholder=\"Postcode\"/><br><br>
+                <input type=\"text\" name=\"postcode\" placeholder=\"Postcode\"/><br>
                 <label>Telephone:</label>
-                <input type=\"text\" name=\"telephone\" placeholder=\"Telephone\"/><br><br>
+                <input type=\"text\" name=\"telephone\" placeholder=\"Telephone\"/><br>
                 <label>Email:</label>
                 <input type=\"text\" name=\"email\" placeholder=\"Email\"/><br><br>
                 <input type=\"submit\" name=\"submit\" value=\"Create user\"/>
