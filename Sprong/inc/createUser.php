@@ -14,9 +14,6 @@ include("header.php");
 
 
 if ($_POST) {
-//   DEBUGGING:
-    echo "<p>Got here</p>";
-
     $firstname = $_POST["firstname"];
     $surname = $_POST["surname"];
     $username = $_POST["username"];
@@ -84,7 +81,7 @@ echo "
 
 //  Let the user know their account has been created:
 if ($_POST) {
-    echo "<p><b>Account created!</b></p>";
+    echo "<p><h4>Account created!</h4></p>";
     echo "<p>Please return to the home page and log in.</p>";
 }
 
