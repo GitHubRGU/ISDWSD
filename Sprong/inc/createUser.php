@@ -17,8 +17,11 @@ if ($_POST) {
 //   DEBUGGING:
     echo "<p>Got here</p>";
 
+    $firstname = $_POST["firstname"];
+    $surname = $_POST["surname"];
+
 //  Build SQL query string to insert the new user into the database:
-    $sql_query="INSERT INTO users (firstname, surname) VALUES ('" . firstname . "', '" . surname . "')";
+    $sql_query="INSERT INTO users (firstname, surname) VALUES ('" . $firstname . "', '" . $surname . "')";
 
 //   DEBUGGING: Show me what the query string looks like:
     echo "<p>SQL query string: " . $sql_query . "</p>";
