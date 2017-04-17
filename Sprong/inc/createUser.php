@@ -11,17 +11,15 @@ include("header.php");
 
 echo "
 <main>
-<p>createUsers.php.</p>
-
-
+<p>To create your account, please enter your details below, click on the Create User button, then log in to Sprong.</p>
 
             <form method=\"post\" action=\"createUser.php\"><br>
                 <label>First name:</label>
-                <input type=\"text\" name=\"firstname\" placeholder=\"First name\"/><br><br>
+                <input type=\"text\" name=\"firstname\" placeholder=\"First name\"/><br>
                 <label>Surname:</label>
-                <input type=\"text\" name=\"surname\" placeholder=\"Surname\"/><br><br>
+                <input type=\"text\" name=\"surname\" placeholder=\"Surname\"/><br>
                 <label>Username:</label>
-                <input type=\"text\" name=\"username\" placeholder=\"Enter username here\"/><br><br>
+                <input type=\"text\" name=\"username\" placeholder=\"Enter username here\"/><br>
                 <label>Password:</label>
                 <input type=\"password\" name=\"password\" placeholder=\"Enter password here\"/><br><br>
                 <label>Address line 1:</label>
