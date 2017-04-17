@@ -11,14 +11,13 @@ h1, h2, p{
 }
 
 *{
-    /*  font-family: 'Open Sans', cursive;  */
     font-family: 'Mukta Vaani', sans-serif;
 }
 
 h1, h2{
-    /*  font-family: 'Pacifico', cursive;  */
     font-family: 'Mukta Vaani', sans-serif;
 }
+
 
 /*  HEADER  */
 header{
@@ -32,6 +31,7 @@ header>h1{
     text-shadow: 1px 1px 1px #bcd5d1;
 }
 
+
 /*  MAIN  */
 main{
     background-color: #5a5c51;
@@ -40,6 +40,7 @@ main{
     padding: 15px;
 }
 
+
 /*  FOOTER  */
 footer{
     background-color: #1d2120;
@@ -47,13 +48,14 @@ footer{
     padding: 5px 0 5px 10px;
 }
 
+
 /*  NAVIGATION  */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #bcd5d1;
+    background-color: #ba9077;
 }
 
 nav li {
@@ -62,7 +64,7 @@ nav li {
 
 nav li a {
     display: block;
-    color: #5a5c51;
+    color: #1d2120;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
