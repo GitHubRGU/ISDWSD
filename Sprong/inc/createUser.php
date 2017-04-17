@@ -13,7 +13,7 @@ echo "
 <main>
 <p>To create your account, please enter your details below, click on the Create User button, then log in to Sprong.</p>
 
-<form method=\"post\" action=\"createUser.php\"><br>
+<form method=\"post\" action=\"createUser.php\">
 
 <table>
 
