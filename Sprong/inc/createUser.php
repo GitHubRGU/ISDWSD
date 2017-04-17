@@ -32,15 +32,18 @@ if ($_POST) {
     $sql_query="INSERT INTO users (firstname, surname, username, password, address1, address2, address3, postcode, telephone, email) VALUES ('" . $firstname . "', '" . $surname . "', '" . $username . "', '" . $password . "', '" . $address1 . "', '" . $address2 . "', '" . $address3 . "', '" . $postcode . "', '" . $telephone . "', '" . $email . "')";
 
 //   DEBUGGING: Show me what the query string looks like:
-    echo "<p>SQL query string: " . $sql_query . "</p>";
+//    echo "<p>SQL query string: " . $sql_query . "</p>";
 
 //  Run the SQL query on the database:
-//  $result = mysqli_query($link,$sql_query);
+    $result = mysqli_query($link,$sql_query);
 
 //  Close the link to the mySQL database:
     mysqli_close($link);
 }
 
+//  Let the user know their account has been created:
+echo "<p>Account created!</p>";
+echo "<p>Please return to the home page and log in.</p>";
 
 
 echo "
