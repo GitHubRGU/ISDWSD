@@ -22,8 +22,8 @@ echo "
 <tr><td><label for=\"firstname\">First name:</label>                
   <td><input type=\"text\" name=\"firstname\" id=\"firstname\" size=\"20\">
 
-<tr><td><label for=\"txtSchoolName\">School name:</label>
-  <input type=\"text\" name=\"txtSchoolName\" id=\"txtSchoolName\" size=\"20\"><br>
+<tr><td><label for=\"surname\">Surname:</label>                
+  <td><input type=\"text\" name=\"surname\" id=\"surname\" size=\"20\">
 
 </table>
             
