@@ -25,6 +25,13 @@ echo "
 <tr><td><label for=\"surname\">Surname:</label>                
   <td><input type=\"text\" name=\"surname\" id=\"surname\" size=\"40\">
 
+<tr><td><label for=\"username\">Username:</label>                
+  <td><input type=\"text\" name=\"username\" id=\"username\" size=\"40\">
+  
+<tr><td><label for=\"password\">Password:</label>                
+  <td><input type=\"text\" name=\"password\" id=\"password\" size=\"40\">
+  
+  
 </table>
             
             
