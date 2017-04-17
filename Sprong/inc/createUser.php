@@ -14,6 +14,25 @@ echo "
 <p>To create your account, please enter your details below, click on the Create User button, then log in to Sprong.</p>
 
             <form method=\"post\" action=\"createUser.php\"><br>
+            
+            
+            
+<table>
+
+<tr><td><label for=\"firstname\">First name:</label>                
+  <td><input type=\"text\" name=\"firstname\" id=\"firstname\" size=\"20\">
+
+<tr><td><label for=\"txtSchoolName\">School name:</label>
+  <input type=\"text\" name=\"txtSchoolName\" id=\"txtSchoolName\" size=\"20\"><br>
+
+</table>
+            
+            
+            
+            
+            
+            
+            
                 <label>First name:</label>
                 <input type=\"text\" name=\"firstname\" placeholder=\"First name\"/><br>
                 <label>Surname:</label>
