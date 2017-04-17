@@ -55,7 +55,7 @@ echo "
 
 
 //  Build SQL query string to insert the new user into the database:
-$sql_query="INSERT INTO users (firstname, surname, username, password, address1, address2, address3, postcode, telephone, email) VALUES ("'" . firstname . "', '" . surname . "', ")";
+$sql_query="INSERT INTO users (firstname, surname) VALUES ('" . firstname . "', '" . surname . "')";
 
 
 
