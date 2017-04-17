@@ -72,7 +72,7 @@ echo "
 </table>
 
 <br>            
-<input type=\"submit\" name=\"submit\" value=\"Create New Account\"/>
+<input type=\"submit\" name=\"submit\" value=\"Create New Account\"/><br>
 </form>
 
 
