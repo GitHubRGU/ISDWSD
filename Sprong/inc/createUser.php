@@ -84,7 +84,7 @@ echo "
 
 //  Let the user know their account has been created:
 if ($_POST) {
-    echo "<p>Account created!</p>";
+    echo "<p><b>Account created!</b></p>";
     echo "<p>Please return to the home page and log in.</p>";
 }
 
