@@ -66,7 +66,7 @@ echo "<p>Step C</p>";
 // process the $row
 while($row = mysqli_fetch_array($result)){
     // print out fields from row of data
-    echo $row['uid'] . " - " . $row['username'] . " - " . $row['password'];
+    echo $row['uid'] . " - " . $row['username'] . " - " . $row['password'] . $row['email'];
     echo "<br/>";
 }
 
