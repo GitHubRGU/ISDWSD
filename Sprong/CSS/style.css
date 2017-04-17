@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Mukta+Vaani');
 
-
 body{
     max-width: 960px;
     margin-left: auto;
@@ -21,8 +20,6 @@ h1, h2{
     font-family: 'Mukta Vaani', sans-serif;
 }
 
-
-
 /*  HEADER  */
 header{
     background-color: #5a5c51;
@@ -35,8 +32,6 @@ header>h1{
     padding-left: 10px;
 }
 
-
-
 /*  MAIN  */
 main{
     background-color: #ba9077;
@@ -45,16 +40,12 @@ main{
     padding: 15px;
 }
 
-
-
 /*  FOOTER  */
 footer{
     background-color: #5a5c51;
     color: #ffffff;
     padding: 5px 0 5px 10px;
 }
-
-
 
 /*  NAVIGATION  */
 nav ul {
