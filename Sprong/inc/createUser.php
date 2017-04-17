@@ -13,6 +13,10 @@ include("connection.php");
 include("header.php");
 
 
+//  Empty $_POST:
+$_POST = array();
+
+
 if ($_POST) {
 //   DEBUGGING:
     echo "<p>Got here</p>";
