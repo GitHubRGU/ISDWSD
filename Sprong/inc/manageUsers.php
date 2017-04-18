@@ -23,11 +23,15 @@ if (isset($_SESSION['username']))
     $sql_query="SELECT * FROM users WHERE username='" . $username . "'";
 
 //   DEBUGGING: Show me what the query string looks like:
-//   echo "<p>SQL query string: " . $sql_query . "</p>";
+     echo "<p>SQL query string: " . $sql_query . "</p>";
 
 //  Run the SQL query on the database:
     $result = mysqli_query($link,$sql_query);
-    echo $result;
+    while($row = mysqli_fetch_array($result)){
+        // print out fields from row of data
+        echo $row['email'];
+        echo "<br/>";
+    }
 
     ?>
 
