@@ -27,9 +27,12 @@ if (isset($_SESSION['username']))
 
 //  Run the SQL query on the database:
     $result = mysqli_query($link,$sql_query);
+    $row = mysqli_fetch_assoc($result);
+
+    echo "Answer = " . $row['email'];
 
 
-    
+
     ?>
 
 <main>
