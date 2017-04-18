@@ -7,7 +7,9 @@
 
 <?php
 
-include("header.php");
+//  Establish connection to Azure mySQL database ($link):
+include("connection.php");
+
 
 echo "
 <main>
@@ -15,7 +17,25 @@ echo "
 </main>
 ";
 
-include("footer.php");
+session_start();
+if (isset($_SESSION['username']))
+{
+    //  Session has been set, so a user is logged in:
+    include("header.php");
+    echo "User is logged in";
+    ?>
+
+<main>
+</main>
+
+<?php
+    include("footer.php");
+
+}
+
+
+
+
 
 ?>
 

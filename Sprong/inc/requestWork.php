@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="../CSS/style.css" type="text/css" />
 <body>
 
+//  EQUVALENT TO CREATE_ARTICLE.PHP
 
 <?php
 

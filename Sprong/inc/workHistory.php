@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="../CSS/style.css" type="text/css" />
 <body>
 
+//  EQUVALENT TO BLOG_ARTICLE.PHP
 
 <?php
 
