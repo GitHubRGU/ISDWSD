@@ -13,6 +13,31 @@ include("connection.php");
 include("header.php");
 
 
+
+session_start();
+if (isset($_SESSION['username']))
+{
+//  Session has been set, so a user is logged in:
+include("header.php");
+echo "<p>User is logged in!</p>";
+
+//  Build SQL query string to insert the new user into the database:
+$uid = $_SESSION['uid'];
+$sql_query="SELECT * FROM users WHERE uid='" . $uid . "'";
+
+//   DEBUGGING: Show me what the query string looks like:
+echo "<p>SQL query string: " . $sql_query . "</p>";
+
+//  Run the SQL query on the database:
+$result = mysqli_query($link,$sql_query);
+$row = mysqli_fetch_assoc($result);
+
+echo "Answer = " . $row['email'];
+
+
+
+//  $_POST has been triggered, so the "Update user info" has been clicked -
+//  push all the data to the user table:
 if ($_POST) {
     $firstname = $_POST["firstname"];
     $surname = $_POST["surname"];
@@ -24,15 +49,23 @@ if ($_POST) {
     $postcode = $_POST["postcode"];
     $telephone = $_POST["telephone"];
     $email = $_POST["email"];
+    $uid = $_SESSION['uid'];
 
 //  Build SQL query string to insert the new user into the database:
-    $sql_query="INSERT INTO users (firstname, surname, username, password, address1, address2, address3, postcode, telephone, email) VALUES ('" . $firstname . "', '" . $surname . "', '" . $username . "', '" . $password . "', '" . $address1 . "', '" . $address2 . "', '" . $address3 . "', '" . $postcode . "', '" . $telephone . "', '" . $email . "')";
 
-//   DEBUGGING: Show me what the query string looks like:
-//    echo "<p>SQL query string: " . $sql_query . "</p>";
+//  THIS IS THE OLD SQL THAT CREATES A NEW ROW OF DATA:
+//    $sql_query="INSERT INTO users (firstname, surname, username, password, address1, address2, address3, postcode, telephone, email) VALUES ('" . $firstname . "', '" . $surname . "', '" . $username . "', '" . $password . "', '" . $address1 . "', '" . $address2 . "', '" . $address3 . "', '" . $postcode . "', '" . $telephone . "', '" . $email . "')";
 
-//  Run the SQL query on the database:
-    $result = mysqli_query($link,$sql_query);
+
+//  THIS IS THE NEW SQL THAT UPDATES THE EXISTING ROW OF DATA:
+//  W3 School syntax = UPDATE table_name SET column1=value, column2=value2,...  WHERE some_column=some_value
+    $sql_query="UPDATE users SET firstname='" . $firstname . "', surname='" . $surname . "', username='" . $username . "', password='" . $password . ", address1='" . $address1 . "', address2='" . $address2 . "', address3='" . $address3 . "', postcode='" . $postcode . "', telephone='" . $telephone . ", email='" . $email . " WHERE uid='" . $uid . "'";
+
+//  DEBUGGING: Show me what the query string looks like:
+    echo "<p>SQL query string: " . $sql_query . "</p>";
+
+//  Run the SQL query on the database - DON'T SWITCH THIS ON UNTIL YOU'RE SURE IT'S CORRECT!!!:
+//    $result = mysqli_query($link,$sql_query);
 
 //  Close the link to the mySQL database:
     mysqli_close($link);
@@ -43,7 +76,7 @@ if ($_POST) {
 
 echo "
 <main>
-<p>To create your account, please enter your details below, click on the Create New Account button, then log in to Sprong.</p>
+<p>To update your account information, please ammend your details below, then click the Save updated details button.</p>
 
 <form method=\"post\" action=\"manageUsers.php\">
 
@@ -70,7 +103,7 @@ echo "
 
 //  Let the user know their account has been created:
 if ($_POST) {
-    echo "<p><h4>Account created!</h4></p>";
+    echo "<p><h4>Account details updated!</h4></p>";
     echo "<p>Please return to the home page and log in.</p>";
 }
 
