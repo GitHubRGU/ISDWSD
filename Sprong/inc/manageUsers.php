@@ -108,6 +108,7 @@ echo "
 
 //  Let the user know their account details have been updated:
 if ($_POST) {
+    header("location:../inc/manageUsers.php");
     echo "<p><h4>Account details updated!</h4></p>";
 }
 
