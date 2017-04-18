@@ -16,7 +16,7 @@ if (isset($_SESSION['username']))
 {
     //  Session has been set, so a user is logged in:
     include("header.php");
-    echo "User is logged in!";
+    echo "User IS logged in!";
 
     //  Build SQL query string to insert the new user into the database:
     $username = $_SESSION['username'];
@@ -27,7 +27,7 @@ if (isset($_SESSION['username']))
 
 //  Run the SQL query on the database:
     $result = mysqli_query($link,$sql_query);
-    echo $result['email'];
+    echo $result('email');
 
     ?>
 
