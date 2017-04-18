@@ -18,7 +18,6 @@ session_start();
 if (isset($_SESSION['username']))
 {
 //  Session has been set, so a user is logged in:
-include("header.php");
 echo "<p>User is logged in!</p>";
 
 //  Build SQL query string to insert the new user into the database:
