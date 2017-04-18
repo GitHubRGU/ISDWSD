@@ -108,7 +108,7 @@ echo "
 
 //  Let the user know their account details have been updated:
 if ($_POST) {
-    echo "<p><h4>Account details updated - LOG OUT TO SAVE CHANGES!</h4></p>";
+    echo "<p><h4>Account details updated <h4><h3> LOG OUT TO SAVE CHANGES!</h3></p>";
 }
 
 
