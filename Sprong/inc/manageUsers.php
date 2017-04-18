@@ -28,7 +28,7 @@ if (isset($_SESSION['username']))
 
 } else {
     //  User is not logged in, so send them to index.php:
-    header("location:./home.php");
+    header("location:../home.php");
 }
 
 
