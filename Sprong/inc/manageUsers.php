@@ -28,7 +28,7 @@ if (isset($_SESSION['username']))
 
 } else {
     //  User is not logged in, so send them to index.php:
-    header("location:./");
+    header("location:./sprong.azurewebsites.net/Sprong/inc/home.php");
 }
 
 
