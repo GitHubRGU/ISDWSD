@@ -19,7 +19,7 @@ if (isset($_SESSION['username']))
     echo "User is logged in!!!";
 
     //  Build SQL query string to insert the new user into the database:
-    $username = $_SESSION('username');
+    $username = $_SESSION['username'];
     $sql_query="SELECT * FROM users WHERE username='" . $username . "'";
 
 //   DEBUGGING: Show me what the query string looks like:
