@@ -30,6 +30,7 @@ echo "<p>SQL query string: " . $sql_query . "</p>";
 //  Run the SQL query on the database:
 $result = mysqli_query($link,$sql_query);
 $row = mysqli_fetch_assoc($result);
+$uid = $row['uid'];
 
 echo "Answer = " . $row['uid'];
 
