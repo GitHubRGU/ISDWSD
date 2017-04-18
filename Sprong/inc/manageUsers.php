@@ -83,7 +83,7 @@ echo "
 <main>
 <p>To update your account information, please amend your details below, then click the Save updated details button.</p>
 
-<form method=\"post\" action=\"manageUsers.php\" onsubmit=\"window.location.reload()\">
+<form method=\"post\" action=\"manageUsers.php\">
 
 <table>
 <tr><td><label for=\"firstname\">First name:</label><td><input type=\"text\" name=\"firstname\" value=\"$initFirstname\" id=\"firstname\" size=\"40\">
