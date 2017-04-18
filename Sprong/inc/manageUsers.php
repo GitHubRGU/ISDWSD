@@ -111,7 +111,7 @@ if ($_POST) {
     $message = "Your details have been updated.";
     echo "<script type='text/javascript'>alert('$message');</script>";
 
-//    echo "<p><h4>Account details updated - click View/Update my details to confirm!</h4></p>";
+    echo "<p><h4>Account details updated - click View/Update my details to confirm!</h4></p>";
     header("location:../inc/manageUsers.php");
 }
 
