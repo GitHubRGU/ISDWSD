@@ -22,8 +22,8 @@ include("header.php");
 echo "<p>User is logged in!</p>";
 
 //  Build SQL query string to insert the new user into the database:
-$uid = $_SESSION['uid'];
-$sql_query="SELECT * FROM users WHERE uid='" . $uid . "'";
+$username = $_SESSION['username'];
+$sql_query="SELECT * FROM users WHERE username='" . $username . "'";
 
 //   DEBUGGING: Show me what the query string looks like:
 echo "<p>SQL query string: " . $sql_query . "</p>";
@@ -32,7 +32,7 @@ echo "<p>SQL query string: " . $sql_query . "</p>";
 $result = mysqli_query($link,$sql_query);
 $row = mysqli_fetch_assoc($result);
 
-echo "Answer = " . $row['email'];
+echo "Answer = " . $row['uid'];
 
 
 
