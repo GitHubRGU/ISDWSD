@@ -18,14 +18,15 @@ session_start();
 if (isset($_SESSION['username']))
 {
 //  Session has been set, so a user is logged in:
-echo "<p>User is logged in!</p>";
+//   DEBUGGING:
+//   echo "<p>User is logged in!</p>";
 
 //  Build SQL query string to insert the new user into the database:
 $username = $_SESSION['username'];
 $sql_query="SELECT * FROM users WHERE username='" . $username . "'";
 
 //   DEBUGGING: Show me what the query string looks like:
-echo "<p>SQL query string: " . $sql_query . "</p>";
+//   echo "<p>SQL query string: " . $sql_query . "</p>";
 
 //  Run the SQL query on the database:
 $result = mysqli_query($link,$sql_query);
@@ -33,7 +34,7 @@ $row = mysqli_fetch_assoc($result);
 $uid = $row['uid'];
 
 //   DEBUGGING
-echo "Answer = " . $row['uid'];
+//   echo "Answer = " . $row['uid'];
 
 //  Use query results to store the untouched detailsin the database:
     $initFirstname = $row['firstname'];
@@ -63,28 +64,21 @@ if ($_POST) {
     $email = $_POST["email"];
 
 //  Build SQL query string to insert the new user into the database:
-
-//  THIS IS THE OLD SQL THAT CREATES A NEW ROW OF DATA:
-//    $sql_query="INSERT INTO users (firstname, surname, username, password, address1, address2, address3, postcode, telephone, email) VALUES ('" . $firstname . "', '" . $surname . "', '" . $username . "', '" . $password . "', '" . $address1 . "', '" . $address2 . "', '" . $address3 . "', '" . $postcode . "', '" . $telephone . "', '" . $email . "')";
-
-
-//  THIS IS THE NEW SQL THAT UPDATES THE EXISTING ROW OF DATA:
 //  W3 School syntax = UPDATE table_name SET column1=value, column2=value2,...  WHERE some_column=some_value
     $sql_query="UPDATE users SET firstname='" . $firstname . "', surname='" . $surname . "', username='" . $username . "', password='" . $password . "', address1='" . $address1 . "', address2='" . $address2 . "', address3='" . $address3 . "', postcode='" . $postcode . "', telephone='" . $telephone . "', email='" . $email . "' WHERE uid='" . $uid . "'";
 
-//  DEBUGGING: Show me what the query string looks like:
-    echo "<p>SQL query string: " . $sql_query . "</p>";
+//   DEBUGGING: Show me what the query string looks like:
+//   echo "<p>SQL query string: " . $sql_query . "</p>";
 
 //  Run the SQL query on the database - DON'T SWITCH THIS ON UNTIL YOU'RE SURE IT'S CORRECT!!!:
-//    $result = mysqli_query($link,$sql_query);
+    $result = mysqli_query($link,$sql_query);
 
 //  Close the link to the mySQL database:
     mysqli_close($link);
 }
 
 
-
-
+//  Same form as createUser.php, but filled in with the information that is already in the database:
 echo "
 <main>
 <p>To update your account information, please amend your details below, then click the Save updated details button.</p>
