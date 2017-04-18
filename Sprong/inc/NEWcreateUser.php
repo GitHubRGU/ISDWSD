@@ -15,16 +15,25 @@ include("header.php");
 //  $_POST has been triggered, so the "Create New Account" button has been clicked -
 //  push all the data to the user table:
 if ($_POST) {
-    $firstname = $_POST["firstname"];
-    $surname = $_POST["surname"];
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-    $address1 = $_POST["address1"];
-    $address2 = $_POST["address2"];
-    $address3 = $_POST["address3"];
-    $postcode = $_POST["postcode"];
-    $telephone = $_POST["telephone"];
-    $email = $_POST["email"];
+    $firstname = test_input($_POST["firstname"]);
+    $surname = test_input($_POST["surname"]);
+    $username = test_input($_POST["username"]);
+    $password = test_input($_POST["password"]);
+    $address1 = test_input($_POST["address1"]);
+    $address2 = test_input($_POST["address2"]);
+    $address3 = test_input($_POST["address3"]);
+    $postcode = test_input($_POST["postcode"]);
+    $telephone = test_input($_POST["telephone"]);
+    $email = test_input($_POST["email"]);
+
+
+//  Function to check entered data and avoid Cross Site Scripting attacks:
+function test_input($data){
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;}
+
 
 //  Build SQL query string to insert the new user into the database:
     $sql_query="INSERT INTO users (firstname, surname, username, password, address1, address2, address3, postcode, telephone, email) VALUES ('" . $firstname . "', '" . $surname . "', '" . $username . "', '" . $password . "', '" . $address1 . "', '" . $address2 . "', '" . $address3 . "', '" . $postcode . "', '" . $telephone . "', '" . $email . "')";
@@ -42,11 +51,12 @@ if ($_POST) {
 
 
 
-echo "
+echo"
+
 <main>
 <p>To create your account, please enter your details below, click on the Create New Account button, then log in to Sprong.</p>
 
-<form method=\"post\" action=\"createUser.php\">
+<form method=\"post\" action=\"NEWcreateUser.php\">
 
 <table>
 <tr><td><label for=\"firstname\">First name:</label><td><input type=\"text\" name=\"firstname\" id=\"firstname\" size=\"40\">
