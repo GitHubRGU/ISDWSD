@@ -27,12 +27,9 @@ if (isset($_SESSION['username']))
     include("footer.php");
 
 } else {
-    //  User is not logged in, so send them to index.php:
+    //  User is not logged in, so send them to the home page:
     header("location:../inc/home.php");
 }
-
-
-
 
 
 ?>
