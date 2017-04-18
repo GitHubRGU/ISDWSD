@@ -28,9 +28,8 @@ if (isset($_SESSION['username']))
 //  Run the SQL query on the database:
     $result = mysqli_query($link,$sql_query);
 
-    echo "TRY:" . mysqli_fetch_field('email');
 
-
+    
     ?>
 
 <main>
