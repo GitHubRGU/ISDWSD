@@ -12,7 +12,8 @@ include("connection.php");
 
 include("header.php");
 
-
+//  $_POST has been triggered, so the "Create New Account" button has been clicked -
+//  push all the data to the user table:
 if ($_POST) {
     $firstname = $_POST["firstname"];
     $surname = $_POST["surname"];
