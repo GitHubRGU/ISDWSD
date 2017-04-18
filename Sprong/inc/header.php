@@ -21,7 +21,7 @@ session_start();
                 //  User successfully logged in, so show all appropriate links:
                 echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/home.php''>Home Page</a></li>";
                 echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/contact.php'>Contact us</a></li>";
-                echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/manageUsers.php'>View/update Customer Details</a></li>";
+                echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/manageUsers.php'>View/update my details</a></li>";
                 echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/requestWork.php'>Request work</a></li>";
                 echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/viewJobStatus.php'>View / update work progress</a></li>";
                 echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/logout.php'>Logout</a></li>";
