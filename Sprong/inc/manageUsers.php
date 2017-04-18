@@ -38,6 +38,14 @@ echo "Answer = " . $row['uid'];
 //  Use query results to store the untouched detailsin the database:
     $initFirstname = $row['firstname'];
     $initSurname = $row['surname'];
+    $initUsername = $row['username'];
+    $initPassword = $row['password'];
+    $initAddress1 = $row['address1'];
+    $initAddress2 = $row['address2'];
+    $initAddress3 = $row['address3'];
+    $initPostcode = $row['postcode'];
+    $initTelephone = $row['telephone'];
+    $initEmail = $row['email'];
 
 
 //  $_POST has been triggered, so the "Update user info" has been clicked -
@@ -79,21 +87,21 @@ if ($_POST) {
 
 echo "
 <main>
-<p>To update your account information, please ammend your details below, then click the Save updated details button.</p>
+<p>To update your account information, please amend your details below, then click the Save updated details button.</p>
 
 <form method=\"post\" action=\"manageUsers.php\">
 
 <table>
 <tr><td><label for=\"firstname\">First name:</label><td><input type=\"text\" name=\"firstname\" value=\"$initFirstname\" id=\"firstname\" size=\"40\">
 <tr><td><label for=\"surname\">Surname:</label><td><input type=\"text\" name=\"surname\" id=\"surname\" value=\"$initSurname\" size=\"40\">
-<tr><td><label for=\"username\">Username:</label><td><input type=\"text\" name=\"username\" id=\"username\" size=\"40\">
-<tr><td><label for=\"password\">Password:</label><td><input type=\"text\" name=\"password\" id=\"password\" size=\"40\">
-<tr><td><label for=\"address1\">Address line 1:</label><td><input type=\"text\" name=\"address1\" id=\"address1\" size=\"40\">
-<tr><td><label for=\"address2\">Address line 2:</label><td><input type=\"text\" name=\"address2\" id=\"address2\" size=\"40\">
-<tr><td><label for=\"address3\">Address line 3:</label><td><input type=\"text\" name=\"address3\" id=\"address3\" size=\"40\">
-<tr><td><label for=\"postcode\">Postcode:</label><td><input type=\"text\" name=\"postcode\" id=\"postcode\" size=\"40\">
-<tr><td><label for=\"telephone\">Telephone:</label><td><input type=\"text\" name=\"telephone\" id=\"telephone\" size=\"40\">
-<tr><td><label for=\"email\">Email:</label><td><input type=\"text\" name=\"email\" id=\"email\" size=\"40\">
+<tr><td><label for=\"username\">Username:</label><td><input type=\"text\" name=\"username\" id=\"username\" value=\"$initUsername\" size=\"40\">
+<tr><td><label for=\"password\">Password:</label><td><input type=\"text\" name=\"password\" id=\"password\" value=\"$initPassword\" size=\"40\">
+<tr><td><label for=\"address1\">Address line 1:</label><td><input type=\"text\" name=\"address1\" id=\"address1\" value=\"$initAddress1\" size=\"40\">
+<tr><td><label for=\"address2\">Address line 2:</label><td><input type=\"text\" name=\"address2\" id=\"address2\" value=\"$initAddress2\" size=\"40\">
+<tr><td><label for=\"address3\">Address line 3:</label><td><input type=\"text\" name=\"address3\" id=\"address3\" value=\"$initAddress3\" size=\"40\">
+<tr><td><label for=\"postcode\">Postcode:</label><td><input type=\"text\" name=\"postcode\" id=\"postcode\" value=\"$initPostcode\" size=\"40\">
+<tr><td><label for=\"telephone\">Telephone:</label><td><input type=\"text\" name=\"telephone\" id=\"telephone\" value=\"$initTelephone\" size=\"40\">
+<tr><td><label for=\"email\">Email:</label><td><input type=\"text\" name=\"email\" id=\"email\" value=\"$initEmail\" size=\"40\">
 </table>
 
 <br>            
