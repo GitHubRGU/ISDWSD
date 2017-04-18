@@ -30,11 +30,6 @@ if (isset($_SESSION['username']))
 
     echo "TRY:" . mysqli_fetch_field('email');
 
-    while($row = mysqli_fetch_array($result)){
-        // print out fields from row of data
-        echo $row['email'];
-        echo "<br/>";
-    }
 
     ?>
 
