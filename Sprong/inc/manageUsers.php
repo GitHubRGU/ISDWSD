@@ -11,12 +11,6 @@
 include("connection.php");
 
 
-echo "
-<main>
-<p>manageUsers.php.</p>
-</main>
-";
-
 session_start();
 if (isset($_SESSION['username']))
 {
@@ -26,6 +20,7 @@ if (isset($_SESSION['username']))
     ?>
 
 <main>
+    <p>manageUsers.php.</p>
 </main>
 
 <?php
