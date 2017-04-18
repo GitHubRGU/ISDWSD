@@ -112,10 +112,9 @@ echo "
 </main>
 ";
 
-//  Let the user know their account has been created:
+//  Let the user know their account details have been updated:
 if ($_POST) {
     echo "<p><h4>Account details updated!</h4></p>";
-    echo "<p>Please return to the home page and log in.</p>";
 }
 
 
