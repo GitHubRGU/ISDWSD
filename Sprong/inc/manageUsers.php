@@ -99,7 +99,7 @@ echo "
 </table>
 
 <br>            
-<input type=\"submit\" name=\"submit\" value=\"Save updated details\"/><br>
+<input type=\"submit\" name=\"submit\" value=\"Save (will return you to the Home page)\"/><br>
 </form>
 
 
