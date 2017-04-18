@@ -26,6 +26,9 @@ if (isset($_SESSION['username']))
 <?php
     include("footer.php");
 
+} else {
+    //  User is not logged in, so send them to index.php:
+    header("location:./");
 }
 
 
