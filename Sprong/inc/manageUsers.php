@@ -58,7 +58,7 @@ if ($_POST) {
 
 //  THIS IS THE NEW SQL THAT UPDATES THE EXISTING ROW OF DATA:
 //  W3 School syntax = UPDATE table_name SET column1=value, column2=value2,...  WHERE some_column=some_value
-    $sql_query="UPDATE users SET firstname='" . $firstname . "', surname='" . $surname . "', username='" . $username . "', password='" . $password . ", address1='" . $address1 . "', address2='" . $address2 . "', address3='" . $address3 . "', postcode='" . $postcode . "', telephone='" . $telephone . ", email='" . $email . " WHERE uid='" . $uid . "'";
+    $sql_query="UPDATE users SET firstname='" . $firstname . "', surname='" . $surname . "', username='" . $username . "', password='" . $password . "', address1='" . $address1 . "', address2='" . $address2 . "', address3='" . $address3 . "', postcode='" . $postcode . "', telephone='" . $telephone . ", email='" . $email . "' WHERE uid='" . $uid . "'";
 
 //  DEBUGGING: Show me what the query string looks like:
     echo "<p>SQL query string: " . $sql_query . "</p>";
