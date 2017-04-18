@@ -28,7 +28,7 @@ if (isset($_SESSION['username']))
 //  Run the SQL query on the database:
     $result = mysqli_query($link,$sql_query);
 
-    echo mysqli_fetch_field('email');
+    echo "TRY:" . mysqli_fetch_field('email');
 
     while($row = mysqli_fetch_array($result)){
         // print out fields from row of data
