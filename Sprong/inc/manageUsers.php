@@ -32,8 +32,12 @@ $result = mysqli_query($link,$sql_query);
 $row = mysqli_fetch_assoc($result);
 $uid = $row['uid'];
 
+//   DEBUGGING
 echo "Answer = " . $row['uid'];
 
+//  Use query results to store the untouched detailsin the database:
+    $initFirstname = $row['firstname'];
+    $initSurname = $row['surname'];
 
 
 //  $_POST has been triggered, so the "Update user info" has been clicked -
@@ -80,8 +84,8 @@ echo "
 <form method=\"post\" action=\"manageUsers.php\">
 
 <table>
-<tr><td><label for=\"firstname\">First name:</label><td><input type=\"text\" name=\"firstname\" value=\"$uid\" id=\"firstname\" size=\"40\">
-<tr><td><label for=\"surname\">Surname:</label><td><input type=\"text\" name=\"surname\" id=\"surname\" size=\"40\">
+<tr><td><label for=\"firstname\">First name:</label><td><input type=\"text\" name=\"firstname\" value=\"$initFirstname\" id=\"firstname\" size=\"40\">
+<tr><td><label for=\"surname\">Surname:</label><td><input type=\"text\" name=\"surname\" id=\"surname\" value=\"$initSurname\" size=\"40\">
 <tr><td><label for=\"username\">Username:</label><td><input type=\"text\" name=\"username\" id=\"username\" size=\"40\">
 <tr><td><label for=\"password\">Password:</label><td><input type=\"text\" name=\"password\" id=\"password\" size=\"40\">
 <tr><td><label for=\"address1\">Address line 1:</label><td><input type=\"text\" name=\"address1\" id=\"address1\" size=\"40\">
