@@ -49,7 +49,6 @@ if ($_POST) {
     $postcode = $_POST["postcode"];
     $telephone = $_POST["telephone"];
     $email = $_POST["email"];
-    $uid = $_SESSION['uid'];
 
 //  Build SQL query string to insert the new user into the database:
 
