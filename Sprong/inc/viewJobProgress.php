@@ -13,7 +13,7 @@ include ("connection.php");
 include ("header.php");
 
 //   DEBUGGING
-echo "<p>params = " . $params . "</p>";
+echo "<p>jobid = " . $jobid . "</p>";
 
 
 $jobid = $params['jobid'];
