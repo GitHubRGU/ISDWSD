@@ -15,15 +15,16 @@ include("inc/connection.php");
 define('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
 
 $rules = array(
-    //  Main pages:
-    'viewJobStatus' => "/viewJobStatus",
-    'requestWork' => "/requestWork",
+    //  User not logged in:
     'createUser' => "/createUser",
     'login' => "/login",
-    'logout' => "/logout",
-    //  Admin pages:
+    //  User logged in:
     'manageUsers' => "/manageUsers",
-    //  Home page:
+    'requestWork' => "/requestWork",
+    'viewAllJobs' => "/viewAllJobs",
+    'logout' => "/logout",
+    //  Always present:
+    'contact' => "/contact",
     'home' => "/"
 );
 
