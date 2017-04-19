@@ -18,7 +18,7 @@ include ("header.php");
 
 
 
-  $jobid = $params['jobID'];
+  $jobnum = $params['jobID'];
 echo"<main>";
 
 
@@ -26,10 +26,10 @@ echo "<p>viewJobProgress.php</p>";
 
 
 //  SQL query string to retrieve all job titles the database:
-$sql_query="SELECT * FROM jobs WHERE jobnum = '2'";
+$sql_query="SELECT * FROM jobs WHERE jobnum = '" . $jobnum . "'";
 
 //   DEBUGGING:
-echo "$sql_query";
+//   echo "$sql_query";
 
 
 //  Run the SQL query on the database:
