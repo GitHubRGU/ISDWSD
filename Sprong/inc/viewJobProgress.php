@@ -16,7 +16,7 @@ include ("header.php");
 //   echo "<p>params = " . $params . "</p>";
 
 
-//$jobid = $params['jobID'];
+$jobid = $params['jobID'];
 echo"<main>";
 
 
