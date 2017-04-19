@@ -63,17 +63,17 @@ if ($_POST) {
     $postcode = $_POST["postcode"];
     $telephone = $_POST["telephone"];
     $email = $_POST["email"];
-    $usertype = $initUsertype;
+    $usertype = $initUsertype;  //  Don't change usertype, keep original value!
 
 //  Build SQL query string to insert the new user into the database:
 //  W3 School syntax = UPDATE table_name SET column1=value, column2=value2,...  WHERE some_column=some_value
     $sql_query="UPDATE users SET firstname='" . $firstname . "', surname='" . $surname . "', username='" . $email . "', password='" . $password . "', address1='" . $address1 . "', address2='" . $address2 . "', address3='" . $address3 . "', postcode='" . $postcode . "', telephone='" . $telephone . "', email='" . $email . "', usertype='" . $usertype . "' WHERE uid='" . $uid . "'";
 
 //   DEBUGGING: Show me what the query string looks like:
-   echo "<p>SQL query string: " . $sql_query . "</p>";
+//   echo "<p>SQL query string: " . $sql_query . "</p>";
 
 //  Run the SQL query on the database - DON'T SWITCH THIS ON UNTIL YOU'RE SURE IT'S CORRECT!!!:
-//    $result = mysqli_query($link,$sql_query);
+    $result = mysqli_query($link,$sql_query);
 
 //  Close the link to the mySQL database:
     mysqli_close($link);
@@ -110,7 +110,7 @@ echo "
 //  Account details updated, send user back to home page:
 if ($_POST) {
 //    echo "<p><h4>Account details updated - click View/Update my details to confirm!</h4></p>";
-//    header("location:../inc/home.php");
+    header("location:../inc/home.php");
 }
 
 
