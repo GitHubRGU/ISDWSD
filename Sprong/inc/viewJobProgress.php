@@ -20,7 +20,7 @@ include ("header.php");
 echo"<main>";
 
 
-echo "<p>viewJobProgress.php.</p>";
+echo "<p>viewJobProgress.php</p>";
 
 
 //  SQL query string to retrieve all job titles the database:
