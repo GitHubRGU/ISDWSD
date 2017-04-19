@@ -18,6 +18,7 @@ echo"
 <main>
 <h2>View Job Progress</h2>
 <p>Below is a list of all work</p>
+<p>DISTINCT</p>
 <ul>
 ";
 
