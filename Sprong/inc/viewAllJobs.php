@@ -1,3 +1,13 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../CSS/style.css" type="text/css" />
+<body>
+
+
+
+
+
 <?php
 
 include ("connection.php");
@@ -33,3 +43,8 @@ include ("footer.php");
 
 ?>
 
+
+
+
+</body>
+</html>
