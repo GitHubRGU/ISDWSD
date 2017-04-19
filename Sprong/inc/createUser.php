@@ -27,13 +27,13 @@ if ($_POST) {
     $email = $_POST["email"];
 
 //  Build SQL query string to insert the new user into the database:
-    $sql_query="INSERT INTO users (firstname, surname, username, password, address1, address2, address3, postcode, telephone, email) VALUES ('" . $firstname . "', '" . $surname . "', '" . $email . "', '" . $password . "', '" . $address1 . "', '" . $address2 . "', '" . $address3 . "', '" . $postcode . "', '" . $telephone . "', '" . $email . "')";
+    $sql_query="INSERT INTO users (firstname, surname, username, password, address1, address2, address3, postcode, telephone, email, usertype) VALUES ('" . $firstname . "', '" . $surname . "', '" . $email . "', '" . $password . "', '" . $address1 . "', '" . $address2 . "', '" . $address3 . "', '" . $postcode . "', '" . $telephone . "', '" . $email . "', 'customer')";
 
 //   DEBUGGING: Show me what the query string looks like:
-//    echo "<p>SQL query string: " . $sql_query . "</p>";
+    echo "<p>SQL query string: " . $sql_query . "</p>";
 
 //  Run the SQL query on the database:
-    $result = mysqli_query($link,$sql_query);
+//    $result = mysqli_query($link,$sql_query);
 
 //  Close the link to the mySQL database:
     mysqli_close($link);
