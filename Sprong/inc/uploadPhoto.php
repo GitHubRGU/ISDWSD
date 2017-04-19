@@ -8,6 +8,19 @@
 
 
 <?php
+
+include("../inc/header.php");
+
+echo "
+<main>
+
+
+<p>Photo uploader page.</p>
+
+
+</main>
+";
+
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
@@ -50,6 +63,11 @@ if ($uploadOk == 0) {
         echo "Sorry, there was an error uploading your file.";
     }
 }
+
+
+
+include("../inc/footer.php");
+
 ?>
 
 
