@@ -22,7 +22,7 @@ $rules = array(
     'manageUsers' => "/manageUsers",
     'requestWork' => "/requestWork",
     'viewAllJobs' => "/viewAllJobs",
-    'viewJobProgress' => "/viewJobProgress/(?'jobID'[\w\-]+)",
+    'viewJobProgress' => "/viewAllJobs/(?'jobID'[\w\-]+)",
     'logout' => "/logout",
     //  Always present:
     'contact' => "/contact",
