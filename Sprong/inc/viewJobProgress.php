@@ -16,7 +16,7 @@ include ("header.php");
 echo "<p>params = " . $params . "</p>";
 
 
-$jobid = $params['jobid'];
+$jobid = $params['jobID'];
 echo"<main>";
 
 //  SQL query string to retrieve all job titles the database:
