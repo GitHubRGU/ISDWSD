@@ -22,7 +22,7 @@ while($row = $result->fetch_array())
     $jid = $row['jid'];
     $jobtitle = $row['jobtitle'];
     $jobowner = $row['jobowner'];
-    echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/viewJobStatus.php{$jid}'>{$jobtitle}</a> for {$jobowner}</li>";
+    echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/viewAllJobs.php{$jid}'>{$jobtitle}</a> for {$jobowner}</li>";
 }
 
 echo "

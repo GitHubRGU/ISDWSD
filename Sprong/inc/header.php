@@ -23,7 +23,7 @@ session_start();
                 echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/contact.php'>Contact us</a></li>";
                 echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/manageUsers.php'>View/update my details</a></li>";
                 echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/requestWork.php'>Request work</a></li>";
-                echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/viewJobStatus.php'>View / update work progress</a></li>";
+                echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/viewAllJobs.php'>View / update work progress</a></li>";
                 echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/logout.php'>Logout</a></li>";
             } else {
                 //  User is not logged in, so display basic links:
