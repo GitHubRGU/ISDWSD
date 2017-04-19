@@ -16,9 +16,9 @@ include ("header.php");
 echo"
 
 <main>
-<h2>View Job Progress</h2>
+<h2>View/update Jobs</h2>
 <p>Below is a list of all work, current and historical, that has been undertaken by our team of luthiers here at Sprong.</p>
-<p>Please click on any of the job title links to see the full story.</p>
+<p>Please click on any of the job title links to see the full story:</p>
 <ul>
 ";
 
