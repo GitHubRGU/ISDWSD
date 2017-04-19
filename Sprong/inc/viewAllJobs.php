@@ -38,7 +38,7 @@ while($row = $result->fetch_array())
     //  Temporarily replaced correct code:
     //   echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/viewJobProgress.php/{$jobnum}'>{$jobtitle}</a> for customer #{$jobowner}</li>";
     //  with:
-    echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/viewJobProgress.php/'>{$jobtitle}</a> for customer #{$jobowner}</li>";
+    echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/viewJobProgress.php'>{$jobtitle}</a> for customer #{$jobowner}</li>";
 }
 
 echo "
