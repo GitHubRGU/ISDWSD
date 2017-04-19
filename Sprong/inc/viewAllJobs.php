@@ -18,12 +18,12 @@ echo"
 <main>
 <h2>View Job Progress</h2>
 <p>Below is a list of all work</p>
-<p>DISTINCT</p>
+<p>DISTINCTROW</p>
 <ul>
 ";
 
 //  SQL query string to retrieve all job titles the database:
-$sql_query="SELECT DISTINCT jobnum FROM jobs";
+$sql_query="SELECT DISTINCTROW jobnum, jobtitle, jobowner FROM jobs";
 
 //  Run the SQL query on the database:
 $result = mysqli_query($link,$sql_query);
