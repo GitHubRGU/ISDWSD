@@ -18,7 +18,7 @@ include ("header.php");
 //   echo "<p>params = " . $params . "</p>";
 
 $params = $_SESSION["params"];
-echo "<p>$params</p>";
+echo "<p>var_dump($params);</p>";
 
 
   $jobid = $params['jobID'];
