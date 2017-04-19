@@ -31,6 +31,10 @@ echo "<p>viewJobProgress.php</p>";
 //  SQL query string to retrieve all job titles the database:
 $sql_query="SELECT * FROM jobs WHERE jobnum = '" . $params . "'";
 
+//   DEBUGGING:
+echo "$sql_query";
+
+
 //  Run the SQL query on the database:
 $result = mysqli_query($link,$sql_query);
 
