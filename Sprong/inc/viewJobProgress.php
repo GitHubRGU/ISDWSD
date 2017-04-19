@@ -16,7 +16,7 @@ include ("header.php");
 //   echo "<p>params = " . $params . "</p>";
 
 
-$jobid = $params['jobID'];
+//  $jobid = $params['jobID'];
 echo"<main>";
 
 
@@ -24,7 +24,7 @@ echo "<p>viewJobProgress.php</p>";
 
 
 //  SQL query string to retrieve all job titles the database:
-$sql_query="SELECT * FROM jobs WHERE jobid = '2'";
+$sql_query="SELECT * FROM jobs WHERE jobnum = '1'";
 
 //  Run the SQL query on the database:
 $result = mysqli_query($link,$sql_query);
