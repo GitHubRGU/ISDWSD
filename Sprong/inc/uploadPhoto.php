@@ -1,3 +1,12 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../CSS/style.css" type="text/css" />
+<body>
+
+
+
+
 <?php
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -42,5 +51,11 @@ if ($uploadOk == 0) {
     }
 }
 ?>
+
+
+
+
+</body>
+</html>
 
 
