@@ -29,10 +29,10 @@ $result = mysqli_query($link,$sql_query);
 
 while($row = $result->fetch_array())
 {
-    $jid = $row['jid'];
+    $jobnum = $row['jobnum'];
     $jobtitle = $row['jobtitle'];
     $jobowner = $row['jobowner'];
-    echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/viewJobProgress.php/{$jid}'>{$jobtitle}</a> for customer #{$jobowner}</li>";
+    echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/viewJobProgress.php/{$jobnum}'>{$jobtitle}</a> for customer #{$jobowner}</li>";
 }
 
 echo "
