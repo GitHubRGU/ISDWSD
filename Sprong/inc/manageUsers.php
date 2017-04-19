@@ -65,7 +65,7 @@ if ($_POST) {
 
 //  Build SQL query string to insert the new user into the database:
 //  W3 School syntax = UPDATE table_name SET column1=value, column2=value2,...  WHERE some_column=some_value
-    $sql_query="UPDATE users SET firstname='" . $firstname . "', surname='" . $surname . "', username='" . $username . "', password='" . $password . "', address1='" . $address1 . "', address2='" . $address2 . "', address3='" . $address3 . "', postcode='" . $postcode . "', telephone='" . $telephone . "', email='" . $email . "' WHERE uid='" . $uid . "'";
+    $sql_query="UPDATE users SET firstname='" . $firstname . "', surname='" . $surname . "', username='" . $email . "', password='" . $password . "', address1='" . $address1 . "', address2='" . $address2 . "', address3='" . $address3 . "', postcode='" . $postcode . "', telephone='" . $telephone . "', email='" . $email . "' WHERE uid='" . $uid . "'";
 
 //   DEBUGGING: Show me what the query string looks like:
 //   echo "<p>SQL query string: " . $sql_query . "</p>";
@@ -88,14 +88,13 @@ echo "
 <table>
 <tr><td><label for=\"firstname\">First name:</label><td><input type=\"text\" name=\"firstname\" value=\"$initFirstname\" id=\"firstname\" size=\"40\">
 <tr><td><label for=\"surname\">Surname:</label><td><input type=\"text\" name=\"surname\" id=\"surname\" value=\"$initSurname\" size=\"40\">
-<tr><td><label for=\"username\">Username:</label><td><input type=\"text\" name=\"username\" id=\"username\" value=\"$initUsername\" size=\"40\">
 <tr><td><label for=\"password\">Password:</label><td><input type=\"text\" name=\"password\" id=\"password\" value=\"$initPassword\" size=\"40\">
 <tr><td><label for=\"address1\">Address line 1:</label><td><input type=\"text\" name=\"address1\" id=\"address1\" value=\"$initAddress1\" size=\"40\">
 <tr><td><label for=\"address2\">Address line 2:</label><td><input type=\"text\" name=\"address2\" id=\"address2\" value=\"$initAddress2\" size=\"40\">
 <tr><td><label for=\"address3\">Address line 3:</label><td><input type=\"text\" name=\"address3\" id=\"address3\" value=\"$initAddress3\" size=\"40\">
 <tr><td><label for=\"postcode\">Postcode:</label><td><input type=\"text\" name=\"postcode\" id=\"postcode\" value=\"$initPostcode\" size=\"40\">
 <tr><td><label for=\"telephone\">Telephone:</label><td><input type=\"text\" name=\"telephone\" id=\"telephone\" value=\"$initTelephone\" size=\"40\">
-<tr><td><label for=\"email\">Email:</label><td><input type=\"text\" name=\"email\" id=\"email\" value=\"$initEmail\" size=\"40\">
+<tr><td><label for=\"email\">Email (User name):</label><td><input type=\"text\" name=\"email\" id=\"email\" value=\"$initEmail\" size=\"40\">
 </table>
 
 <br>            
