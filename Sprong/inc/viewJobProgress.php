@@ -8,7 +8,6 @@
 
 
 <?php
-session_start();
 
 
 include ("connection.php");
@@ -17,8 +16,6 @@ include ("header.php");
 //   DEBUGGING
 //   echo "<p>params = " . $params . "</p>";
 
-$params = $_SESSION["params"];
-echo "<p>var_dump($params);</p>";
 
 
   $jobid = $params['jobID'];
@@ -29,7 +26,7 @@ echo "<p>viewJobProgress.php</p>";
 
 
 //  SQL query string to retrieve all job titles the database:
-$sql_query="SELECT * FROM jobs WHERE jobnum = '" . $params . "'";
+$sql_query="SELECT * FROM jobs WHERE jobnum = '2'";
 
 //   DEBUGGING:
 echo "$sql_query";
