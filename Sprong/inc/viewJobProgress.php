@@ -19,6 +19,14 @@ include ("header.php");
 //$jobid = $params['jobID'];
 echo"<main>";
 
+
+echo "
+<main>
+<p>viewJobProgress.php.</p>
+</main>
+";
+
+
 //  SQL query string to retrieve all job titles the database:
 $sql_query="SELECT * FROM jobs WHERE jobid = '2'";
 
