@@ -27,10 +27,10 @@ session_start();
                 echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/logout.php'>Logout</a></li>";
             } else {
                 //  User is not logged in, so display basic links:
-                echo "<li><a href='home.php''>Home Page</a></li>";
-                echo "<li><a href='contact.php'>Contact us</a></li>";
-                echo "<li><a href='createUser.php'>Create new account</a></li>";
-                echo "<li><a href='login.php'>Login</a></li>";
+                echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/home.php''>Home Page</a></li>";
+                echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/contact.php'>Contact us</a></li>";
+                echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/createUser.php'>Create new account</a></li>";
+                echo "<li><a href='http://sprong.azurewebsites.net/Sprong/inc/login.php'>Login</a></li>";
             }
             ?>
         </ul>
