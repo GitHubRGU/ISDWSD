@@ -22,7 +22,7 @@ echo"
 ";
 
 //  SQL query string to retrieve all job titles the database:
-$sql_query="SELECT jobnum, jobtitle, jobtext FROM jobs";
+$sql_query="SELECT DISTINCT jobnum, jobtitle, jobtext FROM jobs";
 
 //  Run the SQL query on the database:
 $result = mysqli_query($link,$sql_query);
