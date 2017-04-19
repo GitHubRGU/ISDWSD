@@ -8,12 +8,17 @@
 
 
 <?php
+session_start();
+
 
 include ("connection.php");
 include ("header.php");
 
 //   DEBUGGING
 //   echo "<p>params = " . $params . "</p>";
+
+$params = $_SESSION["params"];
+echo "<p>$params</p>";
 
 
   $jobid = $params['jobID'];

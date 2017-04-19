@@ -58,7 +58,8 @@ echo "
 </main>
 ";
 
-
+//  DOES THIS PASS $params to the viewJobProgress.php page?
+$_SESSION["params"] = $params;
 
 include("inc/footer.php");
 
