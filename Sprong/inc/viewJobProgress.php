@@ -12,6 +12,10 @@
 include ("connection.php");
 include ("header.php");
 
+//   DEBUGGING
+echo "<p>params = " . $params . "</p>";
+
+
 $jobid = $params['jobid'];
 echo"<main>";
 
