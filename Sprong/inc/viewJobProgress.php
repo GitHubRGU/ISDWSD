@@ -1,12 +1,3 @@
-<!doctype html>
-<html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="../CSS/style.css" type="text/css" />
-<body>
-
-
-
-
 <?php
 
 
@@ -63,11 +54,3 @@ echo "</main>
 
 include ("footer.php");
 ?>
-
-
-
-
-
-
-</body>
-</html>
