@@ -2,8 +2,9 @@
 <html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="http://sprong.azurewebsites.net/Sprong/CSS/style.css" type="text/css" />
-<base href="/" />
-<?php include("../inc/background.html"); ?>
+
+<?php include $_SERVER.'/inc/background.html'; ?>
+
 <body>
 
 
