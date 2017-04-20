@@ -28,6 +28,7 @@ echo"<main>";
 
 echo "<p>REAL viewJobProgress.php</p>";
 
+$url =  "//{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
 $lastWord = substr($url, strrpos($url, '/') + 1);
 echo "<p>" . $lastWord . "</p>";
 
