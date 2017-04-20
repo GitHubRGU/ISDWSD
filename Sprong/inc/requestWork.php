@@ -14,9 +14,10 @@ if (isset($_SESSION['username'])) {
         include("header.php");
         ?>
         <main>
-            <form action="requestWork.php" method="post">
-                <input type="text" name="requestName" placeholder="Short description of work">
-                <input type="submit">
+            <form method="post" action="requestWork.php.php"><br>
+                <label>Job title</label><br>
+                <input type="text" name="password" placeholder="Enter a short description of work"/><br><br>
+                <input type="submit" name="submit" value="Submit request"/>
             </form>
         </main>
 
