@@ -20,6 +20,18 @@ $lastWord = substr($url, strrpos($url, '/') + 1);
 //   DEBUGGING
 //   echo "<p>" . $lastWord . "</p>";
 
+
+//  SQL query string to retrieve the jobtitle from the database:
+$sql_query="SELECT DISTINCT jobtitle FROM jobs WHERE jobnum = '" . $lastWord . "'";
+
+//  Run the SQL query on the database:
+$result = mysqli_query($link,$sql_query);
+$row = mysqli_fetch_assoc($result);
+$jobtitle = $row['jobtitle'];
+
+echo "<p><h5>$jobtitle</h5></p>";
+
+
 //  SQL query string to retrieve all data for the appropriate jobnum from the database:
 $sql_query="SELECT * FROM jobs WHERE jobnum = '" . $lastWord . "'";
 
