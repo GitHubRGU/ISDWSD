@@ -24,7 +24,7 @@ h4{
 
 /*  HEADER  */
 header{
-    background-color: #1d2120;
+    background-color: #000000;
     color: #ffffff;
     padding-top: 14px;
 }
@@ -37,7 +37,7 @@ header>h1{
 
 /*  MAIN  */
 main{
-    background-color: #ba9077;
+    background-color: #000000;
     color: #ffffff;
     min-height: 300px;
     padding: 15px;
@@ -46,7 +46,7 @@ main{
 
 /*  FOOTER  */
 footer{
-    background-color: #1d2120;
+    background-color: #000000;
     color: #ffffff;
     padding: 5px 0 5px 10px;
 }
