@@ -43,6 +43,21 @@ main{
     padding: 15px;
 }
 
+/* unvisited link */
+main a:link {
+    color: #ffffff;
+}
+
+/* visited link */
+main a:visited {
+    color: #4bb4ff;
+}
+
+/* mouse over link */
+main a:hover {
+    color: hotpink;
+}
+
 /*  FOOTER  */
 footer{
     background-color: #222222;
