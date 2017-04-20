@@ -16,7 +16,6 @@ if (isset($_SESSION['username'])) {
         <main>
             <form action="requestWork.php" method="post">
                 <input type="text" name="requestName" placeholder="Short description of work">
-                <textarea name="requestText"></textarea>
                 <input type="submit">
             </form>
         </main>
