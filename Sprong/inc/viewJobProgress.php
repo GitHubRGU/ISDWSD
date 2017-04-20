@@ -35,7 +35,7 @@ while($row = $result->fetch_array())
     $jobtext = $row['jobtext'];
     $jobstatus = $row['jobstatus'];
 
-    echo "<p>{$jobtext}" . "{$jobstatus}" . "{$jobstatus}</p>";
+    echo "<p>{$jobtext}" . "  Status: " . "{$jobstatus}</p>";
 }
 
 echo "</main>
