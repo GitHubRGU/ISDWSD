@@ -22,7 +22,7 @@ if (isset($_SESSION['username'])) {
         </main>
 
         <?php
-        include("footer.php");
+        //  include("footer.php");
     } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
         include('connection.php');
         $jobNum = str_replace(' ', '-', $_POST['jobtitle']);
