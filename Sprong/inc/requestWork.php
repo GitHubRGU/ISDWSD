@@ -7,7 +7,21 @@
 
 <?php
 
-//  EQUVALENT TO CREATE_ARTICLE.PHP
+//  Confirm that user is logged in (session exists):
+session_start();
+if (isset($_SESSION['username']))
+{
+    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+        include ("header.php");
+        ?>
+
+    }
+
+
+
+
+
+}
 
 include("header.php");
 
