@@ -13,21 +13,10 @@
 include ("connection.php");
 include ("header.php");
 
-//   DEBUGGING
-//   echo "<p>params = " . $params . "</p>";
-
-
-
-$jobnum = $params['jobID'];
-
-
-
-
 echo"<main>";
 
-
-echo "<p>REAL viewJobProgress.php</p>";
-
+//  URL will have the jobnum value appended after the final "/",
+//  read this into variable "$lastWord" and use for the query:
 $url =  "//{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
 $lastWord = substr($url, strrpos($url, '/') + 1);
 echo "<p>" . $lastWord . "</p>";
@@ -43,6 +32,7 @@ $sql_query="SELECT * FROM jobs WHERE jobnum = '" . $lastWord . "'";
 //  Run the SQL query on the database:
 $result = mysqli_query($link,$sql_query);
 
+//  Work through the array returned and display the job history:
 while($row = $result->fetch_array())
 {
     $jobid = $row['jobid'];
@@ -50,12 +40,7 @@ while($row = $result->fetch_array())
     $jobowner = $row['jobowner'];
     $jobtext = $row['jobtext'];
 
-    echo "
-<job>
-<h2>{$jobname}</h2>
-<h3>for {$jobowner}</h3>
-{$jobtext}
-</job>";
+    echo "<p>{$jobname} . {$jobowner} . {$jobtext}</p>";
 }
 
 echo "</main>
