@@ -20,14 +20,16 @@ include ("header.php");
 
   $jobnum = $params['jobID'];
 
-$lastWord = substr($url, strrpos($url, '/') + 1);
-echo "<p>" . $lastWord . "</p>";
+
 
 
 echo"<main>";
 
 
 echo "<p>viewJobProgress.php</p>";
+
+$lastWord = substr($url, strrpos($url, '/') + 1);
+echo "<p>" . $lastWord . "</p>";
 
 
 //  SQL query string to retrieve all job titles the database:
