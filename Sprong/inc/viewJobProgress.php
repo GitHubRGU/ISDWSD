@@ -1,6 +1,6 @@
 <?php
 
-echo"<a href="http://sprong.azurewebsites.net/Sprong/inc/viewJobProgress.php"></a>"
+//  echo"<a href="http://sprong.azurewebsites.net/Sprong/inc/viewJobProgress.php"></a>"
 
 include ("connection.php");
 include ("header.php");
