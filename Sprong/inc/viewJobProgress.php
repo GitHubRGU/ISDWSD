@@ -36,7 +36,7 @@ while($row = $result->fetch_array())
     $jobstatus = $row['jobstatus'];
 
     echo "<p>
-{$jobtext}" . "  (Status: " . "{$jobstatus} . )
+{$jobtext}" . "  (Status: " . "{$jobstatus})
 </p>";
 }
 
