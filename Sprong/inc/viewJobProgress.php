@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="http://sprong.azurewebsites.net/Sprong/CSS/style.css" type="text/css" />
 <?php
 $root = realpath($_SERVER["DOCUMENT_ROOT"]);
+echo"<p>Root: " . $root . "</p>";
 include "$root/inc/background.html";
 ?>
 <body>
