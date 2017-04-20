@@ -26,7 +26,7 @@ include ("header.php");
 echo"<main>";
 
 
-echo "<p>viewJobProgress.php</p>";
+echo "<p>REAL viewJobProgress.php</p>";
 
 $lastWord = substr($url, strrpos($url, '/') + 1);
 echo "<p>" . $lastWord . "</p>";
