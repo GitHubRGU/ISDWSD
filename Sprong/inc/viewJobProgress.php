@@ -40,7 +40,7 @@ while($row = $result->fetch_array())
     $jobowner = $row['jobowner'];
     $jobtext = $row['jobtext'];
 
-    echo "<p>{$jobname} . {$jobowner} . {$jobtext}</p>";
+    echo "<p>{$jobname}" . "{$jobowner}" . "{$jobtext}</p>";
 }
 
 echo "</main>
