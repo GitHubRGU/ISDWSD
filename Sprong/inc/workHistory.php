@@ -2,6 +2,7 @@
 <html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../CSS/style.css" type="text/css" />
+<?php include("../inc/background.html"); ?>
 <body>
 
 //  EQUVALENT TO BLOG_ARTICLE.PHP
