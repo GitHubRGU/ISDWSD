@@ -2,10 +2,17 @@
 <html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../CSS/style.css" type="text/css" />
-<?php include("../inc/background.html"); ?>
+<style>
+    html {
+        background: url(../images/lpmbackground.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+</style>
 <body>
 
-//  EQUVALENT TO BLOG_ARTICLE.PHP
 
 <?php
 
