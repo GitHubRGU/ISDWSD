@@ -1,9 +1,16 @@
 <!doctype html>
 <html>
+<style>
+    html {
+        background: url(../images/lpmbackground.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+</style>
 <meta charset="utf-8">
 <link rel="stylesheet" href="http://sprong.azurewebsites.net/Sprong/CSS/style.css" type="text/css" />
-
-<?php include("/inc/setBackground.php"); ?>
 
 <body>
 
