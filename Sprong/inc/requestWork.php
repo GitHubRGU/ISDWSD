@@ -1,7 +1,5 @@
 <!doctype html>
 <html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="../CSS/style.css" type="text/css" />
 <style>
     html {
         background: url(../images/lpmbackground.jpg) no-repeat center center fixed;
@@ -11,6 +9,9 @@
         background-size: cover;
     }
 </style>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../CSS/style.css" type="text/css" />
+
 <body>
 
 
