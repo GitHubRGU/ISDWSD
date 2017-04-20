@@ -19,6 +19,11 @@ include ("header.php");
 
 
   $jobnum = $params['jobID'];
+
+$lastWord = substr($url, strrpos($url, '/') + 1);
+echo "<p>" . $lastWord . "</p>";
+
+
 echo"<main>";
 
 
