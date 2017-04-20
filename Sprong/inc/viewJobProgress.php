@@ -1,27 +1,29 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../CSS/style.css" type="text/css" />
+<body>
+
+
+
+
 <?php
 
-//  echo"<a href="http://sprong.azurewebsites.net/Sprong/inc/viewJobProgress.php"></a>"
 
 include ("connection.php");
-
+include ("header.php");
 
 //   DEBUGGING
 //   echo "<p>params = " . $params . "</p>";
 
 
 
-  $jobnum = $params['jobID'];
+$jobnum = $params['jobID'];
 
 
 
 
-echo"<!doctype html>
-<html>
-<meta charset=\"utf-8\">
-<link rel=\"stylesheet\" href=\"../CSS/style.css\" type=\"text/css\" />
-<body>";
-
-include ("header.php");
+echo"<main>";
 
 
 echo "<p>REAL viewJobProgress.php</p>";
@@ -48,7 +50,7 @@ while($row = $result->fetch_array())
     $jobowner = $row['jobowner'];
     $jobtext = $row['jobtext'];
 
-echo "
+    echo "
 <job>
 <h2>{$jobname}</h2>
 <h3>for {$jobowner}</h3>
@@ -56,11 +58,16 @@ echo "
 </job>";
 }
 
-include ("footer.php");
-
-echo "</main></body>
-</html>
+echo "</main>
 ";
 
-
+include ("footer.php");
 ?>
+
+
+
+
+
+
+</body>
+</html>
