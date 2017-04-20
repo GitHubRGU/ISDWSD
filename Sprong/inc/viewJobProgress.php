@@ -33,13 +33,6 @@ $jobtitle = $row['jobtitle'];
 echo "<p><h2>History for work order: " . "$jobtitle</h2></p>";
 
 
-//  SQL query string to retrieve the uid and usertype from the database:
-$sql_query="SELECT uid, usertype FROM users";
-
-//  Run the SQL query on the database:
-$usertypeArray = mysqli_query($link,$sql_query);
-
-
 //  SQL query string to retrieve ALL data for the appropriate jobnum from the database:
 $sql_query="SELECT * FROM jobs WHERE jobnum = '" . $lastWord . "'";
 
@@ -54,12 +47,7 @@ while($row = $result->fetch_array())
 {
     $jobtext = $row['jobtext'];
     $jobstatus = $row['jobstatus'];
-    $uid = $row['uid'];
-    array_search($uid,$messageFrom);
-
-    echo "<p>
-{$messageFrom}" . "{$jobtext}" . "  (Status: " . "{$jobstatus})
-</p>";
+    echo "<p>{$jobtext}" . "  (Status: " . "{$jobstatus})</p>";
 }
 
 echo "</main>
