@@ -2,7 +2,7 @@
 <html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="http://sprong.azurewebsites.net/Sprong/CSS/style.css" type="text/css" />
-<?php include("http://sprong.azurewebsites.net/Sprong/inc/background.html"); ?>
+<?php include(require_once realpath(dirname(__FILE__).'/inc/background.html')); ?>
 <body>
 
 
