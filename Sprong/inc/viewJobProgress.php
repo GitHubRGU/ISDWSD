@@ -2,11 +2,7 @@
 <html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="http://sprong.azurewebsites.net/Sprong/CSS/style.css" type="text/css" />
-<?php
-$root = realpath($_SERVER["DOCUMENT_ROOT"]);
-
-include "$root/inc/background.html";
-?>
+<?php include("../inc/background.html"); ?>
 <body>
 
 
@@ -35,7 +31,6 @@ $row = mysqli_fetch_assoc($result);
 $jobtitle = $row['jobtitle'];
 
 //  Echo out $jobtitle, to use as title text for the history list:
-echo"<p>Root: " . $root . "</p>";
 echo "<p><h2>History for work order: " . "$jobtitle</h2></p>";
 
 
