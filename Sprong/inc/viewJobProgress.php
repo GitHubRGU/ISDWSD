@@ -34,7 +34,7 @@ echo "<p>" . $lastWord . "</p>";
 
 
 //  SQL query string to retrieve all job titles the database:
-$sql_query="SELECT * FROM jobs WHERE jobnum = '" . $jobnum . "'";
+$sql_query="SELECT * FROM jobs WHERE jobnum = '" . $lastWord . "'";
 
 //   DEBUGGING:
 //   echo "$sql_query";
