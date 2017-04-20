@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="../CSS/style.css" type="text/css" />
 <style>
     html {
-        background: url(../images/background.jpg) no-repeat center center fixed;
+        background: url(../images/lpmbackground.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
