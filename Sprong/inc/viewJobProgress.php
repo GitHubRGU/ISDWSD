@@ -5,10 +5,7 @@
 <body>
 
 
-
-
 <?php
-
 
 include ("connection.php");
 include ("header.php");
@@ -19,15 +16,15 @@ echo"<main>";
 //  read this into variable "$lastWord" and use for the query:
 $url =  "//{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
 $lastWord = substr($url, strrpos($url, '/') + 1);
-echo "<p>" . $lastWord . "</p>";
 
+//   DEBUGGING
+//   echo "<p>" . $lastWord . "</p>";
 
-//  SQL query string to retrieve all job titles the database:
+//  SQL query string to retrieve all data for the appropriate jobnum from the database:
 $sql_query="SELECT * FROM jobs WHERE jobnum = '" . $lastWord . "'";
 
 //   DEBUGGING:
 //   echo "$sql_query";
-
 
 //  Run the SQL query on the database:
 $result = mysqli_query($link,$sql_query);
@@ -35,12 +32,10 @@ $result = mysqli_query($link,$sql_query);
 //  Work through the array returned and display the job history:
 while($row = $result->fetch_array())
 {
-    $jobid = $row['jobid'];
-    $jobname = $row['jobname'];
-    $jobowner = $row['jobowner'];
     $jobtext = $row['jobtext'];
+    $jobstatus = $row['jobstatus'];
 
-    echo "<p>{$jobname}" . "{$jobowner}" . "{$jobtext}</p>";
+    echo "<p>{$jobtext}" . "{$jobstatus}" . "{$jobstatus}</p>";
 }
 
 echo "</main>
