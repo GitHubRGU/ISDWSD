@@ -3,7 +3,7 @@
 //  echo"<a href="http://sprong.azurewebsites.net/Sprong/inc/viewJobProgress.php"></a>"
 
 include ("connection.php");
-include ("header.php");
+
 
 //   DEBUGGING
 //   echo "<p>params = " . $params . "</p>";
@@ -15,7 +15,13 @@ include ("header.php");
 
 
 
-echo"<main>";
+echo"<!doctype html>
+<html>
+<meta charset=\"utf-8\">
+<link rel=\"stylesheet\" href=\"../CSS/style.css\" type=\"text/css\" />
+<body>";
+
+include ("header.php");
 
 
 echo "<p>REAL viewJobProgress.php</p>";
@@ -50,8 +56,11 @@ echo "
 </job>";
 }
 
-echo "</main>
+include ("footer.php");
+
+echo "</main></body>
+</html>
 ";
 
-include ("footer.php");
+
 ?>
