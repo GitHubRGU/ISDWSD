@@ -16,7 +16,6 @@ h1, h2, p{
 
 h1, h2{
     font-family: 'Mukta Vaani', sans-serif;
-    text-shadow: 4px 4px 4px #5ad6ff;
 }
 
 h4{
@@ -32,7 +31,7 @@ header{
 
 header>h1{
     padding-left: 10px;
-    text-shadow: 1px 1px 1px #bcd5d1;
+    text-shadow: 2px 2px 2px #5ad6ff;
 }
 
 
