@@ -30,16 +30,18 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
     echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
     $uploadOk = 0;
 }
+
+
+//   DEBUGGING:
+echo "<p>Target file: " . $target_file . "</p>";
+echo "<p>Target dir: " . $target_dir . "</p>";
+echo "<p>Upload OK; " . $uploadOk . "</p>";
+
+
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
     echo "Sorry, your file was not uploaded.";
 // if everything is ok, try to upload file
-
-    //   DEBUGGING:
-    echo "<p>Target file: " . $target_file . "</p>";
-    echo "<p>Target dir: " . $target_dir . "</p>";
-    echo "<p>Upload OK; " . $uploadOk . "</p>";
-
 
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
