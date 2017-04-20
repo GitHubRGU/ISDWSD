@@ -45,12 +45,12 @@ main{
 
 /* unvisited link */
 main a:link {
-    color: #ffffff;
+    color: #5ad6ff;
 }
 
 /* visited link */
 main a:visited {
-    color: #4bb4ff;
+    color: #3183f5;
 }
 
 /* mouse over link */
