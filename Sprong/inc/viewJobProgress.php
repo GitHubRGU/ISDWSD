@@ -33,6 +33,8 @@ $row = mysqli_fetch_assoc($result);
 $jobtitle = $row['jobtitle'];
 
 //  Echo out $jobtitle, to use as title text for the history list:
+echo "<p>Request: " . $_SERVER['REQUEST_URI'] . "</p>";
+
 echo "<p><h2>History for work order: " . "$jobtitle</h2></p>";
 
 
