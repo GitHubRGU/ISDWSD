@@ -12,9 +12,13 @@ include("../inc/header.php");
 echo "
 <main>
 
-<div id=\"bg\">
-  <img src=\"../Images/firestrat.jpg\" alt=\"\">
-</div>
+html { 
+  background: url(../Images/firestrat.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 <p>Welcome to Sprong, the home of quality guitar maintenance and repair.</p>
 <p>Your gateway to a perfectly set up instrument!</p>
