@@ -29,7 +29,7 @@ $result = mysqli_query($link,$sql_query);
 $row = mysqli_fetch_assoc($result);
 $jobtitle = $row['jobtitle'];
 
-echo "<p><h2>$jobtitle</h2></p>";
+echo "<p><h2>History for work order: " . "$jobtitle</h2></p>";
 
 
 //  SQL query string to retrieve all data for the appropriate jobnum from the database:
