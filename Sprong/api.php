@@ -33,8 +33,11 @@ for ($i=0;$i<count($columns);$i++) {
 }
 
 //  Generate the SQL query, based on HTTP method ($sql):
-$sql = "select * from `$table`".($key?" WHERE uid=$key":'');
-
+if ($table == 'users') {
+    $sql = "select email from `$table`" . ($key ? " WHERE uid=$key" : '');
+} elseif ($table == 'jobs') {
+    $sql = "select jobtext from `$table`" . ($key ? " WHERE uid=$key" : '');
+}
 
 //  Execute the SQL query ($result):
 $result = mysqli_query($link,$sql);
@@ -46,7 +49,7 @@ if (!$result) {
     die(mysqli_error($link));
 }
 
-//  Create and display a JSON encoded table of the query results / inserted uid / number of affected rows:
+//  Create and display a JSON encoded table of the query results:
     if (!$key) echo '[';
     for ($i=0;$i<mysqli_num_rows($result);$i++) {
         echo ($i>0?',':'').json_encode(mysqli_fetch_object($result));
