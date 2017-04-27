@@ -21,9 +21,6 @@ $input = json_decode(file_get_contents('php://input'),true);
 //  Open a connection to the mySQL database ($link):
 include("inc/connection.php");
 
-//  Get the table from the path ($table):
-$table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
-
 //  Get the columns and values from the input object ($columns and $values):
 $columns = preg_replace('/[^a-z0-9_]+/i','',array_keys($input));
 $values = array_map(function ($value) use ($link) {
