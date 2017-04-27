@@ -48,16 +48,16 @@ switch ($method) {
         $sql = "delete `$table` where uid=$key"; break;
 }
 
-//  Excecute the SQL query ($result):
+//  Execute the SQL query ($result):
 $result = mysqli_query($link,$sql);
 
-//   Drop the connection if the SQL query ($result) returned an error:
+//   Drop the connection if the SQL query ($result) returns a 404 (Not Found) error:
 if (!$result) {
     http_response_code(404);
     die(mysqli_error($link));
 }
 
-//  Display query results / the inserted uid or number of affected rows:
+//  Create and display a JSON encoded table of the query results / inserted uid / number of affected rows:
 if ($method == 'GET') {
     if (!$key) echo '[';
     for ($i=0;$i<mysqli_num_rows($result);$i++) {
