@@ -27,9 +27,9 @@ $values = array_map(function ($value) use ($link) {
 
 //  Generate the SQL query, based upon which table is being queried ($sql):
 if ($table == 'users') {
-    $sql = "select email from `$table`" . ($key ? " WHERE uid=$key" : '');
+    $sql = "select firstname, surname, email, usertype from `$table`" . ($key ? " WHERE uid=$key" : '');
 } elseif ($table == 'jobs') {
-    $sql = "select jobtext from `$table`" . ($key ? " WHERE uid=$key" : '');
+    $sql = "select jobname, jobtext from `$table`" . ($key ? " WHERE jid=$key" : '');
 }
 
 //  Execute the SQL query ($result):
