@@ -14,7 +14,7 @@ $input = json_decode(file_get_contents('php://input'),true);
 //  Open a connection to the mySQL database ($link):
 include("inc/connection.php");
 
-//  Get the table nanme (users or jobs) and primary key (uid or jid) from the path ($table and $key):
+//  Get the table name (users or jobs) and primary key (uid or jid) from the path ($table and $key):
 $table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
 $key = array_shift($request)+0;
 
