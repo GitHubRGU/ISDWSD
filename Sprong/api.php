@@ -14,7 +14,7 @@ $input = json_decode(file_get_contents('php://input'),true);
 //  Open a connection to the mySQL database ($link):
 include("inc/connection.php");
 
-//  Get the table and key (uid) from the path ($table and $key):
+//  Get the table nanme (users or jobs) and primary key (uid or jid) from the path ($table and $key):
 $table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
 $key = array_shift($request)+0;
 
@@ -25,14 +25,7 @@ $values = array_map(function ($value) use ($link) {
     return mysqli_real_escape_string($link,(string)$value);
 },array_values($input));
 
-//  Create the SET part of the SQL command (required for PUT or POST methods) ($set):
-$set = '';
-for ($i=0;$i<count($columns);$i++) {
-    $set.=($i>0?',':'').'`'.$columns[$i].'`=';
-    $set.=($values[$i]===null?'NULL':'"'.$values[$i].'"');
-}
-
-//  Generate the SQL query, based on HTTP method ($sql):
+//  Generate the SQL query, based upon which table is being queried ($sql):
 if ($table == 'users') {
     $sql = "select email from `$table`" . ($key ? " WHERE uid=$key" : '');
 } elseif ($table == 'jobs') {
