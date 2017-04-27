@@ -21,9 +21,8 @@ $input = json_decode(file_get_contents('php://input'),true);
 //  Open a connection to the mySQL database ($link):
 include("inc/connection.php");
 
-//  Get the table and key (uid) from the path ($table and $key):
+//  Get the table from the path ($table):
 $table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
-$key = array_shift($request)+0;
 
 //  Get the columns and values from the input object ($columns and $values):
 $columns = preg_replace('/[^a-z0-9_]+/i','',array_keys($input));
@@ -40,8 +39,7 @@ for ($i=0;$i<count($columns);$i++) {
 }
 
 //  Generate the SQL query ($sql):
-        $sql = "SELECT uid, firstname, surname, email, usertype FROM users".($key?" WHERE uid=$key":'');
-
+        $sql = "SELECT firstname, surname, email, usertype FROM users";
 
 //  Execute the SQL query ($result):
 $result = mysqli_query($link,$sql);
@@ -53,7 +51,6 @@ if (!$result) {
 }
 
 //  Create and display a JSON encoded table of the query results:
-    if (!$key) echo '[';
     for ($i=0;$i<mysqli_num_rows($result);$i++) {
         echo ($i>0?',':'').json_encode(mysqli_fetch_object($result));
     }
