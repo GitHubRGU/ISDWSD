@@ -2,6 +2,14 @@
 
 //  Sprong API
 //  ==========
+//
+//  API to retrieve information contained in the users and jobs tables
+//  in the Sprong database.
+//  Information returned will depend upon which table is being queried.
+//
+//  A users table query returns; First Name, Surname, Email Address and User Type.
+//
+//  A jobs table query returns; Job Number, Job Title and Job Text.
 
 
 
@@ -36,7 +44,7 @@ if ($table == 'users') {
 $result = mysqli_query($link,$sql);
 
 //  Error handling
-//   Drop the connection if the SQL query ($result) returns a 404 (Not Found) error:
+//  Drop the connection if the SQL query ($result) returns a 404 (Not Found) error:
 if (!$result) {
     http_response_code(404);
     die(mysqli_error($link));
