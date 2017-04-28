@@ -81,7 +81,8 @@ if (mysqli_num_rows($result) == 0) {
         echo ($i > 0 ? ',' : '') . json_encode(mysqli_fetch_object($result));
     }
     if (!$key) echo ']';
-    echo "<p>Status Code: 200  Content:</p>";
+
+//    echo "<p>Status Code: 200  Content:</p>";
 
 //  Close the database connection:
     mysqli_close($link);
