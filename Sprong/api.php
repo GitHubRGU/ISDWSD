@@ -38,7 +38,7 @@ if ($table == 'users') {
     //   DEBUGGING:
     echo "<p>" . $sql . "</p>";
 } elseif ($table == 'jobs') {
-    $sql = "SELECT jobnum, jobtitle, jobtext FROM `$table`" . ($key ? " WHERE jobnum=$key" : '');
+    $sql = "SELECT jobnum, jobtitle, jobtext FROM `$table`" . ($key ? " WHERE jobnum=$key" : '') . " ORDER BY jobnum, jid";
 }
 
 //  Execute the SQL query ($result):
