@@ -5,31 +5,39 @@
 </head>
 <body>
 
-<p>HULLO there</p>
+<p>Potato there</p>
+
+
+<?php
+
+$data = file_get_contents('http://sprong.azurewebsites.net/Sprong/api.php/users');
+$users = json_decode($data); // decode the JSON feed
+
+?>
+
+
+<table>
+    <tbody>
+    <tr>
+        <th>First name</th>
+        <th>Surname</th>
+        <th>Email</th>
+        <th>User Type</th>
+    </tr>
 
     <?php
-    $json = file_get_contents("http://sprong.azurewebsites.net/Sprong/api.php/users");
-    //  $json=file_get_contents('http://sprong.azurewebsites.net/Sprong/api.php/users');
-    $data =  json_decode($json);
-
-    if (count($data->stand)) {
-        // Open the table
-        echo "<table>";
-
-        // Cycle through the array
-        foreach ($data->stand as $idx => $stand) {
-
-            // Output a row
-            echo "<tr>";
-            echo "<td>$stand->afko</td>";
-            echo "<td>$stand->positie</td>";
-            echo "</tr>";
-        }
-
-        // Close the table
-        echo "</table>";
+    foreach ($users as $user) {
+        echo '<tr>';
+        echo '<td>' . $user->firstname . '</td>';
+        echo '<td>' . $user->surname . '</td>';
+        echo '<td>' . $user->email . '</td>';
+        echo '<td>' . $user->usertype . '</td>';
+        echo '</tr>';
     }
     ?>
+
+    </tbody>
+</table>
 
 
 </body>
