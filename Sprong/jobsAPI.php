@@ -27,9 +27,9 @@ $jobs = json_decode($data);
     <?php
     foreach ($jobs as $job) {
         echo '<tr>';
-        echo '<td>' . $job->firstname . '</td>';
-        echo '<td>' . $job->surname . '</td>';
-        echo '<td>' . $job->email . '</td>';
+        echo '<td>' . $job->jobnum . '</td>';
+        echo '<td>' . $job->jobtitle . '</td>';
+        echo '<td>' . $job->jobtext . '</td>';
         echo '</tr>';
     }
     ?>
