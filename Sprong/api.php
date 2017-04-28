@@ -77,11 +77,11 @@ if (mysqli_num_rows($result) == 0) {
 
 //  Create and display a JSON encoded table of the query results:
 //    echo "<p>Status Code: 200  Content:</p>";
-//    if (!$key) echo '[';
-//    for ($i = 0; $i < mysqli_num_rows($result); $i++) {
-//        echo ($i > 0 ? ',' : '') . json_encode(mysqli_fetch_object($result));
-//    }
-//    if (!$key) echo ']';
+    if (!$key) echo '[';
+    for ($i = 0; $i < mysqli_num_rows($result); $i++) {
+        echo ($i > 0 ? ',' : '') . json_encode(mysqli_fetch_object($result));
+    }
+    if (!$key) echo ']';
 
 //  Close the database connection:
     mysqli_close($link);
