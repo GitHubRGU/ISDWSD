@@ -13,11 +13,10 @@
 
         foreach($jsonobj->firstname->surname->email->usertype as $value)
         {
-            echo('<li " . "$value"');
+            echo('<li ' . "$value");
 
         }
         echo("</ul>");
-    }
     ?>
 
 </body>
