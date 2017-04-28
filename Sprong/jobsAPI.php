@@ -11,7 +11,7 @@
 $data = file_get_contents('http://sprong.azurewebsites.net/Sprong/api.php/jobs');
 
 //  Decode the JSON data:
-$users = json_decode($data);
+$jobs = json_decode($data);
 
 ?>
 
@@ -19,19 +19,17 @@ $users = json_decode($data);
 <table>
     <tbody>
     <tr>
-        <th>First name</th>
-        <th>Surname</th>
-        <th>Email</th>
-        <th>User Type</th>
+        <th>Job number</th>
+        <th>Job title</th>
+        <th>Job text</th>
     </tr>
 
     <?php
-    foreach ($users as $user) {
+    foreach ($jobs as $job) {
         echo '<tr>';
-        echo '<td>' . $user->firstname . '</td>';
-        echo '<td>' . $user->surname . '</td>';
-        echo '<td>' . $user->email . '</td>';
-        echo '<td>' . $user->usertype . '</td>';
+        echo '<td>' . $job->firstname . '</td>';
+        echo '<td>' . $job->surname . '</td>';
+        echo '<td>' . $job->email . '</td>';
         echo '</tr>';
     }
     ?>
