@@ -4,20 +4,31 @@
     <title>Use of Sprong API</title>
 </head>
 <body>
+
+
     <?php
+    $json=file_get_contents('http://sprong.azurewebsites.net/Sprong/api.php/users');
+    $data =  json_decode($json);
 
-        $request = 'http://sprong.azurewebsites.net/Sprong/api.php/users';
-        $response  = file_get_contents($request);
-        $jsonobj  = json_decode($response);
+    if (count($data->stand)) {
+        // Open the table
+        echo "<table>";
 
-        echo $jsonobj;
+        // Cycle through the array
+        foreach ($data->stand as $idx => $stand) {
 
-        foreach($jsonobj->firstname->surname->email->usertype as $value)
-        {
-            echo("<p>" . "$value" . "</p>");
+            // Output a row
+            echo "<tr>";
+            echo "<td>$stand->afko</td>";
+            echo "<td>$stand->positie</td>";
+            echo "</tr>";
         }
 
+        // Close the table
+        echo "</table>";
+    }
     ?>
+
 
 </body>
 </html>
