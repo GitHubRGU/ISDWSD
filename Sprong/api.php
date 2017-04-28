@@ -69,7 +69,7 @@ if (!$result) {
 
 //  Check number of rows and display error message if zero rows returned:
 if (mysqli_num_rows($result) == 0) {
-    echo "Status Code: 500 Internal Server Error";
+    echo "Status Code: 10 Database record does not exist";
     die(mysqli_error($link));
 } else {
 
