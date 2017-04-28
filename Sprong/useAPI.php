@@ -1,17 +1,17 @@
 <html>
 <head>
-    <link href="./CSS/style.css" rel="stylesheet" type="text/css" />
     <title>Use of Sprong API</title>
 </head>
 <body>
 
-<p>Potato there</p>
-
 
 <?php
 
+//  Use the API to retrieve query results:
 $data = file_get_contents('http://sprong.azurewebsites.net/Sprong/api.php/users');
-$users = json_decode($data); // decode the JSON feed
+
+//  Decode the JSON data:
+$users = json_decode($data);
 
 ?>
 
