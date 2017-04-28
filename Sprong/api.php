@@ -67,15 +67,22 @@ if (!$result) {
     die(mysqli_error($link));
 }
 
+//  Check number of rows and display error message if zero rows returned:
+if (mysqli_num_rows($result) == 0) {
+    echo "Status Code: 500 Internal Server Error";
+    die(mysqli_error($link));
+} else {
+
+//  One or more rows returned, so process the returned information
+
 //  Create and display a JSON encoded table of the query results:
-echo "<p>Status Code: 200  Content:</p>";
-//   DEBUGGING:
-   echo array_values($result);
-if (!$key) echo '[';
-    for ($i=0;$i<mysqli_num_rows($result);$i++) {
-        echo ($i>0?',':'').json_encode(mysqli_fetch_object($result));
+    echo "<p>Status Code: 200  Content:</p>";
+    if (!$key) echo '[';
+    for ($i = 0; $i < mysqli_num_rows($result); $i++) {
+        echo ($i > 0 ? ',' : '') . json_encode(mysqli_fetch_object($result));
     }
     if (!$key) echo ']';
 
 //  Close the database connection:
-mysqli_close($link);
+    mysqli_close($link);
+}
