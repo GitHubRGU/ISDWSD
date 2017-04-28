@@ -10,6 +10,8 @@
         $response  = file_get_contents($request);
         $jsonobj  = json_decode($response);
 
+        echo $jsonobj;
+
         foreach($jsonobj->firstname->surname->email->usertype as $value)
         {
             echo("<p>" . "$value" . "</p>");
