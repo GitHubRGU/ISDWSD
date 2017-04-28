@@ -53,6 +53,20 @@ if (!$result) {
     die(mysqli_error($link));
 }
 
+//  Drop the connection if the SQL query ($result) returns a 400 (Bad Request) error:
+if (!$result) {
+    http_response_code(400);
+    echo "Status Code: 400 Bad Request";
+    die(mysqli_error($link));
+}
+
+//  Drop the connection if the SQL query ($result) returns a 500 (Internal Server Error) error:
+if (!$result) {
+    http_response_code(500);
+    echo "Status Code: 500 Internal Server Error";
+    die(mysqli_error($link));
+}
+
 //  Create and display a JSON encoded table of the query results:
 echo "<p>Status Code: 200  Content:</p>";
 if (!$key) echo '[';
