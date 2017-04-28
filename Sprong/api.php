@@ -43,15 +43,19 @@ if ($table == 'users') {
 //  Execute the SQL query ($result):
 $result = mysqli_query($link,$sql);
 
-//  Error handling
+//  ERROR HANDLING
+//  ==============
+
 //  Drop the connection if the SQL query ($result) returns a 404 (Not Found) error:
 if (!$result) {
     http_response_code(404);
+    echo "Status Code: 404 Not Found";
     die(mysqli_error($link));
 }
 
 //  Create and display a JSON encoded table of the query results:
-    if (!$key) echo '[';
+echo "<p>Code: 200  Content:</p>";
+if (!$key) echo '[';
     for ($i=0;$i<mysqli_num_rows($result);$i++) {
         echo ($i>0?',':'').json_encode(mysqli_fetch_object($result));
     }
