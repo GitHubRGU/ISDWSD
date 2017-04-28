@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Use of Sprong API</title>
+    <title>Use of Sprong API (users) table</title>
 </head>
 <body>
 
