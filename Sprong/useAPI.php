@@ -9,14 +9,12 @@
         $request = 'http://sprong.azurewebsites.net/Sprong/api.php/users';
         $response  = file_get_contents($request);
         $jsonobj  = json_decode($response);
-        echo('<ul ID="resultList">');
 
         foreach($jsonobj->firstname->surname->email->usertype as $value)
         {
-            echo('<li ' . "$value");
-
+            echo("<p>" . "$value" . "</p>");
         }
-        echo("</ul>");
+
     ?>
 
 </body>
