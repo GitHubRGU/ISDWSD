@@ -46,17 +46,17 @@ $result = mysqli_query($link,$sql);
 //  ERROR HANDLING
 //  ==============
 
-//  Drop the connection if the SQL query ($result) returns a 404 (Not Found) error:
-if (!$result) {
-    http_response_code(404);
-    echo "Status Code: 404 Not Found";
-    die(mysqli_error($link));
-}
-
 //  Drop the connection if the SQL query ($result) returns a 400 (Bad Request) error:
 if (!$result) {
     http_response_code(400);
     echo "Status Code: 400 Bad Request";
+    die(mysqli_error($link));
+}
+
+//  Drop the connection if the SQL query ($result) returns a 404 (Not Found) error:
+if (!$result) {
+    http_response_code(404);
+    echo "Status Code: 404 Not Found";
     die(mysqli_error($link));
 }
 
