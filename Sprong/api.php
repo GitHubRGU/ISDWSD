@@ -35,11 +35,8 @@ $values = array_map(function ($value) use ($link) {
 //  Generate the SQL query, based upon which table is being queried ($sql):
 if ($table == 'users') {
     $sql = "SELECT firstname, surname, email, usertype FROM `$table`" . ($key ? " WHERE uid=$key" : '');
-
 } elseif ($table == 'jobs') {
     $sql = "SELECT jobnum, jobtitle, jobtext FROM `$table`" . ($key ? " WHERE jobnum=$key" : '') . " ORDER BY jobnum, jid";
-    //   DEBUGGING:
-    echo "<p>" . $sql . "</p>";
 }
 
 //  Execute the SQL query ($result):
