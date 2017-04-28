@@ -8,7 +8,8 @@
 <p>Hello there</p>
 
     <?php
-    $json=file_get_contents('http://sprong.azurewebsites.net/Sprong/api.php/users');
+    $help = file_get_contents("http://sprong.azurewebsites.net/Sprong/api.php/users")
+    //  $json=file_get_contents('http://sprong.azurewebsites.net/Sprong/api.php/users');
     $data =  json_decode($json);
 
     if (count($data->stand)) {
